@@ -278,7 +278,7 @@ def simulation(code, input_tokens, data_size, limit, data=None):
 
 
 def run(program_path, input_path):  # entry point
-    print(f"Running with {program_path} {input_path}")
+    # print(f"Running with {program_path} {input_path}")
     prog = json.load(open(program_path))
     code = isa.deserialize_instruction_list(prog["program"])
     with open(input_path, encoding="utf-8") as file:

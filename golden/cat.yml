@@ -47,7 +47,6 @@ out_code: |-
 
 out_stdout: |
   ====================
-  Running with /var/folders/66/w060g8313pz8rr7ql7g05s3c0000gn/T/tmpdlq1vq6o/target.json /var/folders/66/w060g8313pz8rr7ql7g05s3c0000gn/T/tmpdlq1vq6o/input.txt
   test
   instr_counter:  32 ticks: 117
 

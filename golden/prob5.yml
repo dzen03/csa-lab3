@@ -480,7 +480,6 @@ out_code: |-
 
 out_stdout: |
   ====================
-  Running with /var/folders/66/w060g8313pz8rr7ql7g05s3c0000gn/T/tmpixlram0k/target.json /var/folders/66/w060g8313pz8rr7ql7g05s3c0000gn/T/tmpixlram0k/input.txt
   232792560
   instr_counter:  2107 ticks: 10956
 

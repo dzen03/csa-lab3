@@ -146,7 +146,6 @@ out_code: |-
 
 out_stdout: |
   ====================
-  Running with /var/folders/66/w060g8313pz8rr7ql7g05s3c0000gn/T/tmpjld8nc5y/target.json /var/folders/66/w060g8313pz8rr7ql7g05s3c0000gn/T/tmpjld8nc5y/input.txt
   hello world
   instr_counter:  298 ticks: 1557
 

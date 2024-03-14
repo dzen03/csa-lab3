@@ -182,7 +182,6 @@ out_code: |-
 
 out_stdout: |
   ====================
-  Running with /var/folders/66/w060g8313pz8rr7ql7g05s3c0000gn/T/tmpr2pafrbk/target.json /var/folders/66/w060g8313pz8rr7ql7g05s3c0000gn/T/tmpr2pafrbk/input.txt
   hello, Name.!
   instr_counter:  231 ticks: 1140
 
