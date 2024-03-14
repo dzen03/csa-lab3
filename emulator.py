@@ -56,8 +56,11 @@ class DataPath:
             if sel_out == Opcode.OUTPUT:
                 res = self.data[self.stack_pointer]
 
-                if ord("a") <= res <= ord("z") or ord("A") <= res <= ord("Z") or \
-                        res in {ord(' '), ord('!'), ord(','), ord('.')}:
+                if (
+                    ord("a") <= res <= ord("z")
+                    or ord("A") <= res <= ord("Z")
+                    or res in {ord(" "), ord("!"), ord(","), ord(".")}
+                ):
                     self.user_output_buffer.append(chr(res))
                 else:
                     res = str(res)
@@ -156,7 +159,6 @@ class ControlUnit:
             Opcode.MOD: lambda a, b: int(a % b),
         }
         if opcode in math:
-
             self.data_path.latch_stack_pointer(Opcode.INC)
             self.tick()
 
