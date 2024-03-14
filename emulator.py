@@ -220,18 +220,23 @@ class ControlUnit:
             self.tick()
         elif opcode is Opcode.INPUT:
             self.data_path.signal_we(True, opcode)
+            self.tick()
 
             self.data_path.latch_stack_pointer(Opcode.DEC)
             self.latch_program_counter(sel_next=True)
             self.tick()
         elif opcode is Opcode.OUTPUT:
             self.data_path.latch_stack_pointer(Opcode.INC)
+            self.tick()
+
             self.data_path.signal_oe(True, opcode)
+            self.tick()
 
             self.latch_program_counter(sel_next=True)
             self.tick()
         elif opcode is Opcode.PUSH:
             self.data_path.signal_we(True, opcode, instr.arg)
+            self.tick()
 
             self.data_path.latch_stack_pointer(Opcode.DEC)
             self.latch_program_counter(sel_next=True)

@@ -46,6 +46,33 @@ Task:
 2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder.
 What is the smallest positive number that is evenly divisible by all the numbers from 1 to 20?
 
+## Memory organisation
+
+```
++----------------+
+| 00: const data |
+| ..             |
+| n:  program    |
+| ..   |         |
+| ..   v         |
+| ..             |
+| ..   ^         |
+| ..   |         |
+| k:   stack     |
++----------------+
+```
+
+
 ## [Translator](translator.md)
 
 ## [Emulator](emulator.md)
+
+## Tests
+
+
+| ФИО                       | <алг>      | <LoC> | <code байт> | <code инстр.> | <инстр.> | <такт.> | <вариант>                                                                                   |
+|---------------------------|------------|-------|-------------|---------------|----------|---------|---------------------------------------------------------------------------------------------|
+| Дзензелюк Илья Алексеевич | cat        | 1     | -           | 9             | 32       | 117     | `forth \| stack \| neum \| hw \| instr \| struct \| stream \| port \| pstr \| prob5 \| spi` |   
+| Дзензелюк Илья Алексеевич | hello      | 1     | -           | 30            | 298      | 1557    | `forth \| stack \| neum \| hw \| instr \| struct \| stream \| port \| pstr \| prob5 \| spi` |   
+| Дзензелюк Илья Алексеевич | hello_user | 1     | -           | 40            | 231      | 1140    | `forth \| stack \| neum \| hw \| instr \| struct \| stream \| port \| pstr \| prob5 \| spi` |   
+| Дзензелюк Илья Алексеевич | prob5      | 3     | -           | 117           | 2107     | 10979   | `forth \| stack \| neum \| hw \| instr \| struct \| stream \| port \| pstr \| prob5 \| spi` |

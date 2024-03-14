@@ -48,41 +48,41 @@ out_code: |-
 out_stdout: |
   ====================
   test
-  instr_counter:  32 ticks: 117
+  instr_counter:  32 ticks: 133
 
 out_log: |
   DEBUG   emulator:simulation    TICK:   0 PC:   0 SP: 149 ACC: 0 	input 0
-  DEBUG   emulator:simulation    TICK:   2 PC:   1 SP: 148 ACC: 0 	dup 0
-  DEBUG   emulator:simulation    TICK:   9 PC:   2 SP: 147 ACC: 116 	. 0
-  DEBUG   emulator:simulation    TICK:  11 PC:   3 SP: 148 ACC: 116 	push 10
-  DEBUG   emulator:simulation    TICK:  13 PC:   4 SP: 147 ACC: 116 	!= 0
-  DEBUG   emulator:simulation    TICK:  21 PC:   5 SP: 148 ACC: 116 	inc 0
-  DEBUG   emulator:simulation    TICK:  24 PC:   6 SP: 149 ACC: 116 	jz 8
-  DEBUG   emulator:simulation    TICK:  27 PC:   7 SP: 149 ACC: 116 	jmp 0
-  DEBUG   emulator:simulation    TICK:  29 PC:   0 SP: 149 ACC: 116 	input 0
-  DEBUG   emulator:simulation    TICK:  31 PC:   1 SP: 148 ACC: 116 	dup 0
-  DEBUG   emulator:simulation    TICK:  38 PC:   2 SP: 147 ACC: 101 	. 0
-  DEBUG   emulator:simulation    TICK:  40 PC:   3 SP: 148 ACC: 101 	push 10
-  DEBUG   emulator:simulation    TICK:  42 PC:   4 SP: 147 ACC: 101 	!= 0
-  DEBUG   emulator:simulation    TICK:  50 PC:   5 SP: 148 ACC: 101 	inc 0
-  DEBUG   emulator:simulation    TICK:  53 PC:   6 SP: 149 ACC: 101 	jz 8
-  DEBUG   emulator:simulation    TICK:  56 PC:   7 SP: 149 ACC: 101 	jmp 0
-  DEBUG   emulator:simulation    TICK:  58 PC:   0 SP: 149 ACC: 101 	input 0
-  DEBUG   emulator:simulation    TICK:  60 PC:   1 SP: 148 ACC: 101 	dup 0
-  DEBUG   emulator:simulation    TICK:  67 PC:   2 SP: 147 ACC: 115 	. 0
-  DEBUG   emulator:simulation    TICK:  69 PC:   3 SP: 148 ACC: 115 	push 10
-  DEBUG   emulator:simulation    TICK:  71 PC:   4 SP: 147 ACC: 115 	!= 0
-  DEBUG   emulator:simulation    TICK:  79 PC:   5 SP: 148 ACC: 115 	inc 0
-  DEBUG   emulator:simulation    TICK:  82 PC:   6 SP: 149 ACC: 115 	jz 8
-  DEBUG   emulator:simulation    TICK:  85 PC:   7 SP: 149 ACC: 115 	jmp 0
-  DEBUG   emulator:simulation    TICK:  87 PC:   0 SP: 149 ACC: 115 	input 0
-  DEBUG   emulator:simulation    TICK:  89 PC:   1 SP: 148 ACC: 115 	dup 0
-  DEBUG   emulator:simulation    TICK:  96 PC:   2 SP: 147 ACC: 116 	. 0
-  DEBUG   emulator:simulation    TICK:  98 PC:   3 SP: 148 ACC: 116 	push 10
-  DEBUG   emulator:simulation    TICK: 100 PC:   4 SP: 147 ACC: 116 	!= 0
-  DEBUG   emulator:simulation    TICK: 108 PC:   5 SP: 148 ACC: 116 	inc 0
-  DEBUG   emulator:simulation    TICK: 111 PC:   6 SP: 149 ACC: 116 	jz 8
-  DEBUG   emulator:simulation    TICK: 114 PC:   7 SP: 149 ACC: 116 	jmp 0
-  DEBUG   emulator:simulation    TICK: 116 PC:   0 SP: 149 ACC: 116 	input 0
+  DEBUG   emulator:simulation    TICK:   3 PC:   1 SP: 148 ACC: 0 	dup 0
+  DEBUG   emulator:simulation    TICK:  10 PC:   2 SP: 147 ACC: 116 	. 0
+  DEBUG   emulator:simulation    TICK:  14 PC:   3 SP: 148 ACC: 116 	push 10
+  DEBUG   emulator:simulation    TICK:  17 PC:   4 SP: 147 ACC: 116 	!= 0
+  DEBUG   emulator:simulation    TICK:  25 PC:   5 SP: 148 ACC: 116 	inc 0
+  DEBUG   emulator:simulation    TICK:  28 PC:   6 SP: 149 ACC: 116 	jz 8
+  DEBUG   emulator:simulation    TICK:  31 PC:   7 SP: 149 ACC: 116 	jmp 0
+  DEBUG   emulator:simulation    TICK:  33 PC:   0 SP: 149 ACC: 116 	input 0
+  DEBUG   emulator:simulation    TICK:  36 PC:   1 SP: 148 ACC: 116 	dup 0
+  DEBUG   emulator:simulation    TICK:  43 PC:   2 SP: 147 ACC: 101 	. 0
+  DEBUG   emulator:simulation    TICK:  47 PC:   3 SP: 148 ACC: 101 	push 10
+  DEBUG   emulator:simulation    TICK:  50 PC:   4 SP: 147 ACC: 101 	!= 0
+  DEBUG   emulator:simulation    TICK:  58 PC:   5 SP: 148 ACC: 101 	inc 0
+  DEBUG   emulator:simulation    TICK:  61 PC:   6 SP: 149 ACC: 101 	jz 8
+  DEBUG   emulator:simulation    TICK:  64 PC:   7 SP: 149 ACC: 101 	jmp 0
+  DEBUG   emulator:simulation    TICK:  66 PC:   0 SP: 149 ACC: 101 	input 0
+  DEBUG   emulator:simulation    TICK:  69 PC:   1 SP: 148 ACC: 101 	dup 0
+  DEBUG   emulator:simulation    TICK:  76 PC:   2 SP: 147 ACC: 115 	. 0
+  DEBUG   emulator:simulation    TICK:  80 PC:   3 SP: 148 ACC: 115 	push 10
+  DEBUG   emulator:simulation    TICK:  83 PC:   4 SP: 147 ACC: 115 	!= 0
+  DEBUG   emulator:simulation    TICK:  91 PC:   5 SP: 148 ACC: 115 	inc 0
+  DEBUG   emulator:simulation    TICK:  94 PC:   6 SP: 149 ACC: 115 	jz 8
+  DEBUG   emulator:simulation    TICK:  97 PC:   7 SP: 149 ACC: 115 	jmp 0
+  DEBUG   emulator:simulation    TICK:  99 PC:   0 SP: 149 ACC: 115 	input 0
+  DEBUG   emulator:simulation    TICK: 102 PC:   1 SP: 148 ACC: 115 	dup 0
+  DEBUG   emulator:simulation    TICK: 109 PC:   2 SP: 147 ACC: 116 	. 0
+  DEBUG   emulator:simulation    TICK: 113 PC:   3 SP: 148 ACC: 116 	push 10
+  DEBUG   emulator:simulation    TICK: 116 PC:   4 SP: 147 ACC: 116 	!= 0
+  DEBUG   emulator:simulation    TICK: 124 PC:   5 SP: 148 ACC: 116 	inc 0
+  DEBUG   emulator:simulation    TICK: 127 PC:   6 SP: 149 ACC: 116 	jz 8
+  DEBUG   emulator:simulation    TICK: 130 PC:   7 SP: 149 ACC: 116 	jmp 0
+  DEBUG   emulator:simulation    TICK: 132 PC:   0 SP: 149 ACC: 116 	input 0
   WARNING emulator:simulation    Input buffer is empty!
   INFO    emulator:simulation    output_buffer: 'test'

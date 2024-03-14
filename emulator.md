@@ -82,12 +82,12 @@ rbp to move back to original stack_pointer state
 | %      | MOD         | 6     |             |
 | dup    | DUP         | 5     |             |
 | .      | OUTPUT      | 2     |             |
-| input  | INPUT       | 2     |             |
+| input  | INPUT       | 1     |             |
 | dec    | DEC         | 1     |             |
 | inc    | INC         | 1     |             |
-|        | MOV addr    | 1     |             |
+|        | MOV addr    | 2     |             |
 |        | MOV_RBP     | 1     |             |
-| number | PUSH number | 2     |             |
+| number | PUSH number | 1     |             |
 |        | JMP         | 1     |             |
 |        | JZ          | 2     |             |
 |        | HALT        | -     |             |
