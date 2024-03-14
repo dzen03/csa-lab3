@@ -1,8 +1,7 @@
-import translator
-import emulator
-
 import sys
 
+import emulator
+import translator
 
 if __name__ == "__main__":
 

@@ -1,9 +1,10 @@
+from __future__ import annotations
+
 import json
-import sys
 import re
+import sys
 
 import isa
-
 
 default_opcodes = [str(oc) for oc in isa.Opcode]
 
@@ -24,7 +25,8 @@ def remove_funcs(words: list[str], custom_words: dict[str, list[str]], data: lis
     while ind < len(words):
         if words[ind] == ":":
             f_name = words[ind + 1]
-            assert f_name not in custom_words and f_name not in default_opcodes, f"word redeclaration: {f_name}"
+            assert f_name not in custom_words
+            assert f_name not in default_opcodes, f"word redeclaration: {f_name}"
             ind += 2
             f = []
 
@@ -41,7 +43,8 @@ def remove_funcs(words: list[str], custom_words: dict[str, list[str]], data: lis
             res.append("mov")
             res += remove_funcs(custom_words[".s"], custom_words, data)
             res.append("mov_rbp")
-            data.append([0, 0, len(string_literal)] + str_to_bytes(string_literal))
+            data.append([0, 0, len(string_literal)])
+            data.append(str_to_bytes(string_literal))
         else:
             if words[ind] in custom_words:
                 res += remove_funcs(custom_words[words[ind]], custom_words, data)
@@ -56,6 +59,7 @@ def calc_mov_addr(data: list[list[int]], data_count):
     return sum([len(data[i]) for i in range(data_count)])
 
 
+# ruff: noqa: C901
 def parse(words: list[str], ind, data: list[list[int]], data_count):  # second run
     prog: list[isa.Instruction] = []
     while ind < len(words):
@@ -113,7 +117,6 @@ def calculate_jumps(words: list[isa.Instruction], data_size: int):
 
 
 def translate(input_path, output_path):  # entry point
-    # print(f"Translating {input_path} into {output_path}")
     words = open(input_path).read().replace("\n", " ").strip().lower() + " halt"
 
     words = re.findall(r"((?:\.\".*\")|(?:' ')|(?:\S+))", words)
@@ -138,7 +141,7 @@ def translate(input_path, output_path):  # entry point
 
 def main(argv):
     if len(argv) != 3:
-        print(f"Error in arguments. Expecting: <input_file> <output_file>")
+        print("Error in arguments. Expecting: <input_file> <output_file>")
         exit(1)
     translate(argv[1], argv[2])
 

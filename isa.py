@@ -1,4 +1,3 @@
-import json
 from enum import Enum
 
 
@@ -42,9 +41,9 @@ class Instruction:
     def _is_int(n: str):
         try:
             int(n)
-            return True
         except ValueError:
             return False
+        return True
 
     def __init__(self, code: str, arg: int):
         if self._is_int(code):

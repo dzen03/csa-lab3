@@ -1,10 +1,12 @@
-import io
+from __future__ import annotations
+
 import json
 import logging
 import sys
 
 import isa
-from isa import Opcode, Instruction
+import pytest
+from isa import Instruction, Opcode
 
 
 class DataPath:
@@ -31,7 +33,7 @@ class DataPath:
         for i in range(len(program)):
             self.data[i + len(data)] = program[i]
 
-    def latch_stack_pointer(self, sel: Opcode, addr: int = None):
+    def latch_stack_pointer(self, sel: Opcode, addr=None):
         if sel == Opcode.INC:
             self.stack_pointer += 1
         elif sel == Opcode.DEC:
@@ -41,14 +43,14 @@ class DataPath:
         elif sel == Opcode.MOV_RBP:
             self.stack_pointer = self.rbp
         else:
-            assert False, "incorrect opcode"
+            pytest.fail("incorrect opcode")
 
     def latch_rbp(self):
         self.rbp = self.stack_pointer
 
     # sel_addr = 0 if selecting instruction
     def signal_oe(
-        self, sel_addr: bool = False, sel_out: Opcode = None, instruction_addr: int = None, latch_acc: bool = False
+        self, sel_addr=False, sel_out=None, instruction_addr=None, latch_acc=False
     ):
         if not sel_addr:
             res = self.data[instruction_addr]
@@ -74,8 +76,9 @@ class DataPath:
         return res
 
     # sel_addr = 0 if selecting instruction
-    def signal_we(self, sel_addr: bool = False, sel_inp: Opcode = None, cu_input: int = None):
-        assert sel_addr is True and sel_inp is not None
+    def signal_we(self, sel_addr=False, sel_inp=None, cu_input=None):
+        assert sel_addr is True
+        assert sel_inp is not None
         if sel_inp == Opcode.INPUT:
             if len(self.user_input_buffer) == 0:
                 raise EOFError
@@ -140,8 +143,8 @@ class ControlUnit:
 
         return False
 
+    # ruff: noqa: C901
     def decode_and_execute_instruction(self):
-        # instr = self.program[self.program_counter]
         instr = self.data_path.signal_oe(False, instruction_addr=self.program_counter)
         opcode = instr.code
         self.tick()
@@ -244,15 +247,14 @@ class ControlUnit:
             self.data_path.stack_pointer,
             self.data_path.acc,
         )
-        return state_repr
 
-        # instr = self.data_path.signal_oe(False, instruction_addr=self.program_counter)
-        # opcode = instr.code
-        # instr_repr = str(opcode)
-        #
-        # instr_repr += " {}".format(instr.arg)
-        #
-        # return "{} \t{}".format(state_repr, instr_repr)
+        instr = self.data_path.signal_oe(False, instruction_addr=self.program_counter)
+        opcode = instr.code
+        instr_repr = str(opcode)
+
+        instr_repr += " {}".format(instr.arg)
+
+        return "{} \t{}".format(state_repr, instr_repr)
 
 
 def simulation(code, input_tokens, data_size, limit, data=None):
@@ -278,7 +280,6 @@ def simulation(code, input_tokens, data_size, limit, data=None):
 
 
 def run(program_path, input_path):  # entry point
-    # print(f"Running with {program_path} {input_path}")
     prog = json.load(open(program_path))
     code = isa.deserialize_instruction_list(prog["program"])
     with open(input_path, encoding="utf-8") as file:
@@ -297,7 +298,7 @@ def run(program_path, input_path):  # entry point
 
 def main(argv):
     if len(argv) != 3:
-        print(f"Error in arguments. Expecting: <program_file> <input_file>")
+        print("Error in arguments. Expecting: <program_file> <input_file>")
         exit(1)
     run(argv[1], argv[2])
 
