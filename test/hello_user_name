@@ -1,0 +1,1 @@
+."Hello, " begin input dup . '\n' != until '!' .
