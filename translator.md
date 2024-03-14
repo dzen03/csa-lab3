@@ -1,4 +1,5 @@
 # Translator
+
 [Source code](translator.py)
 
 ```
@@ -24,8 +25,9 @@ function ::= ":" word ";"
 ```
 
 ## Predefined words aka commands
+
 - `DUP` duplicates the top of stack (TOS)
-- `SWAP` interchanges the top two elements 
+- `SWAP` interchanges the top two elements
 - `DROP` pops the TOS discarding it
 - `HALT` stops everything _(not an actual Forth word)_
 - `=` pops the top two elements, compares them, and pushes 1 onto the stack if there are equal/less/greater, and 0 if not
@@ -33,11 +35,13 @@ function ::= ":" word ";"
 - `:` defines a new word (see [this](#defining-words-aka-functions))
 - `DEC` decreases stack pointer
 - `INC` increases stack pointer
+
 ### Words for IO and memory manipulation _(non Forth)_
+
 - `.` pops and prints the TOS
 - `INPUT` pushes char from user to the TOS
 - `.s` pops entire string
-- `."<string>"` prints <string> to output
+- `."string"` prints string to output
 
 ## Loops
 
@@ -54,17 +58,17 @@ IF words ELSE words THEN
 ```
 : name words ;
 ```
+
 Creates a word called `name` that, upon execution, executes all `words`
 
 ## Commands system
 
-### predefined words:
+### Predefined words
+
 - .s `: .s begin swap . until ;`
-
 - drop `: drop inc ;`
-
 - swap `: swap dup inc - dup dec - dup inc + dec ;`
- 
+
 Correction check on swap:
 
 ```
@@ -91,5 +95,3 @@ a b -> a a b -> a | a b -> a a | a-b -> a | a-b a-b -> a a-b a-b -> b a-b -> b b
 | ...      | ...         |              |
 | ...      |             | `jz m + 1`   |
 | m        | `until`     | `jmp n`      |
-
-

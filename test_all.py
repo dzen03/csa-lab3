@@ -30,7 +30,6 @@ def test_all(golden, caplog):
         # stdout
         with contextlib.redirect_stdout(io.StringIO()) as stdout:
             translator.translate(source, target)
-            print(open(target).read(), file=open('/Users/ilya/Downloads/tmp.txt', 'w'))
             print("=" * 20)
             emulator.run(target, input_stream)
 

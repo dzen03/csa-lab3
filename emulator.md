@@ -1,7 +1,9 @@
 # Hardware
+
 [Source code](emulator.py)
 
 ## Control path
+
 ```
                                                                         sel_inp          cu_output         
                                                                           |               ^      user_output
@@ -32,11 +34,13 @@
     |                                                      +---------+                      |
     +---(stack addr select)-----------------------------------------------------------------+              
 ```
+
 acc used only for dup
 
 rbp to move back to original stack_pointer state
 
 ## Control unit
+
 ```
   +-------+                                            
   |       |                                            
@@ -68,27 +72,28 @@ rbp to move back to original stack_pointer state
 
 ## Instruction set
 
-| word     | instruction   | ticks | description |
-|----------|---------------|-------|-------------|
-| =        | EQ            | 6     |             |
-| +        | ADD           | 6     |             |
-| -        | SUB           | 6     |             |
-| *        | MUL           | 6     |             |
-| /        | DIV           | 6     |             |
-| %        | MOD           | 6     |             |
-| dup      | DUP           | 5     |             |
-| .        | OUTPUT        | 2     |             |
-| input    | INPUT         | 2     |             |
-| dec      | DEC           | 1     |             |
-| inc      | INC           | 1     |             |
-|          | MOV <addr>    | 1     |             |
-|          | MOV_RBP       | 1     |             |
-| <number> | PUSH <number> | 2     |             |
-|          | JMP           | 1     |             |
-|          | JZ            | 2     |             |
-|          | HALT          | -     |             |
+| word   | instruction | ticks | description |
+|--------|-------------|-------|-------------|
+| =      | EQ          | 6     |             |
+| +      | ADD         | 6     |             |
+| -      | SUB         | 6     |             |
+| *      | MUL         | 6     |             |
+| /      | DIV         | 6     |             |
+| %      | MOD         | 6     |             |
+| dup    | DUP         | 5     |             |
+| .      | OUTPUT      | 2     |             |
+| input  | INPUT       | 2     |             |
+| dec    | DEC         | 1     |             |
+| inc    | INC         | 1     |             |
+|        | MOV addr    | 1     |             |
+|        | MOV_RBP     | 1     |             |
+| number | PUSH number | 2     |             |
+|        | JMP         | 1     |             |
+|        | JZ          | 2     |             |
+|        | HALT        | -     |             |
 
-### +3 translation time defined:
+### +3 translation time defined
+
 #### .s
 
 `: .s begin swap . until ;`
@@ -101,6 +106,6 @@ rbp to move back to original stack_pointer state
 
 `: swap dup dup dec dec - dup inc + dup dup dec dec - -1 * inc ;`
 
-## Encoding:
-Machine code serializes to JSON with static_data in front.
+## Encoding
 
+Machine code serializes to JSON with static_data in front.
