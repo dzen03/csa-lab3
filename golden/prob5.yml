@@ -1,0 +1,2596 @@
+in_source: |-
+  : gcd begin swap dup inc inc dup dec % dup until drop ;
+  : lcm dup dup dup inc inc inc swap * dec dec dec dec swap inc swap inc gcd swap / ;
+  0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 begin swap dup if lcm else then dup until drop .
+in_stdin: |
+out_code: |-
+  {
+    "data": [],
+    "program": [
+      {
+        "code": "push",
+        "arg": 0
+      },
+      {
+        "code": "push",
+        "arg": 1
+      },
+      {
+        "code": "push",
+        "arg": 2
+      },
+      {
+        "code": "push",
+        "arg": 3
+      },
+      {
+        "code": "push",
+        "arg": 4
+      },
+      {
+        "code": "push",
+        "arg": 5
+      },
+      {
+        "code": "push",
+        "arg": 6
+      },
+      {
+        "code": "push",
+        "arg": 7
+      },
+      {
+        "code": "push",
+        "arg": 8
+      },
+      {
+        "code": "push",
+        "arg": 9
+      },
+      {
+        "code": "push",
+        "arg": 10
+      },
+      {
+        "code": "push",
+        "arg": 11
+      },
+      {
+        "code": "push",
+        "arg": 12
+      },
+      {
+        "code": "push",
+        "arg": 13
+      },
+      {
+        "code": "push",
+        "arg": 14
+      },
+      {
+        "code": "push",
+        "arg": 15
+      },
+      {
+        "code": "push",
+        "arg": 16
+      },
+      {
+        "code": "push",
+        "arg": 17
+      },
+      {
+        "code": "push",
+        "arg": 18
+      },
+      {
+        "code": "push",
+        "arg": 19
+      },
+      {
+        "code": "push",
+        "arg": 20
+      },
+      {
+        "code": "dup",
+        "arg": 0
+      },
+      {
+        "code": "inc",
+        "arg": 0
+      },
+      {
+        "code": "-",
+        "arg": 0
+      },
+      {
+        "code": "dup",
+        "arg": 0
+      },
+      {
+        "code": "dec",
+        "arg": 0
+      },
+      {
+        "code": "-",
+        "arg": 0
+      },
+      {
+        "code": "dup",
+        "arg": 0
+      },
+      {
+        "code": "inc",
+        "arg": 0
+      },
+      {
+        "code": "+",
+        "arg": 0
+      },
+      {
+        "code": "dec",
+        "arg": 0
+      },
+      {
+        "code": "dup",
+        "arg": 0
+      },
+      {
+        "code": "inc",
+        "arg": 0
+      },
+      {
+        "code": "jz",
+        "arg": 110
+      },
+      {
+        "code": "dup",
+        "arg": 0
+      },
+      {
+        "code": "dup",
+        "arg": 0
+      },
+      {
+        "code": "dup",
+        "arg": 0
+      },
+      {
+        "code": "inc",
+        "arg": 0
+      },
+      {
+        "code": "inc",
+        "arg": 0
+      },
+      {
+        "code": "inc",
+        "arg": 0
+      },
+      {
+        "code": "dup",
+        "arg": 0
+      },
+      {
+        "code": "inc",
+        "arg": 0
+      },
+      {
+        "code": "-",
+        "arg": 0
+      },
+      {
+        "code": "dup",
+        "arg": 0
+      },
+      {
+        "code": "dec",
+        "arg": 0
+      },
+      {
+        "code": "-",
+        "arg": 0
+      },
+      {
+        "code": "dup",
+        "arg": 0
+      },
+      {
+        "code": "inc",
+        "arg": 0
+      },
+      {
+        "code": "+",
+        "arg": 0
+      },
+      {
+        "code": "dec",
+        "arg": 0
+      },
+      {
+        "code": "*",
+        "arg": 0
+      },
+      {
+        "code": "dec",
+        "arg": 0
+      },
+      {
+        "code": "dec",
+        "arg": 0
+      },
+      {
+        "code": "dec",
+        "arg": 0
+      },
+      {
+        "code": "dec",
+        "arg": 0
+      },
+      {
+        "code": "dup",
+        "arg": 0
+      },
+      {
+        "code": "inc",
+        "arg": 0
+      },
+      {
+        "code": "-",
+        "arg": 0
+      },
+      {
+        "code": "dup",
+        "arg": 0
+      },
+      {
+        "code": "dec",
+        "arg": 0
+      },
+      {
+        "code": "-",
+        "arg": 0
+      },
+      {
+        "code": "dup",
+        "arg": 0
+      },
+      {
+        "code": "inc",
+        "arg": 0
+      },
+      {
+        "code": "+",
+        "arg": 0
+      },
+      {
+        "code": "dec",
+        "arg": 0
+      },
+      {
+        "code": "inc",
+        "arg": 0
+      },
+      {
+        "code": "dup",
+        "arg": 0
+      },
+      {
+        "code": "inc",
+        "arg": 0
+      },
+      {
+        "code": "-",
+        "arg": 0
+      },
+      {
+        "code": "dup",
+        "arg": 0
+      },
+      {
+        "code": "dec",
+        "arg": 0
+      },
+      {
+        "code": "-",
+        "arg": 0
+      },
+      {
+        "code": "dup",
+        "arg": 0
+      },
+      {
+        "code": "inc",
+        "arg": 0
+      },
+      {
+        "code": "+",
+        "arg": 0
+      },
+      {
+        "code": "dec",
+        "arg": 0
+      },
+      {
+        "code": "inc",
+        "arg": 0
+      },
+      {
+        "code": "dup",
+        "arg": 0
+      },
+      {
+        "code": "inc",
+        "arg": 0
+      },
+      {
+        "code": "-",
+        "arg": 0
+      },
+      {
+        "code": "dup",
+        "arg": 0
+      },
+      {
+        "code": "dec",
+        "arg": 0
+      },
+      {
+        "code": "-",
+        "arg": 0
+      },
+      {
+        "code": "dup",
+        "arg": 0
+      },
+      {
+        "code": "inc",
+        "arg": 0
+      },
+      {
+        "code": "+",
+        "arg": 0
+      },
+      {
+        "code": "dec",
+        "arg": 0
+      },
+      {
+        "code": "dup",
+        "arg": 0
+      },
+      {
+        "code": "inc",
+        "arg": 0
+      },
+      {
+        "code": "inc",
+        "arg": 0
+      },
+      {
+        "code": "dup",
+        "arg": 0
+      },
+      {
+        "code": "dec",
+        "arg": 0
+      },
+      {
+        "code": "%",
+        "arg": 0
+      },
+      {
+        "code": "dup",
+        "arg": 0
+      },
+      {
+        "code": "inc",
+        "arg": 0
+      },
+      {
+        "code": "jz",
+        "arg": 97
+      },
+      {
+        "code": "jmp",
+        "arg": 77
+      },
+      {
+        "code": "inc",
+        "arg": 0
+      },
+      {
+        "code": "dup",
+        "arg": 0
+      },
+      {
+        "code": "inc",
+        "arg": 0
+      },
+      {
+        "code": "-",
+        "arg": 0
+      },
+      {
+        "code": "dup",
+        "arg": 0
+      },
+      {
+        "code": "dec",
+        "arg": 0
+      },
+      {
+        "code": "-",
+        "arg": 0
+      },
+      {
+        "code": "dup",
+        "arg": 0
+      },
+      {
+        "code": "inc",
+        "arg": 0
+      },
+      {
+        "code": "+",
+        "arg": 0
+      },
+      {
+        "code": "dec",
+        "arg": 0
+      },
+      {
+        "code": "/",
+        "arg": 0
+      },
+      {
+        "code": "jmp",
+        "arg": 110
+      },
+      {
+        "code": "dup",
+        "arg": 0
+      },
+      {
+        "code": "inc",
+        "arg": 0
+      },
+      {
+        "code": "jz",
+        "arg": 114
+      },
+      {
+        "code": "jmp",
+        "arg": 21
+      },
+      {
+        "code": "inc",
+        "arg": 0
+      },
+      {
+        "code": ".",
+        "arg": 0
+      },
+      {
+        "code": "halt",
+        "arg": 0
+      }
+    ]
+  }
+
+out_stdout: |
+  ====================
+  Running with /var/folders/66/w060g8313pz8rr7ql7g05s3c0000gn/T/tmpixlram0k/target.json /var/folders/66/w060g8313pz8rr7ql7g05s3c0000gn/T/tmpixlram0k/input.txt
+  232792560
+  instr_counter:  2107 ticks: 10956
+
+out_log: |
+  DEBUG   emulator:simulation    TICK:   0 PC:   0 SP: 149 ACC: 0
+  DEBUG   emulator:simulation    TICK:   2 PC:   1 SP: 148 ACC: 0
+  DEBUG   emulator:simulation    TICK:   4 PC:   2 SP: 147 ACC: 0
+  DEBUG   emulator:simulation    TICK:   6 PC:   3 SP: 146 ACC: 0
+  DEBUG   emulator:simulation    TICK:   8 PC:   4 SP: 145 ACC: 0
+  DEBUG   emulator:simulation    TICK:  10 PC:   5 SP: 144 ACC: 0
+  DEBUG   emulator:simulation    TICK:  12 PC:   6 SP: 143 ACC: 0
+  DEBUG   emulator:simulation    TICK:  14 PC:   7 SP: 142 ACC: 0
+  DEBUG   emulator:simulation    TICK:  16 PC:   8 SP: 141 ACC: 0
+  DEBUG   emulator:simulation    TICK:  18 PC:   9 SP: 140 ACC: 0
+  DEBUG   emulator:simulation    TICK:  20 PC:  10 SP: 139 ACC: 0
+  DEBUG   emulator:simulation    TICK:  22 PC:  11 SP: 138 ACC: 0
+  DEBUG   emulator:simulation    TICK:  24 PC:  12 SP: 137 ACC: 0
+  DEBUG   emulator:simulation    TICK:  26 PC:  13 SP: 136 ACC: 0
+  DEBUG   emulator:simulation    TICK:  28 PC:  14 SP: 135 ACC: 0
+  DEBUG   emulator:simulation    TICK:  30 PC:  15 SP: 134 ACC: 0
+  DEBUG   emulator:simulation    TICK:  32 PC:  16 SP: 133 ACC: 0
+  DEBUG   emulator:simulation    TICK:  34 PC:  17 SP: 132 ACC: 0
+  DEBUG   emulator:simulation    TICK:  36 PC:  18 SP: 131 ACC: 0
+  DEBUG   emulator:simulation    TICK:  38 PC:  19 SP: 130 ACC: 0
+  DEBUG   emulator:simulation    TICK:  40 PC:  20 SP: 129 ACC: 0
+  DEBUG   emulator:simulation    TICK:  42 PC:  21 SP: 128 ACC: 0
+  DEBUG   emulator:simulation    TICK:  49 PC:  22 SP: 127 ACC: 20
+  DEBUG   emulator:simulation    TICK:  52 PC:  23 SP: 128 ACC: 20
+  DEBUG   emulator:simulation    TICK:  60 PC:  24 SP: 129 ACC: 20
+  DEBUG   emulator:simulation    TICK:  67 PC:  25 SP: 128 ACC: 1
+  DEBUG   emulator:simulation    TICK:  70 PC:  26 SP: 127 ACC: 1
+  DEBUG   emulator:simulation    TICK:  78 PC:  27 SP: 128 ACC: 1
+  DEBUG   emulator:simulation    TICK:  85 PC:  28 SP: 127 ACC: 19
+  DEBUG   emulator:simulation    TICK:  88 PC:  29 SP: 128 ACC: 19
+  DEBUG   emulator:simulation    TICK:  96 PC:  30 SP: 129 ACC: 19
+  DEBUG   emulator:simulation    TICK:  99 PC:  31 SP: 128 ACC: 19
+  DEBUG   emulator:simulation    TICK: 106 PC:  32 SP: 127 ACC: 19
+  DEBUG   emulator:simulation    TICK: 109 PC:  33 SP: 128 ACC: 19
+  DEBUG   emulator:simulation    TICK: 112 PC:  34 SP: 128 ACC: 19
+  DEBUG   emulator:simulation    TICK: 119 PC:  35 SP: 127 ACC: 19
+  DEBUG   emulator:simulation    TICK: 126 PC:  36 SP: 126 ACC: 19
+  DEBUG   emulator:simulation    TICK: 133 PC:  37 SP: 125 ACC: 19
+  DEBUG   emulator:simulation    TICK: 136 PC:  38 SP: 126 ACC: 19
+  DEBUG   emulator:simulation    TICK: 139 PC:  39 SP: 127 ACC: 19
+  DEBUG   emulator:simulation    TICK: 142 PC:  40 SP: 128 ACC: 19
+  DEBUG   emulator:simulation    TICK: 149 PC:  41 SP: 127 ACC: 19
+  DEBUG   emulator:simulation    TICK: 152 PC:  42 SP: 128 ACC: 19
+  DEBUG   emulator:simulation    TICK: 160 PC:  43 SP: 129 ACC: 19
+  DEBUG   emulator:simulation    TICK: 167 PC:  44 SP: 128 ACC: -1
+  DEBUG   emulator:simulation    TICK: 170 PC:  45 SP: 127 ACC: -1
+  DEBUG   emulator:simulation    TICK: 178 PC:  46 SP: 128 ACC: -1
+  DEBUG   emulator:simulation    TICK: 185 PC:  47 SP: 127 ACC: 20
+  DEBUG   emulator:simulation    TICK: 188 PC:  48 SP: 128 ACC: 20
+  DEBUG   emulator:simulation    TICK: 196 PC:  49 SP: 129 ACC: 20
+  DEBUG   emulator:simulation    TICK: 199 PC:  50 SP: 128 ACC: 20
+  DEBUG   emulator:simulation    TICK: 207 PC:  51 SP: 129 ACC: 20
+  DEBUG   emulator:simulation    TICK: 210 PC:  52 SP: 128 ACC: 20
+  DEBUG   emulator:simulation    TICK: 213 PC:  53 SP: 127 ACC: 20
+  DEBUG   emulator:simulation    TICK: 216 PC:  54 SP: 126 ACC: 20
+  DEBUG   emulator:simulation    TICK: 219 PC:  55 SP: 125 ACC: 20
+  DEBUG   emulator:simulation    TICK: 226 PC:  56 SP: 124 ACC: 19
+  DEBUG   emulator:simulation    TICK: 229 PC:  57 SP: 125 ACC: 19
+  DEBUG   emulator:simulation    TICK: 237 PC:  58 SP: 126 ACC: 19
+  DEBUG   emulator:simulation    TICK: 244 PC:  59 SP: 125 ACC: 0
+  DEBUG   emulator:simulation    TICK: 247 PC:  60 SP: 124 ACC: 0
+  DEBUG   emulator:simulation    TICK: 255 PC:  61 SP: 125 ACC: 0
+  DEBUG   emulator:simulation    TICK: 262 PC:  62 SP: 124 ACC: 19
+  DEBUG   emulator:simulation    TICK: 265 PC:  63 SP: 125 ACC: 19
+  DEBUG   emulator:simulation    TICK: 273 PC:  64 SP: 126 ACC: 19
+  DEBUG   emulator:simulation    TICK: 276 PC:  65 SP: 125 ACC: 19
+  DEBUG   emulator:simulation    TICK: 279 PC:  66 SP: 126 ACC: 19
+  DEBUG   emulator:simulation    TICK: 286 PC:  67 SP: 125 ACC: 19
+  DEBUG   emulator:simulation    TICK: 289 PC:  68 SP: 126 ACC: 19
+  DEBUG   emulator:simulation    TICK: 297 PC:  69 SP: 127 ACC: 19
+  DEBUG   emulator:simulation    TICK: 304 PC:  70 SP: 126 ACC: -1
+  DEBUG   emulator:simulation    TICK: 307 PC:  71 SP: 125 ACC: -1
+  DEBUG   emulator:simulation    TICK: 315 PC:  72 SP: 126 ACC: -1
+  DEBUG   emulator:simulation    TICK: 322 PC:  73 SP: 125 ACC: 20
+  DEBUG   emulator:simulation    TICK: 325 PC:  74 SP: 126 ACC: 20
+  DEBUG   emulator:simulation    TICK: 333 PC:  75 SP: 127 ACC: 20
+  DEBUG   emulator:simulation    TICK: 336 PC:  76 SP: 126 ACC: 20
+  DEBUG   emulator:simulation    TICK: 339 PC:  77 SP: 127 ACC: 20
+  DEBUG   emulator:simulation    TICK: 346 PC:  78 SP: 126 ACC: 19
+  DEBUG   emulator:simulation    TICK: 349 PC:  79 SP: 127 ACC: 19
+  DEBUG   emulator:simulation    TICK: 357 PC:  80 SP: 128 ACC: 19
+  DEBUG   emulator:simulation    TICK: 364 PC:  81 SP: 127 ACC: -1
+  DEBUG   emulator:simulation    TICK: 367 PC:  82 SP: 126 ACC: -1
+  DEBUG   emulator:simulation    TICK: 375 PC:  83 SP: 127 ACC: -1
+  DEBUG   emulator:simulation    TICK: 382 PC:  84 SP: 126 ACC: 20
+  DEBUG   emulator:simulation    TICK: 385 PC:  85 SP: 127 ACC: 20
+  DEBUG   emulator:simulation    TICK: 393 PC:  86 SP: 128 ACC: 20
+  DEBUG   emulator:simulation    TICK: 396 PC:  87 SP: 127 ACC: 20
+  DEBUG   emulator:simulation    TICK: 403 PC:  88 SP: 126 ACC: 20
+  DEBUG   emulator:simulation    TICK: 406 PC:  89 SP: 127 ACC: 20
+  DEBUG   emulator:simulation    TICK: 409 PC:  90 SP: 128 ACC: 20
+  DEBUG   emulator:simulation    TICK: 416 PC:  91 SP: 127 ACC: 19
+  DEBUG   emulator:simulation    TICK: 419 PC:  92 SP: 126 ACC: 19
+  DEBUG   emulator:simulation    TICK: 427 PC:  93 SP: 127 ACC: 19
+  DEBUG   emulator:simulation    TICK: 434 PC:  94 SP: 126 ACC: 1
+  DEBUG   emulator:simulation    TICK: 437 PC:  95 SP: 127 ACC: 1
+  DEBUG   emulator:simulation    TICK: 440 PC:  96 SP: 127 ACC: 1
+  DEBUG   emulator:simulation    TICK: 442 PC:  77 SP: 127 ACC: 1
+  DEBUG   emulator:simulation    TICK: 449 PC:  78 SP: 126 ACC: 1
+  DEBUG   emulator:simulation    TICK: 452 PC:  79 SP: 127 ACC: 1
+  DEBUG   emulator:simulation    TICK: 460 PC:  80 SP: 128 ACC: 1
+  DEBUG   emulator:simulation    TICK: 467 PC:  81 SP: 127 ACC: -18
+  DEBUG   emulator:simulation    TICK: 470 PC:  82 SP: 126 ACC: -18
+  DEBUG   emulator:simulation    TICK: 478 PC:  83 SP: 127 ACC: -18
+  DEBUG   emulator:simulation    TICK: 485 PC:  84 SP: 126 ACC: 19
+  DEBUG   emulator:simulation    TICK: 488 PC:  85 SP: 127 ACC: 19
+  DEBUG   emulator:simulation    TICK: 496 PC:  86 SP: 128 ACC: 19
+  DEBUG   emulator:simulation    TICK: 499 PC:  87 SP: 127 ACC: 19
+  DEBUG   emulator:simulation    TICK: 506 PC:  88 SP: 126 ACC: 19
+  DEBUG   emulator:simulation    TICK: 509 PC:  89 SP: 127 ACC: 19
+  DEBUG   emulator:simulation    TICK: 512 PC:  90 SP: 128 ACC: 19
+  DEBUG   emulator:simulation    TICK: 519 PC:  91 SP: 127 ACC: 1
+  DEBUG   emulator:simulation    TICK: 522 PC:  92 SP: 126 ACC: 1
+  DEBUG   emulator:simulation    TICK: 530 PC:  93 SP: 127 ACC: 1
+  DEBUG   emulator:simulation    TICK: 537 PC:  94 SP: 126 ACC: 0
+  DEBUG   emulator:simulation    TICK: 540 PC:  95 SP: 127 ACC: 0
+  DEBUG   emulator:simulation    TICK: 543 PC:  97 SP: 127 ACC: 0
+  DEBUG   emulator:simulation    TICK: 546 PC:  98 SP: 128 ACC: 0
+  DEBUG   emulator:simulation    TICK: 553 PC:  99 SP: 127 ACC: 1
+  DEBUG   emulator:simulation    TICK: 556 PC: 100 SP: 128 ACC: 1
+  DEBUG   emulator:simulation    TICK: 564 PC: 101 SP: 129 ACC: 1
+  DEBUG   emulator:simulation    TICK: 571 PC: 102 SP: 128 ACC: -379
+  DEBUG   emulator:simulation    TICK: 574 PC: 103 SP: 127 ACC: -379
+  DEBUG   emulator:simulation    TICK: 582 PC: 104 SP: 128 ACC: -379
+  DEBUG   emulator:simulation    TICK: 589 PC: 105 SP: 127 ACC: 380
+  DEBUG   emulator:simulation    TICK: 592 PC: 106 SP: 128 ACC: 380
+  DEBUG   emulator:simulation    TICK: 600 PC: 107 SP: 129 ACC: 380
+  DEBUG   emulator:simulation    TICK: 603 PC: 108 SP: 128 ACC: 380
+  DEBUG   emulator:simulation    TICK: 611 PC: 109 SP: 129 ACC: 380
+  DEBUG   emulator:simulation    TICK: 613 PC: 110 SP: 129 ACC: 380
+  DEBUG   emulator:simulation    TICK: 620 PC: 111 SP: 128 ACC: 380
+  DEBUG   emulator:simulation    TICK: 623 PC: 112 SP: 129 ACC: 380
+  DEBUG   emulator:simulation    TICK: 626 PC: 113 SP: 129 ACC: 380
+  DEBUG   emulator:simulation    TICK: 628 PC:  21 SP: 129 ACC: 380
+  DEBUG   emulator:simulation    TICK: 635 PC:  22 SP: 128 ACC: 380
+  DEBUG   emulator:simulation    TICK: 638 PC:  23 SP: 129 ACC: 380
+  DEBUG   emulator:simulation    TICK: 646 PC:  24 SP: 130 ACC: 380
+  DEBUG   emulator:simulation    TICK: 653 PC:  25 SP: 129 ACC: 362
+  DEBUG   emulator:simulation    TICK: 656 PC:  26 SP: 128 ACC: 362
+  DEBUG   emulator:simulation    TICK: 664 PC:  27 SP: 129 ACC: 362
+  DEBUG   emulator:simulation    TICK: 671 PC:  28 SP: 128 ACC: 18
+  DEBUG   emulator:simulation    TICK: 674 PC:  29 SP: 129 ACC: 18
+  DEBUG   emulator:simulation    TICK: 682 PC:  30 SP: 130 ACC: 18
+  DEBUG   emulator:simulation    TICK: 685 PC:  31 SP: 129 ACC: 18
+  DEBUG   emulator:simulation    TICK: 692 PC:  32 SP: 128 ACC: 18
+  DEBUG   emulator:simulation    TICK: 695 PC:  33 SP: 129 ACC: 18
+  DEBUG   emulator:simulation    TICK: 698 PC:  34 SP: 129 ACC: 18
+  DEBUG   emulator:simulation    TICK: 705 PC:  35 SP: 128 ACC: 18
+  DEBUG   emulator:simulation    TICK: 712 PC:  36 SP: 127 ACC: 18
+  DEBUG   emulator:simulation    TICK: 719 PC:  37 SP: 126 ACC: 18
+  DEBUG   emulator:simulation    TICK: 722 PC:  38 SP: 127 ACC: 18
+  DEBUG   emulator:simulation    TICK: 725 PC:  39 SP: 128 ACC: 18
+  DEBUG   emulator:simulation    TICK: 728 PC:  40 SP: 129 ACC: 18
+  DEBUG   emulator:simulation    TICK: 735 PC:  41 SP: 128 ACC: 18
+  DEBUG   emulator:simulation    TICK: 738 PC:  42 SP: 129 ACC: 18
+  DEBUG   emulator:simulation    TICK: 746 PC:  43 SP: 130 ACC: 18
+  DEBUG   emulator:simulation    TICK: 753 PC:  44 SP: 129 ACC: -362
+  DEBUG   emulator:simulation    TICK: 756 PC:  45 SP: 128 ACC: -362
+  DEBUG   emulator:simulation    TICK: 764 PC:  46 SP: 129 ACC: -362
+  DEBUG   emulator:simulation    TICK: 771 PC:  47 SP: 128 ACC: 380
+  DEBUG   emulator:simulation    TICK: 774 PC:  48 SP: 129 ACC: 380
+  DEBUG   emulator:simulation    TICK: 782 PC:  49 SP: 130 ACC: 380
+  DEBUG   emulator:simulation    TICK: 785 PC:  50 SP: 129 ACC: 380
+  DEBUG   emulator:simulation    TICK: 793 PC:  51 SP: 130 ACC: 380
+  DEBUG   emulator:simulation    TICK: 796 PC:  52 SP: 129 ACC: 380
+  DEBUG   emulator:simulation    TICK: 799 PC:  53 SP: 128 ACC: 380
+  DEBUG   emulator:simulation    TICK: 802 PC:  54 SP: 127 ACC: 380
+  DEBUG   emulator:simulation    TICK: 805 PC:  55 SP: 126 ACC: 380
+  DEBUG   emulator:simulation    TICK: 812 PC:  56 SP: 125 ACC: 18
+  DEBUG   emulator:simulation    TICK: 815 PC:  57 SP: 126 ACC: 18
+  DEBUG   emulator:simulation    TICK: 823 PC:  58 SP: 127 ACC: 18
+  DEBUG   emulator:simulation    TICK: 830 PC:  59 SP: 126 ACC: 0
+  DEBUG   emulator:simulation    TICK: 833 PC:  60 SP: 125 ACC: 0
+  DEBUG   emulator:simulation    TICK: 841 PC:  61 SP: 126 ACC: 0
+  DEBUG   emulator:simulation    TICK: 848 PC:  62 SP: 125 ACC: 18
+  DEBUG   emulator:simulation    TICK: 851 PC:  63 SP: 126 ACC: 18
+  DEBUG   emulator:simulation    TICK: 859 PC:  64 SP: 127 ACC: 18
+  DEBUG   emulator:simulation    TICK: 862 PC:  65 SP: 126 ACC: 18
+  DEBUG   emulator:simulation    TICK: 865 PC:  66 SP: 127 ACC: 18
+  DEBUG   emulator:simulation    TICK: 872 PC:  67 SP: 126 ACC: 18
+  DEBUG   emulator:simulation    TICK: 875 PC:  68 SP: 127 ACC: 18
+  DEBUG   emulator:simulation    TICK: 883 PC:  69 SP: 128 ACC: 18
+  DEBUG   emulator:simulation    TICK: 890 PC:  70 SP: 127 ACC: -362
+  DEBUG   emulator:simulation    TICK: 893 PC:  71 SP: 126 ACC: -362
+  DEBUG   emulator:simulation    TICK: 901 PC:  72 SP: 127 ACC: -362
+  DEBUG   emulator:simulation    TICK: 908 PC:  73 SP: 126 ACC: 380
+  DEBUG   emulator:simulation    TICK: 911 PC:  74 SP: 127 ACC: 380
+  DEBUG   emulator:simulation    TICK: 919 PC:  75 SP: 128 ACC: 380
+  DEBUG   emulator:simulation    TICK: 922 PC:  76 SP: 127 ACC: 380
+  DEBUG   emulator:simulation    TICK: 925 PC:  77 SP: 128 ACC: 380
+  DEBUG   emulator:simulation    TICK: 932 PC:  78 SP: 127 ACC: 18
+  DEBUG   emulator:simulation    TICK: 935 PC:  79 SP: 128 ACC: 18
+  DEBUG   emulator:simulation    TICK: 943 PC:  80 SP: 129 ACC: 18
+  DEBUG   emulator:simulation    TICK: 950 PC:  81 SP: 128 ACC: -362
+  DEBUG   emulator:simulation    TICK: 953 PC:  82 SP: 127 ACC: -362
+  DEBUG   emulator:simulation    TICK: 961 PC:  83 SP: 128 ACC: -362
+  DEBUG   emulator:simulation    TICK: 968 PC:  84 SP: 127 ACC: 380
+  DEBUG   emulator:simulation    TICK: 971 PC:  85 SP: 128 ACC: 380
+  DEBUG   emulator:simulation    TICK: 979 PC:  86 SP: 129 ACC: 380
+  DEBUG   emulator:simulation    TICK: 982 PC:  87 SP: 128 ACC: 380
+  DEBUG   emulator:simulation    TICK: 989 PC:  88 SP: 127 ACC: 380
+  DEBUG   emulator:simulation    TICK: 992 PC:  89 SP: 128 ACC: 380
+  DEBUG   emulator:simulation    TICK: 995 PC:  90 SP: 129 ACC: 380
+  DEBUG   emulator:simulation    TICK: 1002 PC:  91 SP: 128 ACC: 18
+  DEBUG   emulator:simulation    TICK: 1005 PC:  92 SP: 127 ACC: 18
+  DEBUG   emulator:simulation    TICK: 1013 PC:  93 SP: 128 ACC: 18
+  DEBUG   emulator:simulation    TICK: 1020 PC:  94 SP: 127 ACC: 2
+  DEBUG   emulator:simulation    TICK: 1023 PC:  95 SP: 128 ACC: 2
+  DEBUG   emulator:simulation    TICK: 1026 PC:  96 SP: 128 ACC: 2
+  DEBUG   emulator:simulation    TICK: 1028 PC:  77 SP: 128 ACC: 2
+  DEBUG   emulator:simulation    TICK: 1035 PC:  78 SP: 127 ACC: 2
+  DEBUG   emulator:simulation    TICK: 1038 PC:  79 SP: 128 ACC: 2
+  DEBUG   emulator:simulation    TICK: 1046 PC:  80 SP: 129 ACC: 2
+  DEBUG   emulator:simulation    TICK: 1053 PC:  81 SP: 128 ACC: -16
+  DEBUG   emulator:simulation    TICK: 1056 PC:  82 SP: 127 ACC: -16
+  DEBUG   emulator:simulation    TICK: 1064 PC:  83 SP: 128 ACC: -16
+  DEBUG   emulator:simulation    TICK: 1071 PC:  84 SP: 127 ACC: 18
+  DEBUG   emulator:simulation    TICK: 1074 PC:  85 SP: 128 ACC: 18
+  DEBUG   emulator:simulation    TICK: 1082 PC:  86 SP: 129 ACC: 18
+  DEBUG   emulator:simulation    TICK: 1085 PC:  87 SP: 128 ACC: 18
+  DEBUG   emulator:simulation    TICK: 1092 PC:  88 SP: 127 ACC: 18
+  DEBUG   emulator:simulation    TICK: 1095 PC:  89 SP: 128 ACC: 18
+  DEBUG   emulator:simulation    TICK: 1098 PC:  90 SP: 129 ACC: 18
+  DEBUG   emulator:simulation    TICK: 1105 PC:  91 SP: 128 ACC: 2
+  DEBUG   emulator:simulation    TICK: 1108 PC:  92 SP: 127 ACC: 2
+  DEBUG   emulator:simulation    TICK: 1116 PC:  93 SP: 128 ACC: 2
+  DEBUG   emulator:simulation    TICK: 1123 PC:  94 SP: 127 ACC: 0
+  DEBUG   emulator:simulation    TICK: 1126 PC:  95 SP: 128 ACC: 0
+  DEBUG   emulator:simulation    TICK: 1129 PC:  97 SP: 128 ACC: 0
+  DEBUG   emulator:simulation    TICK: 1132 PC:  98 SP: 129 ACC: 0
+  DEBUG   emulator:simulation    TICK: 1139 PC:  99 SP: 128 ACC: 2
+  DEBUG   emulator:simulation    TICK: 1142 PC: 100 SP: 129 ACC: 2
+  DEBUG   emulator:simulation    TICK: 1150 PC: 101 SP: 130 ACC: 2
+  DEBUG   emulator:simulation    TICK: 1157 PC: 102 SP: 129 ACC: -6838
+  DEBUG   emulator:simulation    TICK: 1160 PC: 103 SP: 128 ACC: -6838
+  DEBUG   emulator:simulation    TICK: 1168 PC: 104 SP: 129 ACC: -6838
+  DEBUG   emulator:simulation    TICK: 1175 PC: 105 SP: 128 ACC: 6840
+  DEBUG   emulator:simulation    TICK: 1178 PC: 106 SP: 129 ACC: 6840
+  DEBUG   emulator:simulation    TICK: 1186 PC: 107 SP: 130 ACC: 6840
+  DEBUG   emulator:simulation    TICK: 1189 PC: 108 SP: 129 ACC: 6840
+  DEBUG   emulator:simulation    TICK: 1197 PC: 109 SP: 130 ACC: 6840
+  DEBUG   emulator:simulation    TICK: 1199 PC: 110 SP: 130 ACC: 6840
+  DEBUG   emulator:simulation    TICK: 1206 PC: 111 SP: 129 ACC: 3420
+  DEBUG   emulator:simulation    TICK: 1209 PC: 112 SP: 130 ACC: 3420
+  DEBUG   emulator:simulation    TICK: 1212 PC: 113 SP: 130 ACC: 3420
+  DEBUG   emulator:simulation    TICK: 1214 PC:  21 SP: 130 ACC: 3420
+  DEBUG   emulator:simulation    TICK: 1221 PC:  22 SP: 129 ACC: 3420
+  DEBUG   emulator:simulation    TICK: 1224 PC:  23 SP: 130 ACC: 3420
+  DEBUG   emulator:simulation    TICK: 1232 PC:  24 SP: 131 ACC: 3420
+  DEBUG   emulator:simulation    TICK: 1239 PC:  25 SP: 130 ACC: 3403
+  DEBUG   emulator:simulation    TICK: 1242 PC:  26 SP: 129 ACC: 3403
+  DEBUG   emulator:simulation    TICK: 1250 PC:  27 SP: 130 ACC: 3403
+  DEBUG   emulator:simulation    TICK: 1257 PC:  28 SP: 129 ACC: 17
+  DEBUG   emulator:simulation    TICK: 1260 PC:  29 SP: 130 ACC: 17
+  DEBUG   emulator:simulation    TICK: 1268 PC:  30 SP: 131 ACC: 17
+  DEBUG   emulator:simulation    TICK: 1271 PC:  31 SP: 130 ACC: 17
+  DEBUG   emulator:simulation    TICK: 1278 PC:  32 SP: 129 ACC: 17
+  DEBUG   emulator:simulation    TICK: 1281 PC:  33 SP: 130 ACC: 17
+  DEBUG   emulator:simulation    TICK: 1284 PC:  34 SP: 130 ACC: 17
+  DEBUG   emulator:simulation    TICK: 1291 PC:  35 SP: 129 ACC: 17
+  DEBUG   emulator:simulation    TICK: 1298 PC:  36 SP: 128 ACC: 17
+  DEBUG   emulator:simulation    TICK: 1305 PC:  37 SP: 127 ACC: 17
+  DEBUG   emulator:simulation    TICK: 1308 PC:  38 SP: 128 ACC: 17
+  DEBUG   emulator:simulation    TICK: 1311 PC:  39 SP: 129 ACC: 17
+  DEBUG   emulator:simulation    TICK: 1314 PC:  40 SP: 130 ACC: 17
+  DEBUG   emulator:simulation    TICK: 1321 PC:  41 SP: 129 ACC: 17
+  DEBUG   emulator:simulation    TICK: 1324 PC:  42 SP: 130 ACC: 17
+  DEBUG   emulator:simulation    TICK: 1332 PC:  43 SP: 131 ACC: 17
+  DEBUG   emulator:simulation    TICK: 1339 PC:  44 SP: 130 ACC: -3403
+  DEBUG   emulator:simulation    TICK: 1342 PC:  45 SP: 129 ACC: -3403
+  DEBUG   emulator:simulation    TICK: 1350 PC:  46 SP: 130 ACC: -3403
+  DEBUG   emulator:simulation    TICK: 1357 PC:  47 SP: 129 ACC: 3420
+  DEBUG   emulator:simulation    TICK: 1360 PC:  48 SP: 130 ACC: 3420
+  DEBUG   emulator:simulation    TICK: 1368 PC:  49 SP: 131 ACC: 3420
+  DEBUG   emulator:simulation    TICK: 1371 PC:  50 SP: 130 ACC: 3420
+  DEBUG   emulator:simulation    TICK: 1379 PC:  51 SP: 131 ACC: 3420
+  DEBUG   emulator:simulation    TICK: 1382 PC:  52 SP: 130 ACC: 3420
+  DEBUG   emulator:simulation    TICK: 1385 PC:  53 SP: 129 ACC: 3420
+  DEBUG   emulator:simulation    TICK: 1388 PC:  54 SP: 128 ACC: 3420
+  DEBUG   emulator:simulation    TICK: 1391 PC:  55 SP: 127 ACC: 3420
+  DEBUG   emulator:simulation    TICK: 1398 PC:  56 SP: 126 ACC: 17
+  DEBUG   emulator:simulation    TICK: 1401 PC:  57 SP: 127 ACC: 17
+  DEBUG   emulator:simulation    TICK: 1409 PC:  58 SP: 128 ACC: 17
+  DEBUG   emulator:simulation    TICK: 1416 PC:  59 SP: 127 ACC: 0
+  DEBUG   emulator:simulation    TICK: 1419 PC:  60 SP: 126 ACC: 0
+  DEBUG   emulator:simulation    TICK: 1427 PC:  61 SP: 127 ACC: 0
+  DEBUG   emulator:simulation    TICK: 1434 PC:  62 SP: 126 ACC: 17
+  DEBUG   emulator:simulation    TICK: 1437 PC:  63 SP: 127 ACC: 17
+  DEBUG   emulator:simulation    TICK: 1445 PC:  64 SP: 128 ACC: 17
+  DEBUG   emulator:simulation    TICK: 1448 PC:  65 SP: 127 ACC: 17
+  DEBUG   emulator:simulation    TICK: 1451 PC:  66 SP: 128 ACC: 17
+  DEBUG   emulator:simulation    TICK: 1458 PC:  67 SP: 127 ACC: 17
+  DEBUG   emulator:simulation    TICK: 1461 PC:  68 SP: 128 ACC: 17
+  DEBUG   emulator:simulation    TICK: 1469 PC:  69 SP: 129 ACC: 17
+  DEBUG   emulator:simulation    TICK: 1476 PC:  70 SP: 128 ACC: -3403
+  DEBUG   emulator:simulation    TICK: 1479 PC:  71 SP: 127 ACC: -3403
+  DEBUG   emulator:simulation    TICK: 1487 PC:  72 SP: 128 ACC: -3403
+  DEBUG   emulator:simulation    TICK: 1494 PC:  73 SP: 127 ACC: 3420
+  DEBUG   emulator:simulation    TICK: 1497 PC:  74 SP: 128 ACC: 3420
+  DEBUG   emulator:simulation    TICK: 1505 PC:  75 SP: 129 ACC: 3420
+  DEBUG   emulator:simulation    TICK: 1508 PC:  76 SP: 128 ACC: 3420
+  DEBUG   emulator:simulation    TICK: 1511 PC:  77 SP: 129 ACC: 3420
+  DEBUG   emulator:simulation    TICK: 1518 PC:  78 SP: 128 ACC: 17
+  DEBUG   emulator:simulation    TICK: 1521 PC:  79 SP: 129 ACC: 17
+  DEBUG   emulator:simulation    TICK: 1529 PC:  80 SP: 130 ACC: 17
+  DEBUG   emulator:simulation    TICK: 1536 PC:  81 SP: 129 ACC: -3403
+  DEBUG   emulator:simulation    TICK: 1539 PC:  82 SP: 128 ACC: -3403
+  DEBUG   emulator:simulation    TICK: 1547 PC:  83 SP: 129 ACC: -3403
+  DEBUG   emulator:simulation    TICK: 1554 PC:  84 SP: 128 ACC: 3420
+  DEBUG   emulator:simulation    TICK: 1557 PC:  85 SP: 129 ACC: 3420
+  DEBUG   emulator:simulation    TICK: 1565 PC:  86 SP: 130 ACC: 3420
+  DEBUG   emulator:simulation    TICK: 1568 PC:  87 SP: 129 ACC: 3420
+  DEBUG   emulator:simulation    TICK: 1575 PC:  88 SP: 128 ACC: 3420
+  DEBUG   emulator:simulation    TICK: 1578 PC:  89 SP: 129 ACC: 3420
+  DEBUG   emulator:simulation    TICK: 1581 PC:  90 SP: 130 ACC: 3420
+  DEBUG   emulator:simulation    TICK: 1588 PC:  91 SP: 129 ACC: 17
+  DEBUG   emulator:simulation    TICK: 1591 PC:  92 SP: 128 ACC: 17
+  DEBUG   emulator:simulation    TICK: 1599 PC:  93 SP: 129 ACC: 17
+  DEBUG   emulator:simulation    TICK: 1606 PC:  94 SP: 128 ACC: 3
+  DEBUG   emulator:simulation    TICK: 1609 PC:  95 SP: 129 ACC: 3
+  DEBUG   emulator:simulation    TICK: 1612 PC:  96 SP: 129 ACC: 3
+  DEBUG   emulator:simulation    TICK: 1614 PC:  77 SP: 129 ACC: 3
+  DEBUG   emulator:simulation    TICK: 1621 PC:  78 SP: 128 ACC: 3
+  DEBUG   emulator:simulation    TICK: 1624 PC:  79 SP: 129 ACC: 3
+  DEBUG   emulator:simulation    TICK: 1632 PC:  80 SP: 130 ACC: 3
+  DEBUG   emulator:simulation    TICK: 1639 PC:  81 SP: 129 ACC: -14
+  DEBUG   emulator:simulation    TICK: 1642 PC:  82 SP: 128 ACC: -14
+  DEBUG   emulator:simulation    TICK: 1650 PC:  83 SP: 129 ACC: -14
+  DEBUG   emulator:simulation    TICK: 1657 PC:  84 SP: 128 ACC: 17
+  DEBUG   emulator:simulation    TICK: 1660 PC:  85 SP: 129 ACC: 17
+  DEBUG   emulator:simulation    TICK: 1668 PC:  86 SP: 130 ACC: 17
+  DEBUG   emulator:simulation    TICK: 1671 PC:  87 SP: 129 ACC: 17
+  DEBUG   emulator:simulation    TICK: 1678 PC:  88 SP: 128 ACC: 17
+  DEBUG   emulator:simulation    TICK: 1681 PC:  89 SP: 129 ACC: 17
+  DEBUG   emulator:simulation    TICK: 1684 PC:  90 SP: 130 ACC: 17
+  DEBUG   emulator:simulation    TICK: 1691 PC:  91 SP: 129 ACC: 3
+  DEBUG   emulator:simulation    TICK: 1694 PC:  92 SP: 128 ACC: 3
+  DEBUG   emulator:simulation    TICK: 1702 PC:  93 SP: 129 ACC: 3
+  DEBUG   emulator:simulation    TICK: 1709 PC:  94 SP: 128 ACC: 2
+  DEBUG   emulator:simulation    TICK: 1712 PC:  95 SP: 129 ACC: 2
+  DEBUG   emulator:simulation    TICK: 1715 PC:  96 SP: 129 ACC: 2
+  DEBUG   emulator:simulation    TICK: 1717 PC:  77 SP: 129 ACC: 2
+  DEBUG   emulator:simulation    TICK: 1724 PC:  78 SP: 128 ACC: 2
+  DEBUG   emulator:simulation    TICK: 1727 PC:  79 SP: 129 ACC: 2
+  DEBUG   emulator:simulation    TICK: 1735 PC:  80 SP: 130 ACC: 2
+  DEBUG   emulator:simulation    TICK: 1742 PC:  81 SP: 129 ACC: -1
+  DEBUG   emulator:simulation    TICK: 1745 PC:  82 SP: 128 ACC: -1
+  DEBUG   emulator:simulation    TICK: 1753 PC:  83 SP: 129 ACC: -1
+  DEBUG   emulator:simulation    TICK: 1760 PC:  84 SP: 128 ACC: 3
+  DEBUG   emulator:simulation    TICK: 1763 PC:  85 SP: 129 ACC: 3
+  DEBUG   emulator:simulation    TICK: 1771 PC:  86 SP: 130 ACC: 3
+  DEBUG   emulator:simulation    TICK: 1774 PC:  87 SP: 129 ACC: 3
+  DEBUG   emulator:simulation    TICK: 1781 PC:  88 SP: 128 ACC: 3
+  DEBUG   emulator:simulation    TICK: 1784 PC:  89 SP: 129 ACC: 3
+  DEBUG   emulator:simulation    TICK: 1787 PC:  90 SP: 130 ACC: 3
+  DEBUG   emulator:simulation    TICK: 1794 PC:  91 SP: 129 ACC: 2
+  DEBUG   emulator:simulation    TICK: 1797 PC:  92 SP: 128 ACC: 2
+  DEBUG   emulator:simulation    TICK: 1805 PC:  93 SP: 129 ACC: 2
+  DEBUG   emulator:simulation    TICK: 1812 PC:  94 SP: 128 ACC: 1
+  DEBUG   emulator:simulation    TICK: 1815 PC:  95 SP: 129 ACC: 1
+  DEBUG   emulator:simulation    TICK: 1818 PC:  96 SP: 129 ACC: 1
+  DEBUG   emulator:simulation    TICK: 1820 PC:  77 SP: 129 ACC: 1
+  DEBUG   emulator:simulation    TICK: 1827 PC:  78 SP: 128 ACC: 1
+  DEBUG   emulator:simulation    TICK: 1830 PC:  79 SP: 129 ACC: 1
+  DEBUG   emulator:simulation    TICK: 1838 PC:  80 SP: 130 ACC: 1
+  DEBUG   emulator:simulation    TICK: 1845 PC:  81 SP: 129 ACC: -1
+  DEBUG   emulator:simulation    TICK: 1848 PC:  82 SP: 128 ACC: -1
+  DEBUG   emulator:simulation    TICK: 1856 PC:  83 SP: 129 ACC: -1
+  DEBUG   emulator:simulation    TICK: 1863 PC:  84 SP: 128 ACC: 2
+  DEBUG   emulator:simulation    TICK: 1866 PC:  85 SP: 129 ACC: 2
+  DEBUG   emulator:simulation    TICK: 1874 PC:  86 SP: 130 ACC: 2
+  DEBUG   emulator:simulation    TICK: 1877 PC:  87 SP: 129 ACC: 2
+  DEBUG   emulator:simulation    TICK: 1884 PC:  88 SP: 128 ACC: 2
+  DEBUG   emulator:simulation    TICK: 1887 PC:  89 SP: 129 ACC: 2
+  DEBUG   emulator:simulation    TICK: 1890 PC:  90 SP: 130 ACC: 2
+  DEBUG   emulator:simulation    TICK: 1897 PC:  91 SP: 129 ACC: 1
+  DEBUG   emulator:simulation    TICK: 1900 PC:  92 SP: 128 ACC: 1
+  DEBUG   emulator:simulation    TICK: 1908 PC:  93 SP: 129 ACC: 1
+  DEBUG   emulator:simulation    TICK: 1915 PC:  94 SP: 128 ACC: 0
+  DEBUG   emulator:simulation    TICK: 1918 PC:  95 SP: 129 ACC: 0
+  DEBUG   emulator:simulation    TICK: 1921 PC:  97 SP: 129 ACC: 0
+  DEBUG   emulator:simulation    TICK: 1924 PC:  98 SP: 130 ACC: 0
+  DEBUG   emulator:simulation    TICK: 1931 PC:  99 SP: 129 ACC: 1
+  DEBUG   emulator:simulation    TICK: 1934 PC: 100 SP: 130 ACC: 1
+  DEBUG   emulator:simulation    TICK: 1942 PC: 101 SP: 131 ACC: 1
+  DEBUG   emulator:simulation    TICK: 1949 PC: 102 SP: 130 ACC: -58139
+  DEBUG   emulator:simulation    TICK: 1952 PC: 103 SP: 129 ACC: -58139
+  DEBUG   emulator:simulation    TICK: 1960 PC: 104 SP: 130 ACC: -58139
+  DEBUG   emulator:simulation    TICK: 1967 PC: 105 SP: 129 ACC: 58140
+  DEBUG   emulator:simulation    TICK: 1970 PC: 106 SP: 130 ACC: 58140
+  DEBUG   emulator:simulation    TICK: 1978 PC: 107 SP: 131 ACC: 58140
+  DEBUG   emulator:simulation    TICK: 1981 PC: 108 SP: 130 ACC: 58140
+  DEBUG   emulator:simulation    TICK: 1989 PC: 109 SP: 131 ACC: 58140
+  DEBUG   emulator:simulation    TICK: 1991 PC: 110 SP: 131 ACC: 58140
+  DEBUG   emulator:simulation    TICK: 1998 PC: 111 SP: 130 ACC: 58140
+  DEBUG   emulator:simulation    TICK: 2001 PC: 112 SP: 131 ACC: 58140
+  DEBUG   emulator:simulation    TICK: 2004 PC: 113 SP: 131 ACC: 58140
+  DEBUG   emulator:simulation    TICK: 2006 PC:  21 SP: 131 ACC: 58140
+  DEBUG   emulator:simulation    TICK: 2013 PC:  22 SP: 130 ACC: 58140
+  DEBUG   emulator:simulation    TICK: 2016 PC:  23 SP: 131 ACC: 58140
+  DEBUG   emulator:simulation    TICK: 2024 PC:  24 SP: 132 ACC: 58140
+  DEBUG   emulator:simulation    TICK: 2031 PC:  25 SP: 131 ACC: 58124
+  DEBUG   emulator:simulation    TICK: 2034 PC:  26 SP: 130 ACC: 58124
+  DEBUG   emulator:simulation    TICK: 2042 PC:  27 SP: 131 ACC: 58124
+  DEBUG   emulator:simulation    TICK: 2049 PC:  28 SP: 130 ACC: 16
+  DEBUG   emulator:simulation    TICK: 2052 PC:  29 SP: 131 ACC: 16
+  DEBUG   emulator:simulation    TICK: 2060 PC:  30 SP: 132 ACC: 16
+  DEBUG   emulator:simulation    TICK: 2063 PC:  31 SP: 131 ACC: 16
+  DEBUG   emulator:simulation    TICK: 2070 PC:  32 SP: 130 ACC: 16
+  DEBUG   emulator:simulation    TICK: 2073 PC:  33 SP: 131 ACC: 16
+  DEBUG   emulator:simulation    TICK: 2076 PC:  34 SP: 131 ACC: 16
+  DEBUG   emulator:simulation    TICK: 2083 PC:  35 SP: 130 ACC: 16
+  DEBUG   emulator:simulation    TICK: 2090 PC:  36 SP: 129 ACC: 16
+  DEBUG   emulator:simulation    TICK: 2097 PC:  37 SP: 128 ACC: 16
+  DEBUG   emulator:simulation    TICK: 2100 PC:  38 SP: 129 ACC: 16
+  DEBUG   emulator:simulation    TICK: 2103 PC:  39 SP: 130 ACC: 16
+  DEBUG   emulator:simulation    TICK: 2106 PC:  40 SP: 131 ACC: 16
+  DEBUG   emulator:simulation    TICK: 2113 PC:  41 SP: 130 ACC: 16
+  DEBUG   emulator:simulation    TICK: 2116 PC:  42 SP: 131 ACC: 16
+  DEBUG   emulator:simulation    TICK: 2124 PC:  43 SP: 132 ACC: 16
+  DEBUG   emulator:simulation    TICK: 2131 PC:  44 SP: 131 ACC: -58124
+  DEBUG   emulator:simulation    TICK: 2134 PC:  45 SP: 130 ACC: -58124
+  DEBUG   emulator:simulation    TICK: 2142 PC:  46 SP: 131 ACC: -58124
+  DEBUG   emulator:simulation    TICK: 2149 PC:  47 SP: 130 ACC: 58140
+  DEBUG   emulator:simulation    TICK: 2152 PC:  48 SP: 131 ACC: 58140
+  DEBUG   emulator:simulation    TICK: 2160 PC:  49 SP: 132 ACC: 58140
+  DEBUG   emulator:simulation    TICK: 2163 PC:  50 SP: 131 ACC: 58140
+  DEBUG   emulator:simulation    TICK: 2171 PC:  51 SP: 132 ACC: 58140
+  DEBUG   emulator:simulation    TICK: 2174 PC:  52 SP: 131 ACC: 58140
+  DEBUG   emulator:simulation    TICK: 2177 PC:  53 SP: 130 ACC: 58140
+  DEBUG   emulator:simulation    TICK: 2180 PC:  54 SP: 129 ACC: 58140
+  DEBUG   emulator:simulation    TICK: 2183 PC:  55 SP: 128 ACC: 58140
+  DEBUG   emulator:simulation    TICK: 2190 PC:  56 SP: 127 ACC: 16
+  DEBUG   emulator:simulation    TICK: 2193 PC:  57 SP: 128 ACC: 16
+  DEBUG   emulator:simulation    TICK: 2201 PC:  58 SP: 129 ACC: 16
+  DEBUG   emulator:simulation    TICK: 2208 PC:  59 SP: 128 ACC: 0
+  DEBUG   emulator:simulation    TICK: 2211 PC:  60 SP: 127 ACC: 0
+  DEBUG   emulator:simulation    TICK: 2219 PC:  61 SP: 128 ACC: 0
+  DEBUG   emulator:simulation    TICK: 2226 PC:  62 SP: 127 ACC: 16
+  DEBUG   emulator:simulation    TICK: 2229 PC:  63 SP: 128 ACC: 16
+  DEBUG   emulator:simulation    TICK: 2237 PC:  64 SP: 129 ACC: 16
+  DEBUG   emulator:simulation    TICK: 2240 PC:  65 SP: 128 ACC: 16
+  DEBUG   emulator:simulation    TICK: 2243 PC:  66 SP: 129 ACC: 16
+  DEBUG   emulator:simulation    TICK: 2250 PC:  67 SP: 128 ACC: 16
+  DEBUG   emulator:simulation    TICK: 2253 PC:  68 SP: 129 ACC: 16
+  DEBUG   emulator:simulation    TICK: 2261 PC:  69 SP: 130 ACC: 16
+  DEBUG   emulator:simulation    TICK: 2268 PC:  70 SP: 129 ACC: -58124
+  DEBUG   emulator:simulation    TICK: 2271 PC:  71 SP: 128 ACC: -58124
+  DEBUG   emulator:simulation    TICK: 2279 PC:  72 SP: 129 ACC: -58124
+  DEBUG   emulator:simulation    TICK: 2286 PC:  73 SP: 128 ACC: 58140
+  DEBUG   emulator:simulation    TICK: 2289 PC:  74 SP: 129 ACC: 58140
+  DEBUG   emulator:simulation    TICK: 2297 PC:  75 SP: 130 ACC: 58140
+  DEBUG   emulator:simulation    TICK: 2300 PC:  76 SP: 129 ACC: 58140
+  DEBUG   emulator:simulation    TICK: 2303 PC:  77 SP: 130 ACC: 58140
+  DEBUG   emulator:simulation    TICK: 2310 PC:  78 SP: 129 ACC: 16
+  DEBUG   emulator:simulation    TICK: 2313 PC:  79 SP: 130 ACC: 16
+  DEBUG   emulator:simulation    TICK: 2321 PC:  80 SP: 131 ACC: 16
+  DEBUG   emulator:simulation    TICK: 2328 PC:  81 SP: 130 ACC: -58124
+  DEBUG   emulator:simulation    TICK: 2331 PC:  82 SP: 129 ACC: -58124
+  DEBUG   emulator:simulation    TICK: 2339 PC:  83 SP: 130 ACC: -58124
+  DEBUG   emulator:simulation    TICK: 2346 PC:  84 SP: 129 ACC: 58140
+  DEBUG   emulator:simulation    TICK: 2349 PC:  85 SP: 130 ACC: 58140
+  DEBUG   emulator:simulation    TICK: 2357 PC:  86 SP: 131 ACC: 58140
+  DEBUG   emulator:simulation    TICK: 2360 PC:  87 SP: 130 ACC: 58140
+  DEBUG   emulator:simulation    TICK: 2367 PC:  88 SP: 129 ACC: 58140
+  DEBUG   emulator:simulation    TICK: 2370 PC:  89 SP: 130 ACC: 58140
+  DEBUG   emulator:simulation    TICK: 2373 PC:  90 SP: 131 ACC: 58140
+  DEBUG   emulator:simulation    TICK: 2380 PC:  91 SP: 130 ACC: 16
+  DEBUG   emulator:simulation    TICK: 2383 PC:  92 SP: 129 ACC: 16
+  DEBUG   emulator:simulation    TICK: 2391 PC:  93 SP: 130 ACC: 16
+  DEBUG   emulator:simulation    TICK: 2398 PC:  94 SP: 129 ACC: 12
+  DEBUG   emulator:simulation    TICK: 2401 PC:  95 SP: 130 ACC: 12
+  DEBUG   emulator:simulation    TICK: 2404 PC:  96 SP: 130 ACC: 12
+  DEBUG   emulator:simulation    TICK: 2406 PC:  77 SP: 130 ACC: 12
+  DEBUG   emulator:simulation    TICK: 2413 PC:  78 SP: 129 ACC: 12
+  DEBUG   emulator:simulation    TICK: 2416 PC:  79 SP: 130 ACC: 12
+  DEBUG   emulator:simulation    TICK: 2424 PC:  80 SP: 131 ACC: 12
+  DEBUG   emulator:simulation    TICK: 2431 PC:  81 SP: 130 ACC: -4
+  DEBUG   emulator:simulation    TICK: 2434 PC:  82 SP: 129 ACC: -4
+  DEBUG   emulator:simulation    TICK: 2442 PC:  83 SP: 130 ACC: -4
+  DEBUG   emulator:simulation    TICK: 2449 PC:  84 SP: 129 ACC: 16
+  DEBUG   emulator:simulation    TICK: 2452 PC:  85 SP: 130 ACC: 16
+  DEBUG   emulator:simulation    TICK: 2460 PC:  86 SP: 131 ACC: 16
+  DEBUG   emulator:simulation    TICK: 2463 PC:  87 SP: 130 ACC: 16
+  DEBUG   emulator:simulation    TICK: 2470 PC:  88 SP: 129 ACC: 16
+  DEBUG   emulator:simulation    TICK: 2473 PC:  89 SP: 130 ACC: 16
+  DEBUG   emulator:simulation    TICK: 2476 PC:  90 SP: 131 ACC: 16
+  DEBUG   emulator:simulation    TICK: 2483 PC:  91 SP: 130 ACC: 12
+  DEBUG   emulator:simulation    TICK: 2486 PC:  92 SP: 129 ACC: 12
+  DEBUG   emulator:simulation    TICK: 2494 PC:  93 SP: 130 ACC: 12
+  DEBUG   emulator:simulation    TICK: 2501 PC:  94 SP: 129 ACC: 4
+  DEBUG   emulator:simulation    TICK: 2504 PC:  95 SP: 130 ACC: 4
+  DEBUG   emulator:simulation    TICK: 2507 PC:  96 SP: 130 ACC: 4
+  DEBUG   emulator:simulation    TICK: 2509 PC:  77 SP: 130 ACC: 4
+  DEBUG   emulator:simulation    TICK: 2516 PC:  78 SP: 129 ACC: 4
+  DEBUG   emulator:simulation    TICK: 2519 PC:  79 SP: 130 ACC: 4
+  DEBUG   emulator:simulation    TICK: 2527 PC:  80 SP: 131 ACC: 4
+  DEBUG   emulator:simulation    TICK: 2534 PC:  81 SP: 130 ACC: -8
+  DEBUG   emulator:simulation    TICK: 2537 PC:  82 SP: 129 ACC: -8
+  DEBUG   emulator:simulation    TICK: 2545 PC:  83 SP: 130 ACC: -8
+  DEBUG   emulator:simulation    TICK: 2552 PC:  84 SP: 129 ACC: 12
+  DEBUG   emulator:simulation    TICK: 2555 PC:  85 SP: 130 ACC: 12
+  DEBUG   emulator:simulation    TICK: 2563 PC:  86 SP: 131 ACC: 12
+  DEBUG   emulator:simulation    TICK: 2566 PC:  87 SP: 130 ACC: 12
+  DEBUG   emulator:simulation    TICK: 2573 PC:  88 SP: 129 ACC: 12
+  DEBUG   emulator:simulation    TICK: 2576 PC:  89 SP: 130 ACC: 12
+  DEBUG   emulator:simulation    TICK: 2579 PC:  90 SP: 131 ACC: 12
+  DEBUG   emulator:simulation    TICK: 2586 PC:  91 SP: 130 ACC: 4
+  DEBUG   emulator:simulation    TICK: 2589 PC:  92 SP: 129 ACC: 4
+  DEBUG   emulator:simulation    TICK: 2597 PC:  93 SP: 130 ACC: 4
+  DEBUG   emulator:simulation    TICK: 2604 PC:  94 SP: 129 ACC: 0
+  DEBUG   emulator:simulation    TICK: 2607 PC:  95 SP: 130 ACC: 0
+  DEBUG   emulator:simulation    TICK: 2610 PC:  97 SP: 130 ACC: 0
+  DEBUG   emulator:simulation    TICK: 2613 PC:  98 SP: 131 ACC: 0
+  DEBUG   emulator:simulation    TICK: 2620 PC:  99 SP: 130 ACC: 4
+  DEBUG   emulator:simulation    TICK: 2623 PC: 100 SP: 131 ACC: 4
+  DEBUG   emulator:simulation    TICK: 2631 PC: 101 SP: 132 ACC: 4
+  DEBUG   emulator:simulation    TICK: 2638 PC: 102 SP: 131 ACC: -930236
+  DEBUG   emulator:simulation    TICK: 2641 PC: 103 SP: 130 ACC: -930236
+  DEBUG   emulator:simulation    TICK: 2649 PC: 104 SP: 131 ACC: -930236
+  DEBUG   emulator:simulation    TICK: 2656 PC: 105 SP: 130 ACC: 930240
+  DEBUG   emulator:simulation    TICK: 2659 PC: 106 SP: 131 ACC: 930240
+  DEBUG   emulator:simulation    TICK: 2667 PC: 107 SP: 132 ACC: 930240
+  DEBUG   emulator:simulation    TICK: 2670 PC: 108 SP: 131 ACC: 930240
+  DEBUG   emulator:simulation    TICK: 2678 PC: 109 SP: 132 ACC: 930240
+  DEBUG   emulator:simulation    TICK: 2680 PC: 110 SP: 132 ACC: 930240
+  DEBUG   emulator:simulation    TICK: 2687 PC: 111 SP: 131 ACC: 232560
+  DEBUG   emulator:simulation    TICK: 2690 PC: 112 SP: 132 ACC: 232560
+  DEBUG   emulator:simulation    TICK: 2693 PC: 113 SP: 132 ACC: 232560
+  DEBUG   emulator:simulation    TICK: 2695 PC:  21 SP: 132 ACC: 232560
+  DEBUG   emulator:simulation    TICK: 2702 PC:  22 SP: 131 ACC: 232560
+  DEBUG   emulator:simulation    TICK: 2705 PC:  23 SP: 132 ACC: 232560
+  DEBUG   emulator:simulation    TICK: 2713 PC:  24 SP: 133 ACC: 232560
+  DEBUG   emulator:simulation    TICK: 2720 PC:  25 SP: 132 ACC: 232545
+  DEBUG   emulator:simulation    TICK: 2723 PC:  26 SP: 131 ACC: 232545
+  DEBUG   emulator:simulation    TICK: 2731 PC:  27 SP: 132 ACC: 232545
+  DEBUG   emulator:simulation    TICK: 2738 PC:  28 SP: 131 ACC: 15
+  DEBUG   emulator:simulation    TICK: 2741 PC:  29 SP: 132 ACC: 15
+  DEBUG   emulator:simulation    TICK: 2749 PC:  30 SP: 133 ACC: 15
+  DEBUG   emulator:simulation    TICK: 2752 PC:  31 SP: 132 ACC: 15
+  DEBUG   emulator:simulation    TICK: 2759 PC:  32 SP: 131 ACC: 15
+  DEBUG   emulator:simulation    TICK: 2762 PC:  33 SP: 132 ACC: 15
+  DEBUG   emulator:simulation    TICK: 2765 PC:  34 SP: 132 ACC: 15
+  DEBUG   emulator:simulation    TICK: 2772 PC:  35 SP: 131 ACC: 15
+  DEBUG   emulator:simulation    TICK: 2779 PC:  36 SP: 130 ACC: 15
+  DEBUG   emulator:simulation    TICK: 2786 PC:  37 SP: 129 ACC: 15
+  DEBUG   emulator:simulation    TICK: 2789 PC:  38 SP: 130 ACC: 15
+  DEBUG   emulator:simulation    TICK: 2792 PC:  39 SP: 131 ACC: 15
+  DEBUG   emulator:simulation    TICK: 2795 PC:  40 SP: 132 ACC: 15
+  DEBUG   emulator:simulation    TICK: 2802 PC:  41 SP: 131 ACC: 15
+  DEBUG   emulator:simulation    TICK: 2805 PC:  42 SP: 132 ACC: 15
+  DEBUG   emulator:simulation    TICK: 2813 PC:  43 SP: 133 ACC: 15
+  DEBUG   emulator:simulation    TICK: 2820 PC:  44 SP: 132 ACC: -232545
+  DEBUG   emulator:simulation    TICK: 2823 PC:  45 SP: 131 ACC: -232545
+  DEBUG   emulator:simulation    TICK: 2831 PC:  46 SP: 132 ACC: -232545
+  DEBUG   emulator:simulation    TICK: 2838 PC:  47 SP: 131 ACC: 232560
+  DEBUG   emulator:simulation    TICK: 2841 PC:  48 SP: 132 ACC: 232560
+  DEBUG   emulator:simulation    TICK: 2849 PC:  49 SP: 133 ACC: 232560
+  DEBUG   emulator:simulation    TICK: 2852 PC:  50 SP: 132 ACC: 232560
+  DEBUG   emulator:simulation    TICK: 2860 PC:  51 SP: 133 ACC: 232560
+  DEBUG   emulator:simulation    TICK: 2863 PC:  52 SP: 132 ACC: 232560
+  DEBUG   emulator:simulation    TICK: 2866 PC:  53 SP: 131 ACC: 232560
+  DEBUG   emulator:simulation    TICK: 2869 PC:  54 SP: 130 ACC: 232560
+  DEBUG   emulator:simulation    TICK: 2872 PC:  55 SP: 129 ACC: 232560
+  DEBUG   emulator:simulation    TICK: 2879 PC:  56 SP: 128 ACC: 15
+  DEBUG   emulator:simulation    TICK: 2882 PC:  57 SP: 129 ACC: 15
+  DEBUG   emulator:simulation    TICK: 2890 PC:  58 SP: 130 ACC: 15
+  DEBUG   emulator:simulation    TICK: 2897 PC:  59 SP: 129 ACC: 0
+  DEBUG   emulator:simulation    TICK: 2900 PC:  60 SP: 128 ACC: 0
+  DEBUG   emulator:simulation    TICK: 2908 PC:  61 SP: 129 ACC: 0
+  DEBUG   emulator:simulation    TICK: 2915 PC:  62 SP: 128 ACC: 15
+  DEBUG   emulator:simulation    TICK: 2918 PC:  63 SP: 129 ACC: 15
+  DEBUG   emulator:simulation    TICK: 2926 PC:  64 SP: 130 ACC: 15
+  DEBUG   emulator:simulation    TICK: 2929 PC:  65 SP: 129 ACC: 15
+  DEBUG   emulator:simulation    TICK: 2932 PC:  66 SP: 130 ACC: 15
+  DEBUG   emulator:simulation    TICK: 2939 PC:  67 SP: 129 ACC: 15
+  DEBUG   emulator:simulation    TICK: 2942 PC:  68 SP: 130 ACC: 15
+  DEBUG   emulator:simulation    TICK: 2950 PC:  69 SP: 131 ACC: 15
+  DEBUG   emulator:simulation    TICK: 2957 PC:  70 SP: 130 ACC: -232545
+  DEBUG   emulator:simulation    TICK: 2960 PC:  71 SP: 129 ACC: -232545
+  DEBUG   emulator:simulation    TICK: 2968 PC:  72 SP: 130 ACC: -232545
+  DEBUG   emulator:simulation    TICK: 2975 PC:  73 SP: 129 ACC: 232560
+  DEBUG   emulator:simulation    TICK: 2978 PC:  74 SP: 130 ACC: 232560
+  DEBUG   emulator:simulation    TICK: 2986 PC:  75 SP: 131 ACC: 232560
+  DEBUG   emulator:simulation    TICK: 2989 PC:  76 SP: 130 ACC: 232560
+  DEBUG   emulator:simulation    TICK: 2992 PC:  77 SP: 131 ACC: 232560
+  DEBUG   emulator:simulation    TICK: 2999 PC:  78 SP: 130 ACC: 15
+  DEBUG   emulator:simulation    TICK: 3002 PC:  79 SP: 131 ACC: 15
+  DEBUG   emulator:simulation    TICK: 3010 PC:  80 SP: 132 ACC: 15
+  DEBUG   emulator:simulation    TICK: 3017 PC:  81 SP: 131 ACC: -232545
+  DEBUG   emulator:simulation    TICK: 3020 PC:  82 SP: 130 ACC: -232545
+  DEBUG   emulator:simulation    TICK: 3028 PC:  83 SP: 131 ACC: -232545
+  DEBUG   emulator:simulation    TICK: 3035 PC:  84 SP: 130 ACC: 232560
+  DEBUG   emulator:simulation    TICK: 3038 PC:  85 SP: 131 ACC: 232560
+  DEBUG   emulator:simulation    TICK: 3046 PC:  86 SP: 132 ACC: 232560
+  DEBUG   emulator:simulation    TICK: 3049 PC:  87 SP: 131 ACC: 232560
+  DEBUG   emulator:simulation    TICK: 3056 PC:  88 SP: 130 ACC: 232560
+  DEBUG   emulator:simulation    TICK: 3059 PC:  89 SP: 131 ACC: 232560
+  DEBUG   emulator:simulation    TICK: 3062 PC:  90 SP: 132 ACC: 232560
+  DEBUG   emulator:simulation    TICK: 3069 PC:  91 SP: 131 ACC: 15
+  DEBUG   emulator:simulation    TICK: 3072 PC:  92 SP: 130 ACC: 15
+  DEBUG   emulator:simulation    TICK: 3080 PC:  93 SP: 131 ACC: 15
+  DEBUG   emulator:simulation    TICK: 3087 PC:  94 SP: 130 ACC: 0
+  DEBUG   emulator:simulation    TICK: 3090 PC:  95 SP: 131 ACC: 0
+  DEBUG   emulator:simulation    TICK: 3093 PC:  97 SP: 131 ACC: 0
+  DEBUG   emulator:simulation    TICK: 3096 PC:  98 SP: 132 ACC: 0
+  DEBUG   emulator:simulation    TICK: 3103 PC:  99 SP: 131 ACC: 15
+  DEBUG   emulator:simulation    TICK: 3106 PC: 100 SP: 132 ACC: 15
+  DEBUG   emulator:simulation    TICK: 3114 PC: 101 SP: 133 ACC: 15
+  DEBUG   emulator:simulation    TICK: 3121 PC: 102 SP: 132 ACC: -3488385
+  DEBUG   emulator:simulation    TICK: 3124 PC: 103 SP: 131 ACC: -3488385
+  DEBUG   emulator:simulation    TICK: 3132 PC: 104 SP: 132 ACC: -3488385
+  DEBUG   emulator:simulation    TICK: 3139 PC: 105 SP: 131 ACC: 3488400
+  DEBUG   emulator:simulation    TICK: 3142 PC: 106 SP: 132 ACC: 3488400
+  DEBUG   emulator:simulation    TICK: 3150 PC: 107 SP: 133 ACC: 3488400
+  DEBUG   emulator:simulation    TICK: 3153 PC: 108 SP: 132 ACC: 3488400
+  DEBUG   emulator:simulation    TICK: 3161 PC: 109 SP: 133 ACC: 3488400
+  DEBUG   emulator:simulation    TICK: 3163 PC: 110 SP: 133 ACC: 3488400
+  DEBUG   emulator:simulation    TICK: 3170 PC: 111 SP: 132 ACC: 232560
+  DEBUG   emulator:simulation    TICK: 3173 PC: 112 SP: 133 ACC: 232560
+  DEBUG   emulator:simulation    TICK: 3176 PC: 113 SP: 133 ACC: 232560
+  DEBUG   emulator:simulation    TICK: 3178 PC:  21 SP: 133 ACC: 232560
+  DEBUG   emulator:simulation    TICK: 3185 PC:  22 SP: 132 ACC: 232560
+  DEBUG   emulator:simulation    TICK: 3188 PC:  23 SP: 133 ACC: 232560
+  DEBUG   emulator:simulation    TICK: 3196 PC:  24 SP: 134 ACC: 232560
+  DEBUG   emulator:simulation    TICK: 3203 PC:  25 SP: 133 ACC: 232546
+  DEBUG   emulator:simulation    TICK: 3206 PC:  26 SP: 132 ACC: 232546
+  DEBUG   emulator:simulation    TICK: 3214 PC:  27 SP: 133 ACC: 232546
+  DEBUG   emulator:simulation    TICK: 3221 PC:  28 SP: 132 ACC: 14
+  DEBUG   emulator:simulation    TICK: 3224 PC:  29 SP: 133 ACC: 14
+  DEBUG   emulator:simulation    TICK: 3232 PC:  30 SP: 134 ACC: 14
+  DEBUG   emulator:simulation    TICK: 3235 PC:  31 SP: 133 ACC: 14
+  DEBUG   emulator:simulation    TICK: 3242 PC:  32 SP: 132 ACC: 14
+  DEBUG   emulator:simulation    TICK: 3245 PC:  33 SP: 133 ACC: 14
+  DEBUG   emulator:simulation    TICK: 3248 PC:  34 SP: 133 ACC: 14
+  DEBUG   emulator:simulation    TICK: 3255 PC:  35 SP: 132 ACC: 14
+  DEBUG   emulator:simulation    TICK: 3262 PC:  36 SP: 131 ACC: 14
+  DEBUG   emulator:simulation    TICK: 3269 PC:  37 SP: 130 ACC: 14
+  DEBUG   emulator:simulation    TICK: 3272 PC:  38 SP: 131 ACC: 14
+  DEBUG   emulator:simulation    TICK: 3275 PC:  39 SP: 132 ACC: 14
+  DEBUG   emulator:simulation    TICK: 3278 PC:  40 SP: 133 ACC: 14
+  DEBUG   emulator:simulation    TICK: 3285 PC:  41 SP: 132 ACC: 14
+  DEBUG   emulator:simulation    TICK: 3288 PC:  42 SP: 133 ACC: 14
+  DEBUG   emulator:simulation    TICK: 3296 PC:  43 SP: 134 ACC: 14
+  DEBUG   emulator:simulation    TICK: 3303 PC:  44 SP: 133 ACC: -232546
+  DEBUG   emulator:simulation    TICK: 3306 PC:  45 SP: 132 ACC: -232546
+  DEBUG   emulator:simulation    TICK: 3314 PC:  46 SP: 133 ACC: -232546
+  DEBUG   emulator:simulation    TICK: 3321 PC:  47 SP: 132 ACC: 232560
+  DEBUG   emulator:simulation    TICK: 3324 PC:  48 SP: 133 ACC: 232560
+  DEBUG   emulator:simulation    TICK: 3332 PC:  49 SP: 134 ACC: 232560
+  DEBUG   emulator:simulation    TICK: 3335 PC:  50 SP: 133 ACC: 232560
+  DEBUG   emulator:simulation    TICK: 3343 PC:  51 SP: 134 ACC: 232560
+  DEBUG   emulator:simulation    TICK: 3346 PC:  52 SP: 133 ACC: 232560
+  DEBUG   emulator:simulation    TICK: 3349 PC:  53 SP: 132 ACC: 232560
+  DEBUG   emulator:simulation    TICK: 3352 PC:  54 SP: 131 ACC: 232560
+  DEBUG   emulator:simulation    TICK: 3355 PC:  55 SP: 130 ACC: 232560
+  DEBUG   emulator:simulation    TICK: 3362 PC:  56 SP: 129 ACC: 14
+  DEBUG   emulator:simulation    TICK: 3365 PC:  57 SP: 130 ACC: 14
+  DEBUG   emulator:simulation    TICK: 3373 PC:  58 SP: 131 ACC: 14
+  DEBUG   emulator:simulation    TICK: 3380 PC:  59 SP: 130 ACC: 0
+  DEBUG   emulator:simulation    TICK: 3383 PC:  60 SP: 129 ACC: 0
+  DEBUG   emulator:simulation    TICK: 3391 PC:  61 SP: 130 ACC: 0
+  DEBUG   emulator:simulation    TICK: 3398 PC:  62 SP: 129 ACC: 14
+  DEBUG   emulator:simulation    TICK: 3401 PC:  63 SP: 130 ACC: 14
+  DEBUG   emulator:simulation    TICK: 3409 PC:  64 SP: 131 ACC: 14
+  DEBUG   emulator:simulation    TICK: 3412 PC:  65 SP: 130 ACC: 14
+  DEBUG   emulator:simulation    TICK: 3415 PC:  66 SP: 131 ACC: 14
+  DEBUG   emulator:simulation    TICK: 3422 PC:  67 SP: 130 ACC: 14
+  DEBUG   emulator:simulation    TICK: 3425 PC:  68 SP: 131 ACC: 14
+  DEBUG   emulator:simulation    TICK: 3433 PC:  69 SP: 132 ACC: 14
+  DEBUG   emulator:simulation    TICK: 3440 PC:  70 SP: 131 ACC: -232546
+  DEBUG   emulator:simulation    TICK: 3443 PC:  71 SP: 130 ACC: -232546
+  DEBUG   emulator:simulation    TICK: 3451 PC:  72 SP: 131 ACC: -232546
+  DEBUG   emulator:simulation    TICK: 3458 PC:  73 SP: 130 ACC: 232560
+  DEBUG   emulator:simulation    TICK: 3461 PC:  74 SP: 131 ACC: 232560
+  DEBUG   emulator:simulation    TICK: 3469 PC:  75 SP: 132 ACC: 232560
+  DEBUG   emulator:simulation    TICK: 3472 PC:  76 SP: 131 ACC: 232560
+  DEBUG   emulator:simulation    TICK: 3475 PC:  77 SP: 132 ACC: 232560
+  DEBUG   emulator:simulation    TICK: 3482 PC:  78 SP: 131 ACC: 14
+  DEBUG   emulator:simulation    TICK: 3485 PC:  79 SP: 132 ACC: 14
+  DEBUG   emulator:simulation    TICK: 3493 PC:  80 SP: 133 ACC: 14
+  DEBUG   emulator:simulation    TICK: 3500 PC:  81 SP: 132 ACC: -232546
+  DEBUG   emulator:simulation    TICK: 3503 PC:  82 SP: 131 ACC: -232546
+  DEBUG   emulator:simulation    TICK: 3511 PC:  83 SP: 132 ACC: -232546
+  DEBUG   emulator:simulation    TICK: 3518 PC:  84 SP: 131 ACC: 232560
+  DEBUG   emulator:simulation    TICK: 3521 PC:  85 SP: 132 ACC: 232560
+  DEBUG   emulator:simulation    TICK: 3529 PC:  86 SP: 133 ACC: 232560
+  DEBUG   emulator:simulation    TICK: 3532 PC:  87 SP: 132 ACC: 232560
+  DEBUG   emulator:simulation    TICK: 3539 PC:  88 SP: 131 ACC: 232560
+  DEBUG   emulator:simulation    TICK: 3542 PC:  89 SP: 132 ACC: 232560
+  DEBUG   emulator:simulation    TICK: 3545 PC:  90 SP: 133 ACC: 232560
+  DEBUG   emulator:simulation    TICK: 3552 PC:  91 SP: 132 ACC: 14
+  DEBUG   emulator:simulation    TICK: 3555 PC:  92 SP: 131 ACC: 14
+  DEBUG   emulator:simulation    TICK: 3563 PC:  93 SP: 132 ACC: 14
+  DEBUG   emulator:simulation    TICK: 3570 PC:  94 SP: 131 ACC: 6
+  DEBUG   emulator:simulation    TICK: 3573 PC:  95 SP: 132 ACC: 6
+  DEBUG   emulator:simulation    TICK: 3576 PC:  96 SP: 132 ACC: 6
+  DEBUG   emulator:simulation    TICK: 3578 PC:  77 SP: 132 ACC: 6
+  DEBUG   emulator:simulation    TICK: 3585 PC:  78 SP: 131 ACC: 6
+  DEBUG   emulator:simulation    TICK: 3588 PC:  79 SP: 132 ACC: 6
+  DEBUG   emulator:simulation    TICK: 3596 PC:  80 SP: 133 ACC: 6
+  DEBUG   emulator:simulation    TICK: 3603 PC:  81 SP: 132 ACC: -8
+  DEBUG   emulator:simulation    TICK: 3606 PC:  82 SP: 131 ACC: -8
+  DEBUG   emulator:simulation    TICK: 3614 PC:  83 SP: 132 ACC: -8
+  DEBUG   emulator:simulation    TICK: 3621 PC:  84 SP: 131 ACC: 14
+  DEBUG   emulator:simulation    TICK: 3624 PC:  85 SP: 132 ACC: 14
+  DEBUG   emulator:simulation    TICK: 3632 PC:  86 SP: 133 ACC: 14
+  DEBUG   emulator:simulation    TICK: 3635 PC:  87 SP: 132 ACC: 14
+  DEBUG   emulator:simulation    TICK: 3642 PC:  88 SP: 131 ACC: 14
+  DEBUG   emulator:simulation    TICK: 3645 PC:  89 SP: 132 ACC: 14
+  DEBUG   emulator:simulation    TICK: 3648 PC:  90 SP: 133 ACC: 14
+  DEBUG   emulator:simulation    TICK: 3655 PC:  91 SP: 132 ACC: 6
+  DEBUG   emulator:simulation    TICK: 3658 PC:  92 SP: 131 ACC: 6
+  DEBUG   emulator:simulation    TICK: 3666 PC:  93 SP: 132 ACC: 6
+  DEBUG   emulator:simulation    TICK: 3673 PC:  94 SP: 131 ACC: 2
+  DEBUG   emulator:simulation    TICK: 3676 PC:  95 SP: 132 ACC: 2
+  DEBUG   emulator:simulation    TICK: 3679 PC:  96 SP: 132 ACC: 2
+  DEBUG   emulator:simulation    TICK: 3681 PC:  77 SP: 132 ACC: 2
+  DEBUG   emulator:simulation    TICK: 3688 PC:  78 SP: 131 ACC: 2
+  DEBUG   emulator:simulation    TICK: 3691 PC:  79 SP: 132 ACC: 2
+  DEBUG   emulator:simulation    TICK: 3699 PC:  80 SP: 133 ACC: 2
+  DEBUG   emulator:simulation    TICK: 3706 PC:  81 SP: 132 ACC: -4
+  DEBUG   emulator:simulation    TICK: 3709 PC:  82 SP: 131 ACC: -4
+  DEBUG   emulator:simulation    TICK: 3717 PC:  83 SP: 132 ACC: -4
+  DEBUG   emulator:simulation    TICK: 3724 PC:  84 SP: 131 ACC: 6
+  DEBUG   emulator:simulation    TICK: 3727 PC:  85 SP: 132 ACC: 6
+  DEBUG   emulator:simulation    TICK: 3735 PC:  86 SP: 133 ACC: 6
+  DEBUG   emulator:simulation    TICK: 3738 PC:  87 SP: 132 ACC: 6
+  DEBUG   emulator:simulation    TICK: 3745 PC:  88 SP: 131 ACC: 6
+  DEBUG   emulator:simulation    TICK: 3748 PC:  89 SP: 132 ACC: 6
+  DEBUG   emulator:simulation    TICK: 3751 PC:  90 SP: 133 ACC: 6
+  DEBUG   emulator:simulation    TICK: 3758 PC:  91 SP: 132 ACC: 2
+  DEBUG   emulator:simulation    TICK: 3761 PC:  92 SP: 131 ACC: 2
+  DEBUG   emulator:simulation    TICK: 3769 PC:  93 SP: 132 ACC: 2
+  DEBUG   emulator:simulation    TICK: 3776 PC:  94 SP: 131 ACC: 0
+  DEBUG   emulator:simulation    TICK: 3779 PC:  95 SP: 132 ACC: 0
+  DEBUG   emulator:simulation    TICK: 3782 PC:  97 SP: 132 ACC: 0
+  DEBUG   emulator:simulation    TICK: 3785 PC:  98 SP: 133 ACC: 0
+  DEBUG   emulator:simulation    TICK: 3792 PC:  99 SP: 132 ACC: 2
+  DEBUG   emulator:simulation    TICK: 3795 PC: 100 SP: 133 ACC: 2
+  DEBUG   emulator:simulation    TICK: 3803 PC: 101 SP: 134 ACC: 2
+  DEBUG   emulator:simulation    TICK: 3810 PC: 102 SP: 133 ACC: -3255838
+  DEBUG   emulator:simulation    TICK: 3813 PC: 103 SP: 132 ACC: -3255838
+  DEBUG   emulator:simulation    TICK: 3821 PC: 104 SP: 133 ACC: -3255838
+  DEBUG   emulator:simulation    TICK: 3828 PC: 105 SP: 132 ACC: 3255840
+  DEBUG   emulator:simulation    TICK: 3831 PC: 106 SP: 133 ACC: 3255840
+  DEBUG   emulator:simulation    TICK: 3839 PC: 107 SP: 134 ACC: 3255840
+  DEBUG   emulator:simulation    TICK: 3842 PC: 108 SP: 133 ACC: 3255840
+  DEBUG   emulator:simulation    TICK: 3850 PC: 109 SP: 134 ACC: 3255840
+  DEBUG   emulator:simulation    TICK: 3852 PC: 110 SP: 134 ACC: 3255840
+  DEBUG   emulator:simulation    TICK: 3859 PC: 111 SP: 133 ACC: 1627920
+  DEBUG   emulator:simulation    TICK: 3862 PC: 112 SP: 134 ACC: 1627920
+  DEBUG   emulator:simulation    TICK: 3865 PC: 113 SP: 134 ACC: 1627920
+  DEBUG   emulator:simulation    TICK: 3867 PC:  21 SP: 134 ACC: 1627920
+  DEBUG   emulator:simulation    TICK: 3874 PC:  22 SP: 133 ACC: 1627920
+  DEBUG   emulator:simulation    TICK: 3877 PC:  23 SP: 134 ACC: 1627920
+  DEBUG   emulator:simulation    TICK: 3885 PC:  24 SP: 135 ACC: 1627920
+  DEBUG   emulator:simulation    TICK: 3892 PC:  25 SP: 134 ACC: 1627907
+  DEBUG   emulator:simulation    TICK: 3895 PC:  26 SP: 133 ACC: 1627907
+  DEBUG   emulator:simulation    TICK: 3903 PC:  27 SP: 134 ACC: 1627907
+  DEBUG   emulator:simulation    TICK: 3910 PC:  28 SP: 133 ACC: 13
+  DEBUG   emulator:simulation    TICK: 3913 PC:  29 SP: 134 ACC: 13
+  DEBUG   emulator:simulation    TICK: 3921 PC:  30 SP: 135 ACC: 13
+  DEBUG   emulator:simulation    TICK: 3924 PC:  31 SP: 134 ACC: 13
+  DEBUG   emulator:simulation    TICK: 3931 PC:  32 SP: 133 ACC: 13
+  DEBUG   emulator:simulation    TICK: 3934 PC:  33 SP: 134 ACC: 13
+  DEBUG   emulator:simulation    TICK: 3937 PC:  34 SP: 134 ACC: 13
+  DEBUG   emulator:simulation    TICK: 3944 PC:  35 SP: 133 ACC: 13
+  DEBUG   emulator:simulation    TICK: 3951 PC:  36 SP: 132 ACC: 13
+  DEBUG   emulator:simulation    TICK: 3958 PC:  37 SP: 131 ACC: 13
+  DEBUG   emulator:simulation    TICK: 3961 PC:  38 SP: 132 ACC: 13
+  DEBUG   emulator:simulation    TICK: 3964 PC:  39 SP: 133 ACC: 13
+  DEBUG   emulator:simulation    TICK: 3967 PC:  40 SP: 134 ACC: 13
+  DEBUG   emulator:simulation    TICK: 3974 PC:  41 SP: 133 ACC: 13
+  DEBUG   emulator:simulation    TICK: 3977 PC:  42 SP: 134 ACC: 13
+  DEBUG   emulator:simulation    TICK: 3985 PC:  43 SP: 135 ACC: 13
+  DEBUG   emulator:simulation    TICK: 3992 PC:  44 SP: 134 ACC: -1627907
+  DEBUG   emulator:simulation    TICK: 3995 PC:  45 SP: 133 ACC: -1627907
+  DEBUG   emulator:simulation    TICK: 4003 PC:  46 SP: 134 ACC: -1627907
+  DEBUG   emulator:simulation    TICK: 4010 PC:  47 SP: 133 ACC: 1627920
+  DEBUG   emulator:simulation    TICK: 4013 PC:  48 SP: 134 ACC: 1627920
+  DEBUG   emulator:simulation    TICK: 4021 PC:  49 SP: 135 ACC: 1627920
+  DEBUG   emulator:simulation    TICK: 4024 PC:  50 SP: 134 ACC: 1627920
+  DEBUG   emulator:simulation    TICK: 4032 PC:  51 SP: 135 ACC: 1627920
+  DEBUG   emulator:simulation    TICK: 4035 PC:  52 SP: 134 ACC: 1627920
+  DEBUG   emulator:simulation    TICK: 4038 PC:  53 SP: 133 ACC: 1627920
+  DEBUG   emulator:simulation    TICK: 4041 PC:  54 SP: 132 ACC: 1627920
+  DEBUG   emulator:simulation    TICK: 4044 PC:  55 SP: 131 ACC: 1627920
+  DEBUG   emulator:simulation    TICK: 4051 PC:  56 SP: 130 ACC: 13
+  DEBUG   emulator:simulation    TICK: 4054 PC:  57 SP: 131 ACC: 13
+  DEBUG   emulator:simulation    TICK: 4062 PC:  58 SP: 132 ACC: 13
+  DEBUG   emulator:simulation    TICK: 4069 PC:  59 SP: 131 ACC: 0
+  DEBUG   emulator:simulation    TICK: 4072 PC:  60 SP: 130 ACC: 0
+  DEBUG   emulator:simulation    TICK: 4080 PC:  61 SP: 131 ACC: 0
+  DEBUG   emulator:simulation    TICK: 4087 PC:  62 SP: 130 ACC: 13
+  DEBUG   emulator:simulation    TICK: 4090 PC:  63 SP: 131 ACC: 13
+  DEBUG   emulator:simulation    TICK: 4098 PC:  64 SP: 132 ACC: 13
+  DEBUG   emulator:simulation    TICK: 4101 PC:  65 SP: 131 ACC: 13
+  DEBUG   emulator:simulation    TICK: 4104 PC:  66 SP: 132 ACC: 13
+  DEBUG   emulator:simulation    TICK: 4111 PC:  67 SP: 131 ACC: 13
+  DEBUG   emulator:simulation    TICK: 4114 PC:  68 SP: 132 ACC: 13
+  DEBUG   emulator:simulation    TICK: 4122 PC:  69 SP: 133 ACC: 13
+  DEBUG   emulator:simulation    TICK: 4129 PC:  70 SP: 132 ACC: -1627907
+  DEBUG   emulator:simulation    TICK: 4132 PC:  71 SP: 131 ACC: -1627907
+  DEBUG   emulator:simulation    TICK: 4140 PC:  72 SP: 132 ACC: -1627907
+  DEBUG   emulator:simulation    TICK: 4147 PC:  73 SP: 131 ACC: 1627920
+  DEBUG   emulator:simulation    TICK: 4150 PC:  74 SP: 132 ACC: 1627920
+  DEBUG   emulator:simulation    TICK: 4158 PC:  75 SP: 133 ACC: 1627920
+  DEBUG   emulator:simulation    TICK: 4161 PC:  76 SP: 132 ACC: 1627920
+  DEBUG   emulator:simulation    TICK: 4164 PC:  77 SP: 133 ACC: 1627920
+  DEBUG   emulator:simulation    TICK: 4171 PC:  78 SP: 132 ACC: 13
+  DEBUG   emulator:simulation    TICK: 4174 PC:  79 SP: 133 ACC: 13
+  DEBUG   emulator:simulation    TICK: 4182 PC:  80 SP: 134 ACC: 13
+  DEBUG   emulator:simulation    TICK: 4189 PC:  81 SP: 133 ACC: -1627907
+  DEBUG   emulator:simulation    TICK: 4192 PC:  82 SP: 132 ACC: -1627907
+  DEBUG   emulator:simulation    TICK: 4200 PC:  83 SP: 133 ACC: -1627907
+  DEBUG   emulator:simulation    TICK: 4207 PC:  84 SP: 132 ACC: 1627920
+  DEBUG   emulator:simulation    TICK: 4210 PC:  85 SP: 133 ACC: 1627920
+  DEBUG   emulator:simulation    TICK: 4218 PC:  86 SP: 134 ACC: 1627920
+  DEBUG   emulator:simulation    TICK: 4221 PC:  87 SP: 133 ACC: 1627920
+  DEBUG   emulator:simulation    TICK: 4228 PC:  88 SP: 132 ACC: 1627920
+  DEBUG   emulator:simulation    TICK: 4231 PC:  89 SP: 133 ACC: 1627920
+  DEBUG   emulator:simulation    TICK: 4234 PC:  90 SP: 134 ACC: 1627920
+  DEBUG   emulator:simulation    TICK: 4241 PC:  91 SP: 133 ACC: 13
+  DEBUG   emulator:simulation    TICK: 4244 PC:  92 SP: 132 ACC: 13
+  DEBUG   emulator:simulation    TICK: 4252 PC:  93 SP: 133 ACC: 13
+  DEBUG   emulator:simulation    TICK: 4259 PC:  94 SP: 132 ACC: 8
+  DEBUG   emulator:simulation    TICK: 4262 PC:  95 SP: 133 ACC: 8
+  DEBUG   emulator:simulation    TICK: 4265 PC:  96 SP: 133 ACC: 8
+  DEBUG   emulator:simulation    TICK: 4267 PC:  77 SP: 133 ACC: 8
+  DEBUG   emulator:simulation    TICK: 4274 PC:  78 SP: 132 ACC: 8
+  DEBUG   emulator:simulation    TICK: 4277 PC:  79 SP: 133 ACC: 8
+  DEBUG   emulator:simulation    TICK: 4285 PC:  80 SP: 134 ACC: 8
+  DEBUG   emulator:simulation    TICK: 4292 PC:  81 SP: 133 ACC: -5
+  DEBUG   emulator:simulation    TICK: 4295 PC:  82 SP: 132 ACC: -5
+  DEBUG   emulator:simulation    TICK: 4303 PC:  83 SP: 133 ACC: -5
+  DEBUG   emulator:simulation    TICK: 4310 PC:  84 SP: 132 ACC: 13
+  DEBUG   emulator:simulation    TICK: 4313 PC:  85 SP: 133 ACC: 13
+  DEBUG   emulator:simulation    TICK: 4321 PC:  86 SP: 134 ACC: 13
+  DEBUG   emulator:simulation    TICK: 4324 PC:  87 SP: 133 ACC: 13
+  DEBUG   emulator:simulation    TICK: 4331 PC:  88 SP: 132 ACC: 13
+  DEBUG   emulator:simulation    TICK: 4334 PC:  89 SP: 133 ACC: 13
+  DEBUG   emulator:simulation    TICK: 4337 PC:  90 SP: 134 ACC: 13
+  DEBUG   emulator:simulation    TICK: 4344 PC:  91 SP: 133 ACC: 8
+  DEBUG   emulator:simulation    TICK: 4347 PC:  92 SP: 132 ACC: 8
+  DEBUG   emulator:simulation    TICK: 4355 PC:  93 SP: 133 ACC: 8
+  DEBUG   emulator:simulation    TICK: 4362 PC:  94 SP: 132 ACC: 5
+  DEBUG   emulator:simulation    TICK: 4365 PC:  95 SP: 133 ACC: 5
+  DEBUG   emulator:simulation    TICK: 4368 PC:  96 SP: 133 ACC: 5
+  DEBUG   emulator:simulation    TICK: 4370 PC:  77 SP: 133 ACC: 5
+  DEBUG   emulator:simulation    TICK: 4377 PC:  78 SP: 132 ACC: 5
+  DEBUG   emulator:simulation    TICK: 4380 PC:  79 SP: 133 ACC: 5
+  DEBUG   emulator:simulation    TICK: 4388 PC:  80 SP: 134 ACC: 5
+  DEBUG   emulator:simulation    TICK: 4395 PC:  81 SP: 133 ACC: -3
+  DEBUG   emulator:simulation    TICK: 4398 PC:  82 SP: 132 ACC: -3
+  DEBUG   emulator:simulation    TICK: 4406 PC:  83 SP: 133 ACC: -3
+  DEBUG   emulator:simulation    TICK: 4413 PC:  84 SP: 132 ACC: 8
+  DEBUG   emulator:simulation    TICK: 4416 PC:  85 SP: 133 ACC: 8
+  DEBUG   emulator:simulation    TICK: 4424 PC:  86 SP: 134 ACC: 8
+  DEBUG   emulator:simulation    TICK: 4427 PC:  87 SP: 133 ACC: 8
+  DEBUG   emulator:simulation    TICK: 4434 PC:  88 SP: 132 ACC: 8
+  DEBUG   emulator:simulation    TICK: 4437 PC:  89 SP: 133 ACC: 8
+  DEBUG   emulator:simulation    TICK: 4440 PC:  90 SP: 134 ACC: 8
+  DEBUG   emulator:simulation    TICK: 4447 PC:  91 SP: 133 ACC: 5
+  DEBUG   emulator:simulation    TICK: 4450 PC:  92 SP: 132 ACC: 5
+  DEBUG   emulator:simulation    TICK: 4458 PC:  93 SP: 133 ACC: 5
+  DEBUG   emulator:simulation    TICK: 4465 PC:  94 SP: 132 ACC: 3
+  DEBUG   emulator:simulation    TICK: 4468 PC:  95 SP: 133 ACC: 3
+  DEBUG   emulator:simulation    TICK: 4471 PC:  96 SP: 133 ACC: 3
+  DEBUG   emulator:simulation    TICK: 4473 PC:  77 SP: 133 ACC: 3
+  DEBUG   emulator:simulation    TICK: 4480 PC:  78 SP: 132 ACC: 3
+  DEBUG   emulator:simulation    TICK: 4483 PC:  79 SP: 133 ACC: 3
+  DEBUG   emulator:simulation    TICK: 4491 PC:  80 SP: 134 ACC: 3
+  DEBUG   emulator:simulation    TICK: 4498 PC:  81 SP: 133 ACC: -2
+  DEBUG   emulator:simulation    TICK: 4501 PC:  82 SP: 132 ACC: -2
+  DEBUG   emulator:simulation    TICK: 4509 PC:  83 SP: 133 ACC: -2
+  DEBUG   emulator:simulation    TICK: 4516 PC:  84 SP: 132 ACC: 5
+  DEBUG   emulator:simulation    TICK: 4519 PC:  85 SP: 133 ACC: 5
+  DEBUG   emulator:simulation    TICK: 4527 PC:  86 SP: 134 ACC: 5
+  DEBUG   emulator:simulation    TICK: 4530 PC:  87 SP: 133 ACC: 5
+  DEBUG   emulator:simulation    TICK: 4537 PC:  88 SP: 132 ACC: 5
+  DEBUG   emulator:simulation    TICK: 4540 PC:  89 SP: 133 ACC: 5
+  DEBUG   emulator:simulation    TICK: 4543 PC:  90 SP: 134 ACC: 5
+  DEBUG   emulator:simulation    TICK: 4550 PC:  91 SP: 133 ACC: 3
+  DEBUG   emulator:simulation    TICK: 4553 PC:  92 SP: 132 ACC: 3
+  DEBUG   emulator:simulation    TICK: 4561 PC:  93 SP: 133 ACC: 3
+  DEBUG   emulator:simulation    TICK: 4568 PC:  94 SP: 132 ACC: 2
+  DEBUG   emulator:simulation    TICK: 4571 PC:  95 SP: 133 ACC: 2
+  DEBUG   emulator:simulation    TICK: 4574 PC:  96 SP: 133 ACC: 2
+  DEBUG   emulator:simulation    TICK: 4576 PC:  77 SP: 133 ACC: 2
+  DEBUG   emulator:simulation    TICK: 4583 PC:  78 SP: 132 ACC: 2
+  DEBUG   emulator:simulation    TICK: 4586 PC:  79 SP: 133 ACC: 2
+  DEBUG   emulator:simulation    TICK: 4594 PC:  80 SP: 134 ACC: 2
+  DEBUG   emulator:simulation    TICK: 4601 PC:  81 SP: 133 ACC: -1
+  DEBUG   emulator:simulation    TICK: 4604 PC:  82 SP: 132 ACC: -1
+  DEBUG   emulator:simulation    TICK: 4612 PC:  83 SP: 133 ACC: -1
+  DEBUG   emulator:simulation    TICK: 4619 PC:  84 SP: 132 ACC: 3
+  DEBUG   emulator:simulation    TICK: 4622 PC:  85 SP: 133 ACC: 3
+  DEBUG   emulator:simulation    TICK: 4630 PC:  86 SP: 134 ACC: 3
+  DEBUG   emulator:simulation    TICK: 4633 PC:  87 SP: 133 ACC: 3
+  DEBUG   emulator:simulation    TICK: 4640 PC:  88 SP: 132 ACC: 3
+  DEBUG   emulator:simulation    TICK: 4643 PC:  89 SP: 133 ACC: 3
+  DEBUG   emulator:simulation    TICK: 4646 PC:  90 SP: 134 ACC: 3
+  DEBUG   emulator:simulation    TICK: 4653 PC:  91 SP: 133 ACC: 2
+  DEBUG   emulator:simulation    TICK: 4656 PC:  92 SP: 132 ACC: 2
+  DEBUG   emulator:simulation    TICK: 4664 PC:  93 SP: 133 ACC: 2
+  DEBUG   emulator:simulation    TICK: 4671 PC:  94 SP: 132 ACC: 1
+  DEBUG   emulator:simulation    TICK: 4674 PC:  95 SP: 133 ACC: 1
+  DEBUG   emulator:simulation    TICK: 4677 PC:  96 SP: 133 ACC: 1
+  DEBUG   emulator:simulation    TICK: 4679 PC:  77 SP: 133 ACC: 1
+  DEBUG   emulator:simulation    TICK: 4686 PC:  78 SP: 132 ACC: 1
+  DEBUG   emulator:simulation    TICK: 4689 PC:  79 SP: 133 ACC: 1
+  DEBUG   emulator:simulation    TICK: 4697 PC:  80 SP: 134 ACC: 1
+  DEBUG   emulator:simulation    TICK: 4704 PC:  81 SP: 133 ACC: -1
+  DEBUG   emulator:simulation    TICK: 4707 PC:  82 SP: 132 ACC: -1
+  DEBUG   emulator:simulation    TICK: 4715 PC:  83 SP: 133 ACC: -1
+  DEBUG   emulator:simulation    TICK: 4722 PC:  84 SP: 132 ACC: 2
+  DEBUG   emulator:simulation    TICK: 4725 PC:  85 SP: 133 ACC: 2
+  DEBUG   emulator:simulation    TICK: 4733 PC:  86 SP: 134 ACC: 2
+  DEBUG   emulator:simulation    TICK: 4736 PC:  87 SP: 133 ACC: 2
+  DEBUG   emulator:simulation    TICK: 4743 PC:  88 SP: 132 ACC: 2
+  DEBUG   emulator:simulation    TICK: 4746 PC:  89 SP: 133 ACC: 2
+  DEBUG   emulator:simulation    TICK: 4749 PC:  90 SP: 134 ACC: 2
+  DEBUG   emulator:simulation    TICK: 4756 PC:  91 SP: 133 ACC: 1
+  DEBUG   emulator:simulation    TICK: 4759 PC:  92 SP: 132 ACC: 1
+  DEBUG   emulator:simulation    TICK: 4767 PC:  93 SP: 133 ACC: 1
+  DEBUG   emulator:simulation    TICK: 4774 PC:  94 SP: 132 ACC: 0
+  DEBUG   emulator:simulation    TICK: 4777 PC:  95 SP: 133 ACC: 0
+  DEBUG   emulator:simulation    TICK: 4780 PC:  97 SP: 133 ACC: 0
+  DEBUG   emulator:simulation    TICK: 4783 PC:  98 SP: 134 ACC: 0
+  DEBUG   emulator:simulation    TICK: 4790 PC:  99 SP: 133 ACC: 1
+  DEBUG   emulator:simulation    TICK: 4793 PC: 100 SP: 134 ACC: 1
+  DEBUG   emulator:simulation    TICK: 4801 PC: 101 SP: 135 ACC: 1
+  DEBUG   emulator:simulation    TICK: 4808 PC: 102 SP: 134 ACC: -21162959
+  DEBUG   emulator:simulation    TICK: 4811 PC: 103 SP: 133 ACC: -21162959
+  DEBUG   emulator:simulation    TICK: 4819 PC: 104 SP: 134 ACC: -21162959
+  DEBUG   emulator:simulation    TICK: 4826 PC: 105 SP: 133 ACC: 21162960
+  DEBUG   emulator:simulation    TICK: 4829 PC: 106 SP: 134 ACC: 21162960
+  DEBUG   emulator:simulation    TICK: 4837 PC: 107 SP: 135 ACC: 21162960
+  DEBUG   emulator:simulation    TICK: 4840 PC: 108 SP: 134 ACC: 21162960
+  DEBUG   emulator:simulation    TICK: 4848 PC: 109 SP: 135 ACC: 21162960
+  DEBUG   emulator:simulation    TICK: 4850 PC: 110 SP: 135 ACC: 21162960
+  DEBUG   emulator:simulation    TICK: 4857 PC: 111 SP: 134 ACC: 21162960
+  DEBUG   emulator:simulation    TICK: 4860 PC: 112 SP: 135 ACC: 21162960
+  DEBUG   emulator:simulation    TICK: 4863 PC: 113 SP: 135 ACC: 21162960
+  DEBUG   emulator:simulation    TICK: 4865 PC:  21 SP: 135 ACC: 21162960
+  DEBUG   emulator:simulation    TICK: 4872 PC:  22 SP: 134 ACC: 21162960
+  DEBUG   emulator:simulation    TICK: 4875 PC:  23 SP: 135 ACC: 21162960
+  DEBUG   emulator:simulation    TICK: 4883 PC:  24 SP: 136 ACC: 21162960
+  DEBUG   emulator:simulation    TICK: 4890 PC:  25 SP: 135 ACC: 21162948
+  DEBUG   emulator:simulation    TICK: 4893 PC:  26 SP: 134 ACC: 21162948
+  DEBUG   emulator:simulation    TICK: 4901 PC:  27 SP: 135 ACC: 21162948
+  DEBUG   emulator:simulation    TICK: 4908 PC:  28 SP: 134 ACC: 12
+  DEBUG   emulator:simulation    TICK: 4911 PC:  29 SP: 135 ACC: 12
+  DEBUG   emulator:simulation    TICK: 4919 PC:  30 SP: 136 ACC: 12
+  DEBUG   emulator:simulation    TICK: 4922 PC:  31 SP: 135 ACC: 12
+  DEBUG   emulator:simulation    TICK: 4929 PC:  32 SP: 134 ACC: 12
+  DEBUG   emulator:simulation    TICK: 4932 PC:  33 SP: 135 ACC: 12
+  DEBUG   emulator:simulation    TICK: 4935 PC:  34 SP: 135 ACC: 12
+  DEBUG   emulator:simulation    TICK: 4942 PC:  35 SP: 134 ACC: 12
+  DEBUG   emulator:simulation    TICK: 4949 PC:  36 SP: 133 ACC: 12
+  DEBUG   emulator:simulation    TICK: 4956 PC:  37 SP: 132 ACC: 12
+  DEBUG   emulator:simulation    TICK: 4959 PC:  38 SP: 133 ACC: 12
+  DEBUG   emulator:simulation    TICK: 4962 PC:  39 SP: 134 ACC: 12
+  DEBUG   emulator:simulation    TICK: 4965 PC:  40 SP: 135 ACC: 12
+  DEBUG   emulator:simulation    TICK: 4972 PC:  41 SP: 134 ACC: 12
+  DEBUG   emulator:simulation    TICK: 4975 PC:  42 SP: 135 ACC: 12
+  DEBUG   emulator:simulation    TICK: 4983 PC:  43 SP: 136 ACC: 12
+  DEBUG   emulator:simulation    TICK: 4990 PC:  44 SP: 135 ACC: -21162948
+  DEBUG   emulator:simulation    TICK: 4993 PC:  45 SP: 134 ACC: -21162948
+  DEBUG   emulator:simulation    TICK: 5001 PC:  46 SP: 135 ACC: -21162948
+  DEBUG   emulator:simulation    TICK: 5008 PC:  47 SP: 134 ACC: 21162960
+  DEBUG   emulator:simulation    TICK: 5011 PC:  48 SP: 135 ACC: 21162960
+  DEBUG   emulator:simulation    TICK: 5019 PC:  49 SP: 136 ACC: 21162960
+  DEBUG   emulator:simulation    TICK: 5022 PC:  50 SP: 135 ACC: 21162960
+  DEBUG   emulator:simulation    TICK: 5030 PC:  51 SP: 136 ACC: 21162960
+  DEBUG   emulator:simulation    TICK: 5033 PC:  52 SP: 135 ACC: 21162960
+  DEBUG   emulator:simulation    TICK: 5036 PC:  53 SP: 134 ACC: 21162960
+  DEBUG   emulator:simulation    TICK: 5039 PC:  54 SP: 133 ACC: 21162960
+  DEBUG   emulator:simulation    TICK: 5042 PC:  55 SP: 132 ACC: 21162960
+  DEBUG   emulator:simulation    TICK: 5049 PC:  56 SP: 131 ACC: 12
+  DEBUG   emulator:simulation    TICK: 5052 PC:  57 SP: 132 ACC: 12
+  DEBUG   emulator:simulation    TICK: 5060 PC:  58 SP: 133 ACC: 12
+  DEBUG   emulator:simulation    TICK: 5067 PC:  59 SP: 132 ACC: 0
+  DEBUG   emulator:simulation    TICK: 5070 PC:  60 SP: 131 ACC: 0
+  DEBUG   emulator:simulation    TICK: 5078 PC:  61 SP: 132 ACC: 0
+  DEBUG   emulator:simulation    TICK: 5085 PC:  62 SP: 131 ACC: 12
+  DEBUG   emulator:simulation    TICK: 5088 PC:  63 SP: 132 ACC: 12
+  DEBUG   emulator:simulation    TICK: 5096 PC:  64 SP: 133 ACC: 12
+  DEBUG   emulator:simulation    TICK: 5099 PC:  65 SP: 132 ACC: 12
+  DEBUG   emulator:simulation    TICK: 5102 PC:  66 SP: 133 ACC: 12
+  DEBUG   emulator:simulation    TICK: 5109 PC:  67 SP: 132 ACC: 12
+  DEBUG   emulator:simulation    TICK: 5112 PC:  68 SP: 133 ACC: 12
+  DEBUG   emulator:simulation    TICK: 5120 PC:  69 SP: 134 ACC: 12
+  DEBUG   emulator:simulation    TICK: 5127 PC:  70 SP: 133 ACC: -21162948
+  DEBUG   emulator:simulation    TICK: 5130 PC:  71 SP: 132 ACC: -21162948
+  DEBUG   emulator:simulation    TICK: 5138 PC:  72 SP: 133 ACC: -21162948
+  DEBUG   emulator:simulation    TICK: 5145 PC:  73 SP: 132 ACC: 21162960
+  DEBUG   emulator:simulation    TICK: 5148 PC:  74 SP: 133 ACC: 21162960
+  DEBUG   emulator:simulation    TICK: 5156 PC:  75 SP: 134 ACC: 21162960
+  DEBUG   emulator:simulation    TICK: 5159 PC:  76 SP: 133 ACC: 21162960
+  DEBUG   emulator:simulation    TICK: 5162 PC:  77 SP: 134 ACC: 21162960
+  DEBUG   emulator:simulation    TICK: 5169 PC:  78 SP: 133 ACC: 12
+  DEBUG   emulator:simulation    TICK: 5172 PC:  79 SP: 134 ACC: 12
+  DEBUG   emulator:simulation    TICK: 5180 PC:  80 SP: 135 ACC: 12
+  DEBUG   emulator:simulation    TICK: 5187 PC:  81 SP: 134 ACC: -21162948
+  DEBUG   emulator:simulation    TICK: 5190 PC:  82 SP: 133 ACC: -21162948
+  DEBUG   emulator:simulation    TICK: 5198 PC:  83 SP: 134 ACC: -21162948
+  DEBUG   emulator:simulation    TICK: 5205 PC:  84 SP: 133 ACC: 21162960
+  DEBUG   emulator:simulation    TICK: 5208 PC:  85 SP: 134 ACC: 21162960
+  DEBUG   emulator:simulation    TICK: 5216 PC:  86 SP: 135 ACC: 21162960
+  DEBUG   emulator:simulation    TICK: 5219 PC:  87 SP: 134 ACC: 21162960
+  DEBUG   emulator:simulation    TICK: 5226 PC:  88 SP: 133 ACC: 21162960
+  DEBUG   emulator:simulation    TICK: 5229 PC:  89 SP: 134 ACC: 21162960
+  DEBUG   emulator:simulation    TICK: 5232 PC:  90 SP: 135 ACC: 21162960
+  DEBUG   emulator:simulation    TICK: 5239 PC:  91 SP: 134 ACC: 12
+  DEBUG   emulator:simulation    TICK: 5242 PC:  92 SP: 133 ACC: 12
+  DEBUG   emulator:simulation    TICK: 5250 PC:  93 SP: 134 ACC: 12
+  DEBUG   emulator:simulation    TICK: 5257 PC:  94 SP: 133 ACC: 0
+  DEBUG   emulator:simulation    TICK: 5260 PC:  95 SP: 134 ACC: 0
+  DEBUG   emulator:simulation    TICK: 5263 PC:  97 SP: 134 ACC: 0
+  DEBUG   emulator:simulation    TICK: 5266 PC:  98 SP: 135 ACC: 0
+  DEBUG   emulator:simulation    TICK: 5273 PC:  99 SP: 134 ACC: 12
+  DEBUG   emulator:simulation    TICK: 5276 PC: 100 SP: 135 ACC: 12
+  DEBUG   emulator:simulation    TICK: 5284 PC: 101 SP: 136 ACC: 12
+  DEBUG   emulator:simulation    TICK: 5291 PC: 102 SP: 135 ACC: -253955508
+  DEBUG   emulator:simulation    TICK: 5294 PC: 103 SP: 134 ACC: -253955508
+  DEBUG   emulator:simulation    TICK: 5302 PC: 104 SP: 135 ACC: -253955508
+  DEBUG   emulator:simulation    TICK: 5309 PC: 105 SP: 134 ACC: 253955520
+  DEBUG   emulator:simulation    TICK: 5312 PC: 106 SP: 135 ACC: 253955520
+  DEBUG   emulator:simulation    TICK: 5320 PC: 107 SP: 136 ACC: 253955520
+  DEBUG   emulator:simulation    TICK: 5323 PC: 108 SP: 135 ACC: 253955520
+  DEBUG   emulator:simulation    TICK: 5331 PC: 109 SP: 136 ACC: 253955520
+  DEBUG   emulator:simulation    TICK: 5333 PC: 110 SP: 136 ACC: 253955520
+  DEBUG   emulator:simulation    TICK: 5340 PC: 111 SP: 135 ACC: 21162960
+  DEBUG   emulator:simulation    TICK: 5343 PC: 112 SP: 136 ACC: 21162960
+  DEBUG   emulator:simulation    TICK: 5346 PC: 113 SP: 136 ACC: 21162960
+  DEBUG   emulator:simulation    TICK: 5348 PC:  21 SP: 136 ACC: 21162960
+  DEBUG   emulator:simulation    TICK: 5355 PC:  22 SP: 135 ACC: 21162960
+  DEBUG   emulator:simulation    TICK: 5358 PC:  23 SP: 136 ACC: 21162960
+  DEBUG   emulator:simulation    TICK: 5366 PC:  24 SP: 137 ACC: 21162960
+  DEBUG   emulator:simulation    TICK: 5373 PC:  25 SP: 136 ACC: 21162949
+  DEBUG   emulator:simulation    TICK: 5376 PC:  26 SP: 135 ACC: 21162949
+  DEBUG   emulator:simulation    TICK: 5384 PC:  27 SP: 136 ACC: 21162949
+  DEBUG   emulator:simulation    TICK: 5391 PC:  28 SP: 135 ACC: 11
+  DEBUG   emulator:simulation    TICK: 5394 PC:  29 SP: 136 ACC: 11
+  DEBUG   emulator:simulation    TICK: 5402 PC:  30 SP: 137 ACC: 11
+  DEBUG   emulator:simulation    TICK: 5405 PC:  31 SP: 136 ACC: 11
+  DEBUG   emulator:simulation    TICK: 5412 PC:  32 SP: 135 ACC: 11
+  DEBUG   emulator:simulation    TICK: 5415 PC:  33 SP: 136 ACC: 11
+  DEBUG   emulator:simulation    TICK: 5418 PC:  34 SP: 136 ACC: 11
+  DEBUG   emulator:simulation    TICK: 5425 PC:  35 SP: 135 ACC: 11
+  DEBUG   emulator:simulation    TICK: 5432 PC:  36 SP: 134 ACC: 11
+  DEBUG   emulator:simulation    TICK: 5439 PC:  37 SP: 133 ACC: 11
+  DEBUG   emulator:simulation    TICK: 5442 PC:  38 SP: 134 ACC: 11
+  DEBUG   emulator:simulation    TICK: 5445 PC:  39 SP: 135 ACC: 11
+  DEBUG   emulator:simulation    TICK: 5448 PC:  40 SP: 136 ACC: 11
+  DEBUG   emulator:simulation    TICK: 5455 PC:  41 SP: 135 ACC: 11
+  DEBUG   emulator:simulation    TICK: 5458 PC:  42 SP: 136 ACC: 11
+  DEBUG   emulator:simulation    TICK: 5466 PC:  43 SP: 137 ACC: 11
+  DEBUG   emulator:simulation    TICK: 5473 PC:  44 SP: 136 ACC: -21162949
+  DEBUG   emulator:simulation    TICK: 5476 PC:  45 SP: 135 ACC: -21162949
+  DEBUG   emulator:simulation    TICK: 5484 PC:  46 SP: 136 ACC: -21162949
+  DEBUG   emulator:simulation    TICK: 5491 PC:  47 SP: 135 ACC: 21162960
+  DEBUG   emulator:simulation    TICK: 5494 PC:  48 SP: 136 ACC: 21162960
+  DEBUG   emulator:simulation    TICK: 5502 PC:  49 SP: 137 ACC: 21162960
+  DEBUG   emulator:simulation    TICK: 5505 PC:  50 SP: 136 ACC: 21162960
+  DEBUG   emulator:simulation    TICK: 5513 PC:  51 SP: 137 ACC: 21162960
+  DEBUG   emulator:simulation    TICK: 5516 PC:  52 SP: 136 ACC: 21162960
+  DEBUG   emulator:simulation    TICK: 5519 PC:  53 SP: 135 ACC: 21162960
+  DEBUG   emulator:simulation    TICK: 5522 PC:  54 SP: 134 ACC: 21162960
+  DEBUG   emulator:simulation    TICK: 5525 PC:  55 SP: 133 ACC: 21162960
+  DEBUG   emulator:simulation    TICK: 5532 PC:  56 SP: 132 ACC: 11
+  DEBUG   emulator:simulation    TICK: 5535 PC:  57 SP: 133 ACC: 11
+  DEBUG   emulator:simulation    TICK: 5543 PC:  58 SP: 134 ACC: 11
+  DEBUG   emulator:simulation    TICK: 5550 PC:  59 SP: 133 ACC: 0
+  DEBUG   emulator:simulation    TICK: 5553 PC:  60 SP: 132 ACC: 0
+  DEBUG   emulator:simulation    TICK: 5561 PC:  61 SP: 133 ACC: 0
+  DEBUG   emulator:simulation    TICK: 5568 PC:  62 SP: 132 ACC: 11
+  DEBUG   emulator:simulation    TICK: 5571 PC:  63 SP: 133 ACC: 11
+  DEBUG   emulator:simulation    TICK: 5579 PC:  64 SP: 134 ACC: 11
+  DEBUG   emulator:simulation    TICK: 5582 PC:  65 SP: 133 ACC: 11
+  DEBUG   emulator:simulation    TICK: 5585 PC:  66 SP: 134 ACC: 11
+  DEBUG   emulator:simulation    TICK: 5592 PC:  67 SP: 133 ACC: 11
+  DEBUG   emulator:simulation    TICK: 5595 PC:  68 SP: 134 ACC: 11
+  DEBUG   emulator:simulation    TICK: 5603 PC:  69 SP: 135 ACC: 11
+  DEBUG   emulator:simulation    TICK: 5610 PC:  70 SP: 134 ACC: -21162949
+  DEBUG   emulator:simulation    TICK: 5613 PC:  71 SP: 133 ACC: -21162949
+  DEBUG   emulator:simulation    TICK: 5621 PC:  72 SP: 134 ACC: -21162949
+  DEBUG   emulator:simulation    TICK: 5628 PC:  73 SP: 133 ACC: 21162960
+  DEBUG   emulator:simulation    TICK: 5631 PC:  74 SP: 134 ACC: 21162960
+  DEBUG   emulator:simulation    TICK: 5639 PC:  75 SP: 135 ACC: 21162960
+  DEBUG   emulator:simulation    TICK: 5642 PC:  76 SP: 134 ACC: 21162960
+  DEBUG   emulator:simulation    TICK: 5645 PC:  77 SP: 135 ACC: 21162960
+  DEBUG   emulator:simulation    TICK: 5652 PC:  78 SP: 134 ACC: 11
+  DEBUG   emulator:simulation    TICK: 5655 PC:  79 SP: 135 ACC: 11
+  DEBUG   emulator:simulation    TICK: 5663 PC:  80 SP: 136 ACC: 11
+  DEBUG   emulator:simulation    TICK: 5670 PC:  81 SP: 135 ACC: -21162949
+  DEBUG   emulator:simulation    TICK: 5673 PC:  82 SP: 134 ACC: -21162949
+  DEBUG   emulator:simulation    TICK: 5681 PC:  83 SP: 135 ACC: -21162949
+  DEBUG   emulator:simulation    TICK: 5688 PC:  84 SP: 134 ACC: 21162960
+  DEBUG   emulator:simulation    TICK: 5691 PC:  85 SP: 135 ACC: 21162960
+  DEBUG   emulator:simulation    TICK: 5699 PC:  86 SP: 136 ACC: 21162960
+  DEBUG   emulator:simulation    TICK: 5702 PC:  87 SP: 135 ACC: 21162960
+  DEBUG   emulator:simulation    TICK: 5709 PC:  88 SP: 134 ACC: 21162960
+  DEBUG   emulator:simulation    TICK: 5712 PC:  89 SP: 135 ACC: 21162960
+  DEBUG   emulator:simulation    TICK: 5715 PC:  90 SP: 136 ACC: 21162960
+  DEBUG   emulator:simulation    TICK: 5722 PC:  91 SP: 135 ACC: 11
+  DEBUG   emulator:simulation    TICK: 5725 PC:  92 SP: 134 ACC: 11
+  DEBUG   emulator:simulation    TICK: 5733 PC:  93 SP: 135 ACC: 11
+  DEBUG   emulator:simulation    TICK: 5740 PC:  94 SP: 134 ACC: 5
+  DEBUG   emulator:simulation    TICK: 5743 PC:  95 SP: 135 ACC: 5
+  DEBUG   emulator:simulation    TICK: 5746 PC:  96 SP: 135 ACC: 5
+  DEBUG   emulator:simulation    TICK: 5748 PC:  77 SP: 135 ACC: 5
+  DEBUG   emulator:simulation    TICK: 5755 PC:  78 SP: 134 ACC: 5
+  DEBUG   emulator:simulation    TICK: 5758 PC:  79 SP: 135 ACC: 5
+  DEBUG   emulator:simulation    TICK: 5766 PC:  80 SP: 136 ACC: 5
+  DEBUG   emulator:simulation    TICK: 5773 PC:  81 SP: 135 ACC: -6
+  DEBUG   emulator:simulation    TICK: 5776 PC:  82 SP: 134 ACC: -6
+  DEBUG   emulator:simulation    TICK: 5784 PC:  83 SP: 135 ACC: -6
+  DEBUG   emulator:simulation    TICK: 5791 PC:  84 SP: 134 ACC: 11
+  DEBUG   emulator:simulation    TICK: 5794 PC:  85 SP: 135 ACC: 11
+  DEBUG   emulator:simulation    TICK: 5802 PC:  86 SP: 136 ACC: 11
+  DEBUG   emulator:simulation    TICK: 5805 PC:  87 SP: 135 ACC: 11
+  DEBUG   emulator:simulation    TICK: 5812 PC:  88 SP: 134 ACC: 11
+  DEBUG   emulator:simulation    TICK: 5815 PC:  89 SP: 135 ACC: 11
+  DEBUG   emulator:simulation    TICK: 5818 PC:  90 SP: 136 ACC: 11
+  DEBUG   emulator:simulation    TICK: 5825 PC:  91 SP: 135 ACC: 5
+  DEBUG   emulator:simulation    TICK: 5828 PC:  92 SP: 134 ACC: 5
+  DEBUG   emulator:simulation    TICK: 5836 PC:  93 SP: 135 ACC: 5
+  DEBUG   emulator:simulation    TICK: 5843 PC:  94 SP: 134 ACC: 1
+  DEBUG   emulator:simulation    TICK: 5846 PC:  95 SP: 135 ACC: 1
+  DEBUG   emulator:simulation    TICK: 5849 PC:  96 SP: 135 ACC: 1
+  DEBUG   emulator:simulation    TICK: 5851 PC:  77 SP: 135 ACC: 1
+  DEBUG   emulator:simulation    TICK: 5858 PC:  78 SP: 134 ACC: 1
+  DEBUG   emulator:simulation    TICK: 5861 PC:  79 SP: 135 ACC: 1
+  DEBUG   emulator:simulation    TICK: 5869 PC:  80 SP: 136 ACC: 1
+  DEBUG   emulator:simulation    TICK: 5876 PC:  81 SP: 135 ACC: -4
+  DEBUG   emulator:simulation    TICK: 5879 PC:  82 SP: 134 ACC: -4
+  DEBUG   emulator:simulation    TICK: 5887 PC:  83 SP: 135 ACC: -4
+  DEBUG   emulator:simulation    TICK: 5894 PC:  84 SP: 134 ACC: 5
+  DEBUG   emulator:simulation    TICK: 5897 PC:  85 SP: 135 ACC: 5
+  DEBUG   emulator:simulation    TICK: 5905 PC:  86 SP: 136 ACC: 5
+  DEBUG   emulator:simulation    TICK: 5908 PC:  87 SP: 135 ACC: 5
+  DEBUG   emulator:simulation    TICK: 5915 PC:  88 SP: 134 ACC: 5
+  DEBUG   emulator:simulation    TICK: 5918 PC:  89 SP: 135 ACC: 5
+  DEBUG   emulator:simulation    TICK: 5921 PC:  90 SP: 136 ACC: 5
+  DEBUG   emulator:simulation    TICK: 5928 PC:  91 SP: 135 ACC: 1
+  DEBUG   emulator:simulation    TICK: 5931 PC:  92 SP: 134 ACC: 1
+  DEBUG   emulator:simulation    TICK: 5939 PC:  93 SP: 135 ACC: 1
+  DEBUG   emulator:simulation    TICK: 5946 PC:  94 SP: 134 ACC: 0
+  DEBUG   emulator:simulation    TICK: 5949 PC:  95 SP: 135 ACC: 0
+  DEBUG   emulator:simulation    TICK: 5952 PC:  97 SP: 135 ACC: 0
+  DEBUG   emulator:simulation    TICK: 5955 PC:  98 SP: 136 ACC: 0
+  DEBUG   emulator:simulation    TICK: 5962 PC:  99 SP: 135 ACC: 1
+  DEBUG   emulator:simulation    TICK: 5965 PC: 100 SP: 136 ACC: 1
+  DEBUG   emulator:simulation    TICK: 5973 PC: 101 SP: 137 ACC: 1
+  DEBUG   emulator:simulation    TICK: 5980 PC: 102 SP: 136 ACC: -232792559
+  DEBUG   emulator:simulation    TICK: 5983 PC: 103 SP: 135 ACC: -232792559
+  DEBUG   emulator:simulation    TICK: 5991 PC: 104 SP: 136 ACC: -232792559
+  DEBUG   emulator:simulation    TICK: 5998 PC: 105 SP: 135 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 6001 PC: 106 SP: 136 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 6009 PC: 107 SP: 137 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 6012 PC: 108 SP: 136 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 6020 PC: 109 SP: 137 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 6022 PC: 110 SP: 137 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 6029 PC: 111 SP: 136 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 6032 PC: 112 SP: 137 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 6035 PC: 113 SP: 137 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 6037 PC:  21 SP: 137 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 6044 PC:  22 SP: 136 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 6047 PC:  23 SP: 137 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 6055 PC:  24 SP: 138 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 6062 PC:  25 SP: 137 ACC: 232792550
+  DEBUG   emulator:simulation    TICK: 6065 PC:  26 SP: 136 ACC: 232792550
+  DEBUG   emulator:simulation    TICK: 6073 PC:  27 SP: 137 ACC: 232792550
+  DEBUG   emulator:simulation    TICK: 6080 PC:  28 SP: 136 ACC: 10
+  DEBUG   emulator:simulation    TICK: 6083 PC:  29 SP: 137 ACC: 10
+  DEBUG   emulator:simulation    TICK: 6091 PC:  30 SP: 138 ACC: 10
+  DEBUG   emulator:simulation    TICK: 6094 PC:  31 SP: 137 ACC: 10
+  DEBUG   emulator:simulation    TICK: 6101 PC:  32 SP: 136 ACC: 10
+  DEBUG   emulator:simulation    TICK: 6104 PC:  33 SP: 137 ACC: 10
+  DEBUG   emulator:simulation    TICK: 6107 PC:  34 SP: 137 ACC: 10
+  DEBUG   emulator:simulation    TICK: 6114 PC:  35 SP: 136 ACC: 10
+  DEBUG   emulator:simulation    TICK: 6121 PC:  36 SP: 135 ACC: 10
+  DEBUG   emulator:simulation    TICK: 6128 PC:  37 SP: 134 ACC: 10
+  DEBUG   emulator:simulation    TICK: 6131 PC:  38 SP: 135 ACC: 10
+  DEBUG   emulator:simulation    TICK: 6134 PC:  39 SP: 136 ACC: 10
+  DEBUG   emulator:simulation    TICK: 6137 PC:  40 SP: 137 ACC: 10
+  DEBUG   emulator:simulation    TICK: 6144 PC:  41 SP: 136 ACC: 10
+  DEBUG   emulator:simulation    TICK: 6147 PC:  42 SP: 137 ACC: 10
+  DEBUG   emulator:simulation    TICK: 6155 PC:  43 SP: 138 ACC: 10
+  DEBUG   emulator:simulation    TICK: 6162 PC:  44 SP: 137 ACC: -232792550
+  DEBUG   emulator:simulation    TICK: 6165 PC:  45 SP: 136 ACC: -232792550
+  DEBUG   emulator:simulation    TICK: 6173 PC:  46 SP: 137 ACC: -232792550
+  DEBUG   emulator:simulation    TICK: 6180 PC:  47 SP: 136 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 6183 PC:  48 SP: 137 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 6191 PC:  49 SP: 138 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 6194 PC:  50 SP: 137 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 6202 PC:  51 SP: 138 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 6205 PC:  52 SP: 137 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 6208 PC:  53 SP: 136 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 6211 PC:  54 SP: 135 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 6214 PC:  55 SP: 134 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 6221 PC:  56 SP: 133 ACC: 10
+  DEBUG   emulator:simulation    TICK: 6224 PC:  57 SP: 134 ACC: 10
+  DEBUG   emulator:simulation    TICK: 6232 PC:  58 SP: 135 ACC: 10
+  DEBUG   emulator:simulation    TICK: 6239 PC:  59 SP: 134 ACC: 0
+  DEBUG   emulator:simulation    TICK: 6242 PC:  60 SP: 133 ACC: 0
+  DEBUG   emulator:simulation    TICK: 6250 PC:  61 SP: 134 ACC: 0
+  DEBUG   emulator:simulation    TICK: 6257 PC:  62 SP: 133 ACC: 10
+  DEBUG   emulator:simulation    TICK: 6260 PC:  63 SP: 134 ACC: 10
+  DEBUG   emulator:simulation    TICK: 6268 PC:  64 SP: 135 ACC: 10
+  DEBUG   emulator:simulation    TICK: 6271 PC:  65 SP: 134 ACC: 10
+  DEBUG   emulator:simulation    TICK: 6274 PC:  66 SP: 135 ACC: 10
+  DEBUG   emulator:simulation    TICK: 6281 PC:  67 SP: 134 ACC: 10
+  DEBUG   emulator:simulation    TICK: 6284 PC:  68 SP: 135 ACC: 10
+  DEBUG   emulator:simulation    TICK: 6292 PC:  69 SP: 136 ACC: 10
+  DEBUG   emulator:simulation    TICK: 6299 PC:  70 SP: 135 ACC: -232792550
+  DEBUG   emulator:simulation    TICK: 6302 PC:  71 SP: 134 ACC: -232792550
+  DEBUG   emulator:simulation    TICK: 6310 PC:  72 SP: 135 ACC: -232792550
+  DEBUG   emulator:simulation    TICK: 6317 PC:  73 SP: 134 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 6320 PC:  74 SP: 135 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 6328 PC:  75 SP: 136 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 6331 PC:  76 SP: 135 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 6334 PC:  77 SP: 136 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 6341 PC:  78 SP: 135 ACC: 10
+  DEBUG   emulator:simulation    TICK: 6344 PC:  79 SP: 136 ACC: 10
+  DEBUG   emulator:simulation    TICK: 6352 PC:  80 SP: 137 ACC: 10
+  DEBUG   emulator:simulation    TICK: 6359 PC:  81 SP: 136 ACC: -232792550
+  DEBUG   emulator:simulation    TICK: 6362 PC:  82 SP: 135 ACC: -232792550
+  DEBUG   emulator:simulation    TICK: 6370 PC:  83 SP: 136 ACC: -232792550
+  DEBUG   emulator:simulation    TICK: 6377 PC:  84 SP: 135 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 6380 PC:  85 SP: 136 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 6388 PC:  86 SP: 137 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 6391 PC:  87 SP: 136 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 6398 PC:  88 SP: 135 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 6401 PC:  89 SP: 136 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 6404 PC:  90 SP: 137 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 6411 PC:  91 SP: 136 ACC: 10
+  DEBUG   emulator:simulation    TICK: 6414 PC:  92 SP: 135 ACC: 10
+  DEBUG   emulator:simulation    TICK: 6422 PC:  93 SP: 136 ACC: 10
+  DEBUG   emulator:simulation    TICK: 6429 PC:  94 SP: 135 ACC: 0
+  DEBUG   emulator:simulation    TICK: 6432 PC:  95 SP: 136 ACC: 0
+  DEBUG   emulator:simulation    TICK: 6435 PC:  97 SP: 136 ACC: 0
+  DEBUG   emulator:simulation    TICK: 6438 PC:  98 SP: 137 ACC: 0
+  DEBUG   emulator:simulation    TICK: 6445 PC:  99 SP: 136 ACC: 10
+  DEBUG   emulator:simulation    TICK: 6448 PC: 100 SP: 137 ACC: 10
+  DEBUG   emulator:simulation    TICK: 6456 PC: 101 SP: 138 ACC: 10
+  DEBUG   emulator:simulation    TICK: 6463 PC: 102 SP: 137 ACC: -2327925590
+  DEBUG   emulator:simulation    TICK: 6466 PC: 103 SP: 136 ACC: -2327925590
+  DEBUG   emulator:simulation    TICK: 6474 PC: 104 SP: 137 ACC: -2327925590
+  DEBUG   emulator:simulation    TICK: 6481 PC: 105 SP: 136 ACC: 2327925600
+  DEBUG   emulator:simulation    TICK: 6484 PC: 106 SP: 137 ACC: 2327925600
+  DEBUG   emulator:simulation    TICK: 6492 PC: 107 SP: 138 ACC: 2327925600
+  DEBUG   emulator:simulation    TICK: 6495 PC: 108 SP: 137 ACC: 2327925600
+  DEBUG   emulator:simulation    TICK: 6503 PC: 109 SP: 138 ACC: 2327925600
+  DEBUG   emulator:simulation    TICK: 6505 PC: 110 SP: 138 ACC: 2327925600
+  DEBUG   emulator:simulation    TICK: 6512 PC: 111 SP: 137 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 6515 PC: 112 SP: 138 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 6518 PC: 113 SP: 138 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 6520 PC:  21 SP: 138 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 6527 PC:  22 SP: 137 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 6530 PC:  23 SP: 138 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 6538 PC:  24 SP: 139 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 6545 PC:  25 SP: 138 ACC: 232792551
+  DEBUG   emulator:simulation    TICK: 6548 PC:  26 SP: 137 ACC: 232792551
+  DEBUG   emulator:simulation    TICK: 6556 PC:  27 SP: 138 ACC: 232792551
+  DEBUG   emulator:simulation    TICK: 6563 PC:  28 SP: 137 ACC: 9
+  DEBUG   emulator:simulation    TICK: 6566 PC:  29 SP: 138 ACC: 9
+  DEBUG   emulator:simulation    TICK: 6574 PC:  30 SP: 139 ACC: 9
+  DEBUG   emulator:simulation    TICK: 6577 PC:  31 SP: 138 ACC: 9
+  DEBUG   emulator:simulation    TICK: 6584 PC:  32 SP: 137 ACC: 9
+  DEBUG   emulator:simulation    TICK: 6587 PC:  33 SP: 138 ACC: 9
+  DEBUG   emulator:simulation    TICK: 6590 PC:  34 SP: 138 ACC: 9
+  DEBUG   emulator:simulation    TICK: 6597 PC:  35 SP: 137 ACC: 9
+  DEBUG   emulator:simulation    TICK: 6604 PC:  36 SP: 136 ACC: 9
+  DEBUG   emulator:simulation    TICK: 6611 PC:  37 SP: 135 ACC: 9
+  DEBUG   emulator:simulation    TICK: 6614 PC:  38 SP: 136 ACC: 9
+  DEBUG   emulator:simulation    TICK: 6617 PC:  39 SP: 137 ACC: 9
+  DEBUG   emulator:simulation    TICK: 6620 PC:  40 SP: 138 ACC: 9
+  DEBUG   emulator:simulation    TICK: 6627 PC:  41 SP: 137 ACC: 9
+  DEBUG   emulator:simulation    TICK: 6630 PC:  42 SP: 138 ACC: 9
+  DEBUG   emulator:simulation    TICK: 6638 PC:  43 SP: 139 ACC: 9
+  DEBUG   emulator:simulation    TICK: 6645 PC:  44 SP: 138 ACC: -232792551
+  DEBUG   emulator:simulation    TICK: 6648 PC:  45 SP: 137 ACC: -232792551
+  DEBUG   emulator:simulation    TICK: 6656 PC:  46 SP: 138 ACC: -232792551
+  DEBUG   emulator:simulation    TICK: 6663 PC:  47 SP: 137 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 6666 PC:  48 SP: 138 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 6674 PC:  49 SP: 139 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 6677 PC:  50 SP: 138 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 6685 PC:  51 SP: 139 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 6688 PC:  52 SP: 138 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 6691 PC:  53 SP: 137 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 6694 PC:  54 SP: 136 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 6697 PC:  55 SP: 135 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 6704 PC:  56 SP: 134 ACC: 9
+  DEBUG   emulator:simulation    TICK: 6707 PC:  57 SP: 135 ACC: 9
+  DEBUG   emulator:simulation    TICK: 6715 PC:  58 SP: 136 ACC: 9
+  DEBUG   emulator:simulation    TICK: 6722 PC:  59 SP: 135 ACC: 0
+  DEBUG   emulator:simulation    TICK: 6725 PC:  60 SP: 134 ACC: 0
+  DEBUG   emulator:simulation    TICK: 6733 PC:  61 SP: 135 ACC: 0
+  DEBUG   emulator:simulation    TICK: 6740 PC:  62 SP: 134 ACC: 9
+  DEBUG   emulator:simulation    TICK: 6743 PC:  63 SP: 135 ACC: 9
+  DEBUG   emulator:simulation    TICK: 6751 PC:  64 SP: 136 ACC: 9
+  DEBUG   emulator:simulation    TICK: 6754 PC:  65 SP: 135 ACC: 9
+  DEBUG   emulator:simulation    TICK: 6757 PC:  66 SP: 136 ACC: 9
+  DEBUG   emulator:simulation    TICK: 6764 PC:  67 SP: 135 ACC: 9
+  DEBUG   emulator:simulation    TICK: 6767 PC:  68 SP: 136 ACC: 9
+  DEBUG   emulator:simulation    TICK: 6775 PC:  69 SP: 137 ACC: 9
+  DEBUG   emulator:simulation    TICK: 6782 PC:  70 SP: 136 ACC: -232792551
+  DEBUG   emulator:simulation    TICK: 6785 PC:  71 SP: 135 ACC: -232792551
+  DEBUG   emulator:simulation    TICK: 6793 PC:  72 SP: 136 ACC: -232792551
+  DEBUG   emulator:simulation    TICK: 6800 PC:  73 SP: 135 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 6803 PC:  74 SP: 136 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 6811 PC:  75 SP: 137 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 6814 PC:  76 SP: 136 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 6817 PC:  77 SP: 137 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 6824 PC:  78 SP: 136 ACC: 9
+  DEBUG   emulator:simulation    TICK: 6827 PC:  79 SP: 137 ACC: 9
+  DEBUG   emulator:simulation    TICK: 6835 PC:  80 SP: 138 ACC: 9
+  DEBUG   emulator:simulation    TICK: 6842 PC:  81 SP: 137 ACC: -232792551
+  DEBUG   emulator:simulation    TICK: 6845 PC:  82 SP: 136 ACC: -232792551
+  DEBUG   emulator:simulation    TICK: 6853 PC:  83 SP: 137 ACC: -232792551
+  DEBUG   emulator:simulation    TICK: 6860 PC:  84 SP: 136 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 6863 PC:  85 SP: 137 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 6871 PC:  86 SP: 138 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 6874 PC:  87 SP: 137 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 6881 PC:  88 SP: 136 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 6884 PC:  89 SP: 137 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 6887 PC:  90 SP: 138 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 6894 PC:  91 SP: 137 ACC: 9
+  DEBUG   emulator:simulation    TICK: 6897 PC:  92 SP: 136 ACC: 9
+  DEBUG   emulator:simulation    TICK: 6905 PC:  93 SP: 137 ACC: 9
+  DEBUG   emulator:simulation    TICK: 6912 PC:  94 SP: 136 ACC: 0
+  DEBUG   emulator:simulation    TICK: 6915 PC:  95 SP: 137 ACC: 0
+  DEBUG   emulator:simulation    TICK: 6918 PC:  97 SP: 137 ACC: 0
+  DEBUG   emulator:simulation    TICK: 6921 PC:  98 SP: 138 ACC: 0
+  DEBUG   emulator:simulation    TICK: 6928 PC:  99 SP: 137 ACC: 9
+  DEBUG   emulator:simulation    TICK: 6931 PC: 100 SP: 138 ACC: 9
+  DEBUG   emulator:simulation    TICK: 6939 PC: 101 SP: 139 ACC: 9
+  DEBUG   emulator:simulation    TICK: 6946 PC: 102 SP: 138 ACC: -2095133031
+  DEBUG   emulator:simulation    TICK: 6949 PC: 103 SP: 137 ACC: -2095133031
+  DEBUG   emulator:simulation    TICK: 6957 PC: 104 SP: 138 ACC: -2095133031
+  DEBUG   emulator:simulation    TICK: 6964 PC: 105 SP: 137 ACC: 2095133040
+  DEBUG   emulator:simulation    TICK: 6967 PC: 106 SP: 138 ACC: 2095133040
+  DEBUG   emulator:simulation    TICK: 6975 PC: 107 SP: 139 ACC: 2095133040
+  DEBUG   emulator:simulation    TICK: 6978 PC: 108 SP: 138 ACC: 2095133040
+  DEBUG   emulator:simulation    TICK: 6986 PC: 109 SP: 139 ACC: 2095133040
+  DEBUG   emulator:simulation    TICK: 6988 PC: 110 SP: 139 ACC: 2095133040
+  DEBUG   emulator:simulation    TICK: 6995 PC: 111 SP: 138 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 6998 PC: 112 SP: 139 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 7001 PC: 113 SP: 139 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 7003 PC:  21 SP: 139 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 7010 PC:  22 SP: 138 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 7013 PC:  23 SP: 139 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 7021 PC:  24 SP: 140 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 7028 PC:  25 SP: 139 ACC: 232792552
+  DEBUG   emulator:simulation    TICK: 7031 PC:  26 SP: 138 ACC: 232792552
+  DEBUG   emulator:simulation    TICK: 7039 PC:  27 SP: 139 ACC: 232792552
+  DEBUG   emulator:simulation    TICK: 7046 PC:  28 SP: 138 ACC: 8
+  DEBUG   emulator:simulation    TICK: 7049 PC:  29 SP: 139 ACC: 8
+  DEBUG   emulator:simulation    TICK: 7057 PC:  30 SP: 140 ACC: 8
+  DEBUG   emulator:simulation    TICK: 7060 PC:  31 SP: 139 ACC: 8
+  DEBUG   emulator:simulation    TICK: 7067 PC:  32 SP: 138 ACC: 8
+  DEBUG   emulator:simulation    TICK: 7070 PC:  33 SP: 139 ACC: 8
+  DEBUG   emulator:simulation    TICK: 7073 PC:  34 SP: 139 ACC: 8
+  DEBUG   emulator:simulation    TICK: 7080 PC:  35 SP: 138 ACC: 8
+  DEBUG   emulator:simulation    TICK: 7087 PC:  36 SP: 137 ACC: 8
+  DEBUG   emulator:simulation    TICK: 7094 PC:  37 SP: 136 ACC: 8
+  DEBUG   emulator:simulation    TICK: 7097 PC:  38 SP: 137 ACC: 8
+  DEBUG   emulator:simulation    TICK: 7100 PC:  39 SP: 138 ACC: 8
+  DEBUG   emulator:simulation    TICK: 7103 PC:  40 SP: 139 ACC: 8
+  DEBUG   emulator:simulation    TICK: 7110 PC:  41 SP: 138 ACC: 8
+  DEBUG   emulator:simulation    TICK: 7113 PC:  42 SP: 139 ACC: 8
+  DEBUG   emulator:simulation    TICK: 7121 PC:  43 SP: 140 ACC: 8
+  DEBUG   emulator:simulation    TICK: 7128 PC:  44 SP: 139 ACC: -232792552
+  DEBUG   emulator:simulation    TICK: 7131 PC:  45 SP: 138 ACC: -232792552
+  DEBUG   emulator:simulation    TICK: 7139 PC:  46 SP: 139 ACC: -232792552
+  DEBUG   emulator:simulation    TICK: 7146 PC:  47 SP: 138 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 7149 PC:  48 SP: 139 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 7157 PC:  49 SP: 140 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 7160 PC:  50 SP: 139 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 7168 PC:  51 SP: 140 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 7171 PC:  52 SP: 139 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 7174 PC:  53 SP: 138 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 7177 PC:  54 SP: 137 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 7180 PC:  55 SP: 136 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 7187 PC:  56 SP: 135 ACC: 8
+  DEBUG   emulator:simulation    TICK: 7190 PC:  57 SP: 136 ACC: 8
+  DEBUG   emulator:simulation    TICK: 7198 PC:  58 SP: 137 ACC: 8
+  DEBUG   emulator:simulation    TICK: 7205 PC:  59 SP: 136 ACC: 0
+  DEBUG   emulator:simulation    TICK: 7208 PC:  60 SP: 135 ACC: 0
+  DEBUG   emulator:simulation    TICK: 7216 PC:  61 SP: 136 ACC: 0
+  DEBUG   emulator:simulation    TICK: 7223 PC:  62 SP: 135 ACC: 8
+  DEBUG   emulator:simulation    TICK: 7226 PC:  63 SP: 136 ACC: 8
+  DEBUG   emulator:simulation    TICK: 7234 PC:  64 SP: 137 ACC: 8
+  DEBUG   emulator:simulation    TICK: 7237 PC:  65 SP: 136 ACC: 8
+  DEBUG   emulator:simulation    TICK: 7240 PC:  66 SP: 137 ACC: 8
+  DEBUG   emulator:simulation    TICK: 7247 PC:  67 SP: 136 ACC: 8
+  DEBUG   emulator:simulation    TICK: 7250 PC:  68 SP: 137 ACC: 8
+  DEBUG   emulator:simulation    TICK: 7258 PC:  69 SP: 138 ACC: 8
+  DEBUG   emulator:simulation    TICK: 7265 PC:  70 SP: 137 ACC: -232792552
+  DEBUG   emulator:simulation    TICK: 7268 PC:  71 SP: 136 ACC: -232792552
+  DEBUG   emulator:simulation    TICK: 7276 PC:  72 SP: 137 ACC: -232792552
+  DEBUG   emulator:simulation    TICK: 7283 PC:  73 SP: 136 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 7286 PC:  74 SP: 137 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 7294 PC:  75 SP: 138 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 7297 PC:  76 SP: 137 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 7300 PC:  77 SP: 138 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 7307 PC:  78 SP: 137 ACC: 8
+  DEBUG   emulator:simulation    TICK: 7310 PC:  79 SP: 138 ACC: 8
+  DEBUG   emulator:simulation    TICK: 7318 PC:  80 SP: 139 ACC: 8
+  DEBUG   emulator:simulation    TICK: 7325 PC:  81 SP: 138 ACC: -232792552
+  DEBUG   emulator:simulation    TICK: 7328 PC:  82 SP: 137 ACC: -232792552
+  DEBUG   emulator:simulation    TICK: 7336 PC:  83 SP: 138 ACC: -232792552
+  DEBUG   emulator:simulation    TICK: 7343 PC:  84 SP: 137 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 7346 PC:  85 SP: 138 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 7354 PC:  86 SP: 139 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 7357 PC:  87 SP: 138 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 7364 PC:  88 SP: 137 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 7367 PC:  89 SP: 138 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 7370 PC:  90 SP: 139 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 7377 PC:  91 SP: 138 ACC: 8
+  DEBUG   emulator:simulation    TICK: 7380 PC:  92 SP: 137 ACC: 8
+  DEBUG   emulator:simulation    TICK: 7388 PC:  93 SP: 138 ACC: 8
+  DEBUG   emulator:simulation    TICK: 7395 PC:  94 SP: 137 ACC: 0
+  DEBUG   emulator:simulation    TICK: 7398 PC:  95 SP: 138 ACC: 0
+  DEBUG   emulator:simulation    TICK: 7401 PC:  97 SP: 138 ACC: 0
+  DEBUG   emulator:simulation    TICK: 7404 PC:  98 SP: 139 ACC: 0
+  DEBUG   emulator:simulation    TICK: 7411 PC:  99 SP: 138 ACC: 8
+  DEBUG   emulator:simulation    TICK: 7414 PC: 100 SP: 139 ACC: 8
+  DEBUG   emulator:simulation    TICK: 7422 PC: 101 SP: 140 ACC: 8
+  DEBUG   emulator:simulation    TICK: 7429 PC: 102 SP: 139 ACC: -1862340472
+  DEBUG   emulator:simulation    TICK: 7432 PC: 103 SP: 138 ACC: -1862340472
+  DEBUG   emulator:simulation    TICK: 7440 PC: 104 SP: 139 ACC: -1862340472
+  DEBUG   emulator:simulation    TICK: 7447 PC: 105 SP: 138 ACC: 1862340480
+  DEBUG   emulator:simulation    TICK: 7450 PC: 106 SP: 139 ACC: 1862340480
+  DEBUG   emulator:simulation    TICK: 7458 PC: 107 SP: 140 ACC: 1862340480
+  DEBUG   emulator:simulation    TICK: 7461 PC: 108 SP: 139 ACC: 1862340480
+  DEBUG   emulator:simulation    TICK: 7469 PC: 109 SP: 140 ACC: 1862340480
+  DEBUG   emulator:simulation    TICK: 7471 PC: 110 SP: 140 ACC: 1862340480
+  DEBUG   emulator:simulation    TICK: 7478 PC: 111 SP: 139 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 7481 PC: 112 SP: 140 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 7484 PC: 113 SP: 140 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 7486 PC:  21 SP: 140 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 7493 PC:  22 SP: 139 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 7496 PC:  23 SP: 140 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 7504 PC:  24 SP: 141 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 7511 PC:  25 SP: 140 ACC: 232792553
+  DEBUG   emulator:simulation    TICK: 7514 PC:  26 SP: 139 ACC: 232792553
+  DEBUG   emulator:simulation    TICK: 7522 PC:  27 SP: 140 ACC: 232792553
+  DEBUG   emulator:simulation    TICK: 7529 PC:  28 SP: 139 ACC: 7
+  DEBUG   emulator:simulation    TICK: 7532 PC:  29 SP: 140 ACC: 7
+  DEBUG   emulator:simulation    TICK: 7540 PC:  30 SP: 141 ACC: 7
+  DEBUG   emulator:simulation    TICK: 7543 PC:  31 SP: 140 ACC: 7
+  DEBUG   emulator:simulation    TICK: 7550 PC:  32 SP: 139 ACC: 7
+  DEBUG   emulator:simulation    TICK: 7553 PC:  33 SP: 140 ACC: 7
+  DEBUG   emulator:simulation    TICK: 7556 PC:  34 SP: 140 ACC: 7
+  DEBUG   emulator:simulation    TICK: 7563 PC:  35 SP: 139 ACC: 7
+  DEBUG   emulator:simulation    TICK: 7570 PC:  36 SP: 138 ACC: 7
+  DEBUG   emulator:simulation    TICK: 7577 PC:  37 SP: 137 ACC: 7
+  DEBUG   emulator:simulation    TICK: 7580 PC:  38 SP: 138 ACC: 7
+  DEBUG   emulator:simulation    TICK: 7583 PC:  39 SP: 139 ACC: 7
+  DEBUG   emulator:simulation    TICK: 7586 PC:  40 SP: 140 ACC: 7
+  DEBUG   emulator:simulation    TICK: 7593 PC:  41 SP: 139 ACC: 7
+  DEBUG   emulator:simulation    TICK: 7596 PC:  42 SP: 140 ACC: 7
+  DEBUG   emulator:simulation    TICK: 7604 PC:  43 SP: 141 ACC: 7
+  DEBUG   emulator:simulation    TICK: 7611 PC:  44 SP: 140 ACC: -232792553
+  DEBUG   emulator:simulation    TICK: 7614 PC:  45 SP: 139 ACC: -232792553
+  DEBUG   emulator:simulation    TICK: 7622 PC:  46 SP: 140 ACC: -232792553
+  DEBUG   emulator:simulation    TICK: 7629 PC:  47 SP: 139 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 7632 PC:  48 SP: 140 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 7640 PC:  49 SP: 141 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 7643 PC:  50 SP: 140 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 7651 PC:  51 SP: 141 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 7654 PC:  52 SP: 140 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 7657 PC:  53 SP: 139 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 7660 PC:  54 SP: 138 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 7663 PC:  55 SP: 137 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 7670 PC:  56 SP: 136 ACC: 7
+  DEBUG   emulator:simulation    TICK: 7673 PC:  57 SP: 137 ACC: 7
+  DEBUG   emulator:simulation    TICK: 7681 PC:  58 SP: 138 ACC: 7
+  DEBUG   emulator:simulation    TICK: 7688 PC:  59 SP: 137 ACC: 0
+  DEBUG   emulator:simulation    TICK: 7691 PC:  60 SP: 136 ACC: 0
+  DEBUG   emulator:simulation    TICK: 7699 PC:  61 SP: 137 ACC: 0
+  DEBUG   emulator:simulation    TICK: 7706 PC:  62 SP: 136 ACC: 7
+  DEBUG   emulator:simulation    TICK: 7709 PC:  63 SP: 137 ACC: 7
+  DEBUG   emulator:simulation    TICK: 7717 PC:  64 SP: 138 ACC: 7
+  DEBUG   emulator:simulation    TICK: 7720 PC:  65 SP: 137 ACC: 7
+  DEBUG   emulator:simulation    TICK: 7723 PC:  66 SP: 138 ACC: 7
+  DEBUG   emulator:simulation    TICK: 7730 PC:  67 SP: 137 ACC: 7
+  DEBUG   emulator:simulation    TICK: 7733 PC:  68 SP: 138 ACC: 7
+  DEBUG   emulator:simulation    TICK: 7741 PC:  69 SP: 139 ACC: 7
+  DEBUG   emulator:simulation    TICK: 7748 PC:  70 SP: 138 ACC: -232792553
+  DEBUG   emulator:simulation    TICK: 7751 PC:  71 SP: 137 ACC: -232792553
+  DEBUG   emulator:simulation    TICK: 7759 PC:  72 SP: 138 ACC: -232792553
+  DEBUG   emulator:simulation    TICK: 7766 PC:  73 SP: 137 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 7769 PC:  74 SP: 138 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 7777 PC:  75 SP: 139 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 7780 PC:  76 SP: 138 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 7783 PC:  77 SP: 139 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 7790 PC:  78 SP: 138 ACC: 7
+  DEBUG   emulator:simulation    TICK: 7793 PC:  79 SP: 139 ACC: 7
+  DEBUG   emulator:simulation    TICK: 7801 PC:  80 SP: 140 ACC: 7
+  DEBUG   emulator:simulation    TICK: 7808 PC:  81 SP: 139 ACC: -232792553
+  DEBUG   emulator:simulation    TICK: 7811 PC:  82 SP: 138 ACC: -232792553
+  DEBUG   emulator:simulation    TICK: 7819 PC:  83 SP: 139 ACC: -232792553
+  DEBUG   emulator:simulation    TICK: 7826 PC:  84 SP: 138 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 7829 PC:  85 SP: 139 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 7837 PC:  86 SP: 140 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 7840 PC:  87 SP: 139 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 7847 PC:  88 SP: 138 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 7850 PC:  89 SP: 139 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 7853 PC:  90 SP: 140 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 7860 PC:  91 SP: 139 ACC: 7
+  DEBUG   emulator:simulation    TICK: 7863 PC:  92 SP: 138 ACC: 7
+  DEBUG   emulator:simulation    TICK: 7871 PC:  93 SP: 139 ACC: 7
+  DEBUG   emulator:simulation    TICK: 7878 PC:  94 SP: 138 ACC: 0
+  DEBUG   emulator:simulation    TICK: 7881 PC:  95 SP: 139 ACC: 0
+  DEBUG   emulator:simulation    TICK: 7884 PC:  97 SP: 139 ACC: 0
+  DEBUG   emulator:simulation    TICK: 7887 PC:  98 SP: 140 ACC: 0
+  DEBUG   emulator:simulation    TICK: 7894 PC:  99 SP: 139 ACC: 7
+  DEBUG   emulator:simulation    TICK: 7897 PC: 100 SP: 140 ACC: 7
+  DEBUG   emulator:simulation    TICK: 7905 PC: 101 SP: 141 ACC: 7
+  DEBUG   emulator:simulation    TICK: 7912 PC: 102 SP: 140 ACC: -1629547913
+  DEBUG   emulator:simulation    TICK: 7915 PC: 103 SP: 139 ACC: -1629547913
+  DEBUG   emulator:simulation    TICK: 7923 PC: 104 SP: 140 ACC: -1629547913
+  DEBUG   emulator:simulation    TICK: 7930 PC: 105 SP: 139 ACC: 1629547920
+  DEBUG   emulator:simulation    TICK: 7933 PC: 106 SP: 140 ACC: 1629547920
+  DEBUG   emulator:simulation    TICK: 7941 PC: 107 SP: 141 ACC: 1629547920
+  DEBUG   emulator:simulation    TICK: 7944 PC: 108 SP: 140 ACC: 1629547920
+  DEBUG   emulator:simulation    TICK: 7952 PC: 109 SP: 141 ACC: 1629547920
+  DEBUG   emulator:simulation    TICK: 7954 PC: 110 SP: 141 ACC: 1629547920
+  DEBUG   emulator:simulation    TICK: 7961 PC: 111 SP: 140 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 7964 PC: 112 SP: 141 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 7967 PC: 113 SP: 141 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 7969 PC:  21 SP: 141 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 7976 PC:  22 SP: 140 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 7979 PC:  23 SP: 141 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 7987 PC:  24 SP: 142 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 7994 PC:  25 SP: 141 ACC: 232792554
+  DEBUG   emulator:simulation    TICK: 7997 PC:  26 SP: 140 ACC: 232792554
+  DEBUG   emulator:simulation    TICK: 8005 PC:  27 SP: 141 ACC: 232792554
+  DEBUG   emulator:simulation    TICK: 8012 PC:  28 SP: 140 ACC: 6
+  DEBUG   emulator:simulation    TICK: 8015 PC:  29 SP: 141 ACC: 6
+  DEBUG   emulator:simulation    TICK: 8023 PC:  30 SP: 142 ACC: 6
+  DEBUG   emulator:simulation    TICK: 8026 PC:  31 SP: 141 ACC: 6
+  DEBUG   emulator:simulation    TICK: 8033 PC:  32 SP: 140 ACC: 6
+  DEBUG   emulator:simulation    TICK: 8036 PC:  33 SP: 141 ACC: 6
+  DEBUG   emulator:simulation    TICK: 8039 PC:  34 SP: 141 ACC: 6
+  DEBUG   emulator:simulation    TICK: 8046 PC:  35 SP: 140 ACC: 6
+  DEBUG   emulator:simulation    TICK: 8053 PC:  36 SP: 139 ACC: 6
+  DEBUG   emulator:simulation    TICK: 8060 PC:  37 SP: 138 ACC: 6
+  DEBUG   emulator:simulation    TICK: 8063 PC:  38 SP: 139 ACC: 6
+  DEBUG   emulator:simulation    TICK: 8066 PC:  39 SP: 140 ACC: 6
+  DEBUG   emulator:simulation    TICK: 8069 PC:  40 SP: 141 ACC: 6
+  DEBUG   emulator:simulation    TICK: 8076 PC:  41 SP: 140 ACC: 6
+  DEBUG   emulator:simulation    TICK: 8079 PC:  42 SP: 141 ACC: 6
+  DEBUG   emulator:simulation    TICK: 8087 PC:  43 SP: 142 ACC: 6
+  DEBUG   emulator:simulation    TICK: 8094 PC:  44 SP: 141 ACC: -232792554
+  DEBUG   emulator:simulation    TICK: 8097 PC:  45 SP: 140 ACC: -232792554
+  DEBUG   emulator:simulation    TICK: 8105 PC:  46 SP: 141 ACC: -232792554
+  DEBUG   emulator:simulation    TICK: 8112 PC:  47 SP: 140 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 8115 PC:  48 SP: 141 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 8123 PC:  49 SP: 142 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 8126 PC:  50 SP: 141 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 8134 PC:  51 SP: 142 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 8137 PC:  52 SP: 141 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 8140 PC:  53 SP: 140 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 8143 PC:  54 SP: 139 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 8146 PC:  55 SP: 138 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 8153 PC:  56 SP: 137 ACC: 6
+  DEBUG   emulator:simulation    TICK: 8156 PC:  57 SP: 138 ACC: 6
+  DEBUG   emulator:simulation    TICK: 8164 PC:  58 SP: 139 ACC: 6
+  DEBUG   emulator:simulation    TICK: 8171 PC:  59 SP: 138 ACC: 0
+  DEBUG   emulator:simulation    TICK: 8174 PC:  60 SP: 137 ACC: 0
+  DEBUG   emulator:simulation    TICK: 8182 PC:  61 SP: 138 ACC: 0
+  DEBUG   emulator:simulation    TICK: 8189 PC:  62 SP: 137 ACC: 6
+  DEBUG   emulator:simulation    TICK: 8192 PC:  63 SP: 138 ACC: 6
+  DEBUG   emulator:simulation    TICK: 8200 PC:  64 SP: 139 ACC: 6
+  DEBUG   emulator:simulation    TICK: 8203 PC:  65 SP: 138 ACC: 6
+  DEBUG   emulator:simulation    TICK: 8206 PC:  66 SP: 139 ACC: 6
+  DEBUG   emulator:simulation    TICK: 8213 PC:  67 SP: 138 ACC: 6
+  DEBUG   emulator:simulation    TICK: 8216 PC:  68 SP: 139 ACC: 6
+  DEBUG   emulator:simulation    TICK: 8224 PC:  69 SP: 140 ACC: 6
+  DEBUG   emulator:simulation    TICK: 8231 PC:  70 SP: 139 ACC: -232792554
+  DEBUG   emulator:simulation    TICK: 8234 PC:  71 SP: 138 ACC: -232792554
+  DEBUG   emulator:simulation    TICK: 8242 PC:  72 SP: 139 ACC: -232792554
+  DEBUG   emulator:simulation    TICK: 8249 PC:  73 SP: 138 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 8252 PC:  74 SP: 139 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 8260 PC:  75 SP: 140 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 8263 PC:  76 SP: 139 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 8266 PC:  77 SP: 140 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 8273 PC:  78 SP: 139 ACC: 6
+  DEBUG   emulator:simulation    TICK: 8276 PC:  79 SP: 140 ACC: 6
+  DEBUG   emulator:simulation    TICK: 8284 PC:  80 SP: 141 ACC: 6
+  DEBUG   emulator:simulation    TICK: 8291 PC:  81 SP: 140 ACC: -232792554
+  DEBUG   emulator:simulation    TICK: 8294 PC:  82 SP: 139 ACC: -232792554
+  DEBUG   emulator:simulation    TICK: 8302 PC:  83 SP: 140 ACC: -232792554
+  DEBUG   emulator:simulation    TICK: 8309 PC:  84 SP: 139 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 8312 PC:  85 SP: 140 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 8320 PC:  86 SP: 141 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 8323 PC:  87 SP: 140 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 8330 PC:  88 SP: 139 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 8333 PC:  89 SP: 140 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 8336 PC:  90 SP: 141 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 8343 PC:  91 SP: 140 ACC: 6
+  DEBUG   emulator:simulation    TICK: 8346 PC:  92 SP: 139 ACC: 6
+  DEBUG   emulator:simulation    TICK: 8354 PC:  93 SP: 140 ACC: 6
+  DEBUG   emulator:simulation    TICK: 8361 PC:  94 SP: 139 ACC: 0
+  DEBUG   emulator:simulation    TICK: 8364 PC:  95 SP: 140 ACC: 0
+  DEBUG   emulator:simulation    TICK: 8367 PC:  97 SP: 140 ACC: 0
+  DEBUG   emulator:simulation    TICK: 8370 PC:  98 SP: 141 ACC: 0
+  DEBUG   emulator:simulation    TICK: 8377 PC:  99 SP: 140 ACC: 6
+  DEBUG   emulator:simulation    TICK: 8380 PC: 100 SP: 141 ACC: 6
+  DEBUG   emulator:simulation    TICK: 8388 PC: 101 SP: 142 ACC: 6
+  DEBUG   emulator:simulation    TICK: 8395 PC: 102 SP: 141 ACC: -1396755354
+  DEBUG   emulator:simulation    TICK: 8398 PC: 103 SP: 140 ACC: -1396755354
+  DEBUG   emulator:simulation    TICK: 8406 PC: 104 SP: 141 ACC: -1396755354
+  DEBUG   emulator:simulation    TICK: 8413 PC: 105 SP: 140 ACC: 1396755360
+  DEBUG   emulator:simulation    TICK: 8416 PC: 106 SP: 141 ACC: 1396755360
+  DEBUG   emulator:simulation    TICK: 8424 PC: 107 SP: 142 ACC: 1396755360
+  DEBUG   emulator:simulation    TICK: 8427 PC: 108 SP: 141 ACC: 1396755360
+  DEBUG   emulator:simulation    TICK: 8435 PC: 109 SP: 142 ACC: 1396755360
+  DEBUG   emulator:simulation    TICK: 8437 PC: 110 SP: 142 ACC: 1396755360
+  DEBUG   emulator:simulation    TICK: 8444 PC: 111 SP: 141 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 8447 PC: 112 SP: 142 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 8450 PC: 113 SP: 142 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 8452 PC:  21 SP: 142 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 8459 PC:  22 SP: 141 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 8462 PC:  23 SP: 142 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 8470 PC:  24 SP: 143 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 8477 PC:  25 SP: 142 ACC: 232792555
+  DEBUG   emulator:simulation    TICK: 8480 PC:  26 SP: 141 ACC: 232792555
+  DEBUG   emulator:simulation    TICK: 8488 PC:  27 SP: 142 ACC: 232792555
+  DEBUG   emulator:simulation    TICK: 8495 PC:  28 SP: 141 ACC: 5
+  DEBUG   emulator:simulation    TICK: 8498 PC:  29 SP: 142 ACC: 5
+  DEBUG   emulator:simulation    TICK: 8506 PC:  30 SP: 143 ACC: 5
+  DEBUG   emulator:simulation    TICK: 8509 PC:  31 SP: 142 ACC: 5
+  DEBUG   emulator:simulation    TICK: 8516 PC:  32 SP: 141 ACC: 5
+  DEBUG   emulator:simulation    TICK: 8519 PC:  33 SP: 142 ACC: 5
+  DEBUG   emulator:simulation    TICK: 8522 PC:  34 SP: 142 ACC: 5
+  DEBUG   emulator:simulation    TICK: 8529 PC:  35 SP: 141 ACC: 5
+  DEBUG   emulator:simulation    TICK: 8536 PC:  36 SP: 140 ACC: 5
+  DEBUG   emulator:simulation    TICK: 8543 PC:  37 SP: 139 ACC: 5
+  DEBUG   emulator:simulation    TICK: 8546 PC:  38 SP: 140 ACC: 5
+  DEBUG   emulator:simulation    TICK: 8549 PC:  39 SP: 141 ACC: 5
+  DEBUG   emulator:simulation    TICK: 8552 PC:  40 SP: 142 ACC: 5
+  DEBUG   emulator:simulation    TICK: 8559 PC:  41 SP: 141 ACC: 5
+  DEBUG   emulator:simulation    TICK: 8562 PC:  42 SP: 142 ACC: 5
+  DEBUG   emulator:simulation    TICK: 8570 PC:  43 SP: 143 ACC: 5
+  DEBUG   emulator:simulation    TICK: 8577 PC:  44 SP: 142 ACC: -232792555
+  DEBUG   emulator:simulation    TICK: 8580 PC:  45 SP: 141 ACC: -232792555
+  DEBUG   emulator:simulation    TICK: 8588 PC:  46 SP: 142 ACC: -232792555
+  DEBUG   emulator:simulation    TICK: 8595 PC:  47 SP: 141 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 8598 PC:  48 SP: 142 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 8606 PC:  49 SP: 143 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 8609 PC:  50 SP: 142 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 8617 PC:  51 SP: 143 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 8620 PC:  52 SP: 142 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 8623 PC:  53 SP: 141 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 8626 PC:  54 SP: 140 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 8629 PC:  55 SP: 139 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 8636 PC:  56 SP: 138 ACC: 5
+  DEBUG   emulator:simulation    TICK: 8639 PC:  57 SP: 139 ACC: 5
+  DEBUG   emulator:simulation    TICK: 8647 PC:  58 SP: 140 ACC: 5
+  DEBUG   emulator:simulation    TICK: 8654 PC:  59 SP: 139 ACC: 0
+  DEBUG   emulator:simulation    TICK: 8657 PC:  60 SP: 138 ACC: 0
+  DEBUG   emulator:simulation    TICK: 8665 PC:  61 SP: 139 ACC: 0
+  DEBUG   emulator:simulation    TICK: 8672 PC:  62 SP: 138 ACC: 5
+  DEBUG   emulator:simulation    TICK: 8675 PC:  63 SP: 139 ACC: 5
+  DEBUG   emulator:simulation    TICK: 8683 PC:  64 SP: 140 ACC: 5
+  DEBUG   emulator:simulation    TICK: 8686 PC:  65 SP: 139 ACC: 5
+  DEBUG   emulator:simulation    TICK: 8689 PC:  66 SP: 140 ACC: 5
+  DEBUG   emulator:simulation    TICK: 8696 PC:  67 SP: 139 ACC: 5
+  DEBUG   emulator:simulation    TICK: 8699 PC:  68 SP: 140 ACC: 5
+  DEBUG   emulator:simulation    TICK: 8707 PC:  69 SP: 141 ACC: 5
+  DEBUG   emulator:simulation    TICK: 8714 PC:  70 SP: 140 ACC: -232792555
+  DEBUG   emulator:simulation    TICK: 8717 PC:  71 SP: 139 ACC: -232792555
+  DEBUG   emulator:simulation    TICK: 8725 PC:  72 SP: 140 ACC: -232792555
+  DEBUG   emulator:simulation    TICK: 8732 PC:  73 SP: 139 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 8735 PC:  74 SP: 140 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 8743 PC:  75 SP: 141 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 8746 PC:  76 SP: 140 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 8749 PC:  77 SP: 141 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 8756 PC:  78 SP: 140 ACC: 5
+  DEBUG   emulator:simulation    TICK: 8759 PC:  79 SP: 141 ACC: 5
+  DEBUG   emulator:simulation    TICK: 8767 PC:  80 SP: 142 ACC: 5
+  DEBUG   emulator:simulation    TICK: 8774 PC:  81 SP: 141 ACC: -232792555
+  DEBUG   emulator:simulation    TICK: 8777 PC:  82 SP: 140 ACC: -232792555
+  DEBUG   emulator:simulation    TICK: 8785 PC:  83 SP: 141 ACC: -232792555
+  DEBUG   emulator:simulation    TICK: 8792 PC:  84 SP: 140 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 8795 PC:  85 SP: 141 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 8803 PC:  86 SP: 142 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 8806 PC:  87 SP: 141 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 8813 PC:  88 SP: 140 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 8816 PC:  89 SP: 141 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 8819 PC:  90 SP: 142 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 8826 PC:  91 SP: 141 ACC: 5
+  DEBUG   emulator:simulation    TICK: 8829 PC:  92 SP: 140 ACC: 5
+  DEBUG   emulator:simulation    TICK: 8837 PC:  93 SP: 141 ACC: 5
+  DEBUG   emulator:simulation    TICK: 8844 PC:  94 SP: 140 ACC: 0
+  DEBUG   emulator:simulation    TICK: 8847 PC:  95 SP: 141 ACC: 0
+  DEBUG   emulator:simulation    TICK: 8850 PC:  97 SP: 141 ACC: 0
+  DEBUG   emulator:simulation    TICK: 8853 PC:  98 SP: 142 ACC: 0
+  DEBUG   emulator:simulation    TICK: 8860 PC:  99 SP: 141 ACC: 5
+  DEBUG   emulator:simulation    TICK: 8863 PC: 100 SP: 142 ACC: 5
+  DEBUG   emulator:simulation    TICK: 8871 PC: 101 SP: 143 ACC: 5
+  DEBUG   emulator:simulation    TICK: 8878 PC: 102 SP: 142 ACC: -1163962795
+  DEBUG   emulator:simulation    TICK: 8881 PC: 103 SP: 141 ACC: -1163962795
+  DEBUG   emulator:simulation    TICK: 8889 PC: 104 SP: 142 ACC: -1163962795
+  DEBUG   emulator:simulation    TICK: 8896 PC: 105 SP: 141 ACC: 1163962800
+  DEBUG   emulator:simulation    TICK: 8899 PC: 106 SP: 142 ACC: 1163962800
+  DEBUG   emulator:simulation    TICK: 8907 PC: 107 SP: 143 ACC: 1163962800
+  DEBUG   emulator:simulation    TICK: 8910 PC: 108 SP: 142 ACC: 1163962800
+  DEBUG   emulator:simulation    TICK: 8918 PC: 109 SP: 143 ACC: 1163962800
+  DEBUG   emulator:simulation    TICK: 8920 PC: 110 SP: 143 ACC: 1163962800
+  DEBUG   emulator:simulation    TICK: 8927 PC: 111 SP: 142 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 8930 PC: 112 SP: 143 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 8933 PC: 113 SP: 143 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 8935 PC:  21 SP: 143 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 8942 PC:  22 SP: 142 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 8945 PC:  23 SP: 143 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 8953 PC:  24 SP: 144 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 8960 PC:  25 SP: 143 ACC: 232792556
+  DEBUG   emulator:simulation    TICK: 8963 PC:  26 SP: 142 ACC: 232792556
+  DEBUG   emulator:simulation    TICK: 8971 PC:  27 SP: 143 ACC: 232792556
+  DEBUG   emulator:simulation    TICK: 8978 PC:  28 SP: 142 ACC: 4
+  DEBUG   emulator:simulation    TICK: 8981 PC:  29 SP: 143 ACC: 4
+  DEBUG   emulator:simulation    TICK: 8989 PC:  30 SP: 144 ACC: 4
+  DEBUG   emulator:simulation    TICK: 8992 PC:  31 SP: 143 ACC: 4
+  DEBUG   emulator:simulation    TICK: 8999 PC:  32 SP: 142 ACC: 4
+  DEBUG   emulator:simulation    TICK: 9002 PC:  33 SP: 143 ACC: 4
+  DEBUG   emulator:simulation    TICK: 9005 PC:  34 SP: 143 ACC: 4
+  DEBUG   emulator:simulation    TICK: 9012 PC:  35 SP: 142 ACC: 4
+  DEBUG   emulator:simulation    TICK: 9019 PC:  36 SP: 141 ACC: 4
+  DEBUG   emulator:simulation    TICK: 9026 PC:  37 SP: 140 ACC: 4
+  DEBUG   emulator:simulation    TICK: 9029 PC:  38 SP: 141 ACC: 4
+  DEBUG   emulator:simulation    TICK: 9032 PC:  39 SP: 142 ACC: 4
+  DEBUG   emulator:simulation    TICK: 9035 PC:  40 SP: 143 ACC: 4
+  DEBUG   emulator:simulation    TICK: 9042 PC:  41 SP: 142 ACC: 4
+  DEBUG   emulator:simulation    TICK: 9045 PC:  42 SP: 143 ACC: 4
+  DEBUG   emulator:simulation    TICK: 9053 PC:  43 SP: 144 ACC: 4
+  DEBUG   emulator:simulation    TICK: 9060 PC:  44 SP: 143 ACC: -232792556
+  DEBUG   emulator:simulation    TICK: 9063 PC:  45 SP: 142 ACC: -232792556
+  DEBUG   emulator:simulation    TICK: 9071 PC:  46 SP: 143 ACC: -232792556
+  DEBUG   emulator:simulation    TICK: 9078 PC:  47 SP: 142 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 9081 PC:  48 SP: 143 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 9089 PC:  49 SP: 144 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 9092 PC:  50 SP: 143 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 9100 PC:  51 SP: 144 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 9103 PC:  52 SP: 143 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 9106 PC:  53 SP: 142 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 9109 PC:  54 SP: 141 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 9112 PC:  55 SP: 140 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 9119 PC:  56 SP: 139 ACC: 4
+  DEBUG   emulator:simulation    TICK: 9122 PC:  57 SP: 140 ACC: 4
+  DEBUG   emulator:simulation    TICK: 9130 PC:  58 SP: 141 ACC: 4
+  DEBUG   emulator:simulation    TICK: 9137 PC:  59 SP: 140 ACC: 0
+  DEBUG   emulator:simulation    TICK: 9140 PC:  60 SP: 139 ACC: 0
+  DEBUG   emulator:simulation    TICK: 9148 PC:  61 SP: 140 ACC: 0
+  DEBUG   emulator:simulation    TICK: 9155 PC:  62 SP: 139 ACC: 4
+  DEBUG   emulator:simulation    TICK: 9158 PC:  63 SP: 140 ACC: 4
+  DEBUG   emulator:simulation    TICK: 9166 PC:  64 SP: 141 ACC: 4
+  DEBUG   emulator:simulation    TICK: 9169 PC:  65 SP: 140 ACC: 4
+  DEBUG   emulator:simulation    TICK: 9172 PC:  66 SP: 141 ACC: 4
+  DEBUG   emulator:simulation    TICK: 9179 PC:  67 SP: 140 ACC: 4
+  DEBUG   emulator:simulation    TICK: 9182 PC:  68 SP: 141 ACC: 4
+  DEBUG   emulator:simulation    TICK: 9190 PC:  69 SP: 142 ACC: 4
+  DEBUG   emulator:simulation    TICK: 9197 PC:  70 SP: 141 ACC: -232792556
+  DEBUG   emulator:simulation    TICK: 9200 PC:  71 SP: 140 ACC: -232792556
+  DEBUG   emulator:simulation    TICK: 9208 PC:  72 SP: 141 ACC: -232792556
+  DEBUG   emulator:simulation    TICK: 9215 PC:  73 SP: 140 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 9218 PC:  74 SP: 141 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 9226 PC:  75 SP: 142 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 9229 PC:  76 SP: 141 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 9232 PC:  77 SP: 142 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 9239 PC:  78 SP: 141 ACC: 4
+  DEBUG   emulator:simulation    TICK: 9242 PC:  79 SP: 142 ACC: 4
+  DEBUG   emulator:simulation    TICK: 9250 PC:  80 SP: 143 ACC: 4
+  DEBUG   emulator:simulation    TICK: 9257 PC:  81 SP: 142 ACC: -232792556
+  DEBUG   emulator:simulation    TICK: 9260 PC:  82 SP: 141 ACC: -232792556
+  DEBUG   emulator:simulation    TICK: 9268 PC:  83 SP: 142 ACC: -232792556
+  DEBUG   emulator:simulation    TICK: 9275 PC:  84 SP: 141 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 9278 PC:  85 SP: 142 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 9286 PC:  86 SP: 143 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 9289 PC:  87 SP: 142 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 9296 PC:  88 SP: 141 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 9299 PC:  89 SP: 142 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 9302 PC:  90 SP: 143 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 9309 PC:  91 SP: 142 ACC: 4
+  DEBUG   emulator:simulation    TICK: 9312 PC:  92 SP: 141 ACC: 4
+  DEBUG   emulator:simulation    TICK: 9320 PC:  93 SP: 142 ACC: 4
+  DEBUG   emulator:simulation    TICK: 9327 PC:  94 SP: 141 ACC: 0
+  DEBUG   emulator:simulation    TICK: 9330 PC:  95 SP: 142 ACC: 0
+  DEBUG   emulator:simulation    TICK: 9333 PC:  97 SP: 142 ACC: 0
+  DEBUG   emulator:simulation    TICK: 9336 PC:  98 SP: 143 ACC: 0
+  DEBUG   emulator:simulation    TICK: 9343 PC:  99 SP: 142 ACC: 4
+  DEBUG   emulator:simulation    TICK: 9346 PC: 100 SP: 143 ACC: 4
+  DEBUG   emulator:simulation    TICK: 9354 PC: 101 SP: 144 ACC: 4
+  DEBUG   emulator:simulation    TICK: 9361 PC: 102 SP: 143 ACC: -931170236
+  DEBUG   emulator:simulation    TICK: 9364 PC: 103 SP: 142 ACC: -931170236
+  DEBUG   emulator:simulation    TICK: 9372 PC: 104 SP: 143 ACC: -931170236
+  DEBUG   emulator:simulation    TICK: 9379 PC: 105 SP: 142 ACC: 931170240
+  DEBUG   emulator:simulation    TICK: 9382 PC: 106 SP: 143 ACC: 931170240
+  DEBUG   emulator:simulation    TICK: 9390 PC: 107 SP: 144 ACC: 931170240
+  DEBUG   emulator:simulation    TICK: 9393 PC: 108 SP: 143 ACC: 931170240
+  DEBUG   emulator:simulation    TICK: 9401 PC: 109 SP: 144 ACC: 931170240
+  DEBUG   emulator:simulation    TICK: 9403 PC: 110 SP: 144 ACC: 931170240
+  DEBUG   emulator:simulation    TICK: 9410 PC: 111 SP: 143 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 9413 PC: 112 SP: 144 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 9416 PC: 113 SP: 144 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 9418 PC:  21 SP: 144 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 9425 PC:  22 SP: 143 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 9428 PC:  23 SP: 144 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 9436 PC:  24 SP: 145 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 9443 PC:  25 SP: 144 ACC: 232792557
+  DEBUG   emulator:simulation    TICK: 9446 PC:  26 SP: 143 ACC: 232792557
+  DEBUG   emulator:simulation    TICK: 9454 PC:  27 SP: 144 ACC: 232792557
+  DEBUG   emulator:simulation    TICK: 9461 PC:  28 SP: 143 ACC: 3
+  DEBUG   emulator:simulation    TICK: 9464 PC:  29 SP: 144 ACC: 3
+  DEBUG   emulator:simulation    TICK: 9472 PC:  30 SP: 145 ACC: 3
+  DEBUG   emulator:simulation    TICK: 9475 PC:  31 SP: 144 ACC: 3
+  DEBUG   emulator:simulation    TICK: 9482 PC:  32 SP: 143 ACC: 3
+  DEBUG   emulator:simulation    TICK: 9485 PC:  33 SP: 144 ACC: 3
+  DEBUG   emulator:simulation    TICK: 9488 PC:  34 SP: 144 ACC: 3
+  DEBUG   emulator:simulation    TICK: 9495 PC:  35 SP: 143 ACC: 3
+  DEBUG   emulator:simulation    TICK: 9502 PC:  36 SP: 142 ACC: 3
+  DEBUG   emulator:simulation    TICK: 9509 PC:  37 SP: 141 ACC: 3
+  DEBUG   emulator:simulation    TICK: 9512 PC:  38 SP: 142 ACC: 3
+  DEBUG   emulator:simulation    TICK: 9515 PC:  39 SP: 143 ACC: 3
+  DEBUG   emulator:simulation    TICK: 9518 PC:  40 SP: 144 ACC: 3
+  DEBUG   emulator:simulation    TICK: 9525 PC:  41 SP: 143 ACC: 3
+  DEBUG   emulator:simulation    TICK: 9528 PC:  42 SP: 144 ACC: 3
+  DEBUG   emulator:simulation    TICK: 9536 PC:  43 SP: 145 ACC: 3
+  DEBUG   emulator:simulation    TICK: 9543 PC:  44 SP: 144 ACC: -232792557
+  DEBUG   emulator:simulation    TICK: 9546 PC:  45 SP: 143 ACC: -232792557
+  DEBUG   emulator:simulation    TICK: 9554 PC:  46 SP: 144 ACC: -232792557
+  DEBUG   emulator:simulation    TICK: 9561 PC:  47 SP: 143 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 9564 PC:  48 SP: 144 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 9572 PC:  49 SP: 145 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 9575 PC:  50 SP: 144 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 9583 PC:  51 SP: 145 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 9586 PC:  52 SP: 144 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 9589 PC:  53 SP: 143 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 9592 PC:  54 SP: 142 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 9595 PC:  55 SP: 141 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 9602 PC:  56 SP: 140 ACC: 3
+  DEBUG   emulator:simulation    TICK: 9605 PC:  57 SP: 141 ACC: 3
+  DEBUG   emulator:simulation    TICK: 9613 PC:  58 SP: 142 ACC: 3
+  DEBUG   emulator:simulation    TICK: 9620 PC:  59 SP: 141 ACC: 0
+  DEBUG   emulator:simulation    TICK: 9623 PC:  60 SP: 140 ACC: 0
+  DEBUG   emulator:simulation    TICK: 9631 PC:  61 SP: 141 ACC: 0
+  DEBUG   emulator:simulation    TICK: 9638 PC:  62 SP: 140 ACC: 3
+  DEBUG   emulator:simulation    TICK: 9641 PC:  63 SP: 141 ACC: 3
+  DEBUG   emulator:simulation    TICK: 9649 PC:  64 SP: 142 ACC: 3
+  DEBUG   emulator:simulation    TICK: 9652 PC:  65 SP: 141 ACC: 3
+  DEBUG   emulator:simulation    TICK: 9655 PC:  66 SP: 142 ACC: 3
+  DEBUG   emulator:simulation    TICK: 9662 PC:  67 SP: 141 ACC: 3
+  DEBUG   emulator:simulation    TICK: 9665 PC:  68 SP: 142 ACC: 3
+  DEBUG   emulator:simulation    TICK: 9673 PC:  69 SP: 143 ACC: 3
+  DEBUG   emulator:simulation    TICK: 9680 PC:  70 SP: 142 ACC: -232792557
+  DEBUG   emulator:simulation    TICK: 9683 PC:  71 SP: 141 ACC: -232792557
+  DEBUG   emulator:simulation    TICK: 9691 PC:  72 SP: 142 ACC: -232792557
+  DEBUG   emulator:simulation    TICK: 9698 PC:  73 SP: 141 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 9701 PC:  74 SP: 142 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 9709 PC:  75 SP: 143 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 9712 PC:  76 SP: 142 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 9715 PC:  77 SP: 143 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 9722 PC:  78 SP: 142 ACC: 3
+  DEBUG   emulator:simulation    TICK: 9725 PC:  79 SP: 143 ACC: 3
+  DEBUG   emulator:simulation    TICK: 9733 PC:  80 SP: 144 ACC: 3
+  DEBUG   emulator:simulation    TICK: 9740 PC:  81 SP: 143 ACC: -232792557
+  DEBUG   emulator:simulation    TICK: 9743 PC:  82 SP: 142 ACC: -232792557
+  DEBUG   emulator:simulation    TICK: 9751 PC:  83 SP: 143 ACC: -232792557
+  DEBUG   emulator:simulation    TICK: 9758 PC:  84 SP: 142 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 9761 PC:  85 SP: 143 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 9769 PC:  86 SP: 144 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 9772 PC:  87 SP: 143 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 9779 PC:  88 SP: 142 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 9782 PC:  89 SP: 143 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 9785 PC:  90 SP: 144 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 9792 PC:  91 SP: 143 ACC: 3
+  DEBUG   emulator:simulation    TICK: 9795 PC:  92 SP: 142 ACC: 3
+  DEBUG   emulator:simulation    TICK: 9803 PC:  93 SP: 143 ACC: 3
+  DEBUG   emulator:simulation    TICK: 9810 PC:  94 SP: 142 ACC: 0
+  DEBUG   emulator:simulation    TICK: 9813 PC:  95 SP: 143 ACC: 0
+  DEBUG   emulator:simulation    TICK: 9816 PC:  97 SP: 143 ACC: 0
+  DEBUG   emulator:simulation    TICK: 9819 PC:  98 SP: 144 ACC: 0
+  DEBUG   emulator:simulation    TICK: 9826 PC:  99 SP: 143 ACC: 3
+  DEBUG   emulator:simulation    TICK: 9829 PC: 100 SP: 144 ACC: 3
+  DEBUG   emulator:simulation    TICK: 9837 PC: 101 SP: 145 ACC: 3
+  DEBUG   emulator:simulation    TICK: 9844 PC: 102 SP: 144 ACC: -698377677
+  DEBUG   emulator:simulation    TICK: 9847 PC: 103 SP: 143 ACC: -698377677
+  DEBUG   emulator:simulation    TICK: 9855 PC: 104 SP: 144 ACC: -698377677
+  DEBUG   emulator:simulation    TICK: 9862 PC: 105 SP: 143 ACC: 698377680
+  DEBUG   emulator:simulation    TICK: 9865 PC: 106 SP: 144 ACC: 698377680
+  DEBUG   emulator:simulation    TICK: 9873 PC: 107 SP: 145 ACC: 698377680
+  DEBUG   emulator:simulation    TICK: 9876 PC: 108 SP: 144 ACC: 698377680
+  DEBUG   emulator:simulation    TICK: 9884 PC: 109 SP: 145 ACC: 698377680
+  DEBUG   emulator:simulation    TICK: 9886 PC: 110 SP: 145 ACC: 698377680
+  DEBUG   emulator:simulation    TICK: 9893 PC: 111 SP: 144 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 9896 PC: 112 SP: 145 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 9899 PC: 113 SP: 145 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 9901 PC:  21 SP: 145 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 9908 PC:  22 SP: 144 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 9911 PC:  23 SP: 145 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 9919 PC:  24 SP: 146 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 9926 PC:  25 SP: 145 ACC: 232792558
+  DEBUG   emulator:simulation    TICK: 9929 PC:  26 SP: 144 ACC: 232792558
+  DEBUG   emulator:simulation    TICK: 9937 PC:  27 SP: 145 ACC: 232792558
+  DEBUG   emulator:simulation    TICK: 9944 PC:  28 SP: 144 ACC: 2
+  DEBUG   emulator:simulation    TICK: 9947 PC:  29 SP: 145 ACC: 2
+  DEBUG   emulator:simulation    TICK: 9955 PC:  30 SP: 146 ACC: 2
+  DEBUG   emulator:simulation    TICK: 9958 PC:  31 SP: 145 ACC: 2
+  DEBUG   emulator:simulation    TICK: 9965 PC:  32 SP: 144 ACC: 2
+  DEBUG   emulator:simulation    TICK: 9968 PC:  33 SP: 145 ACC: 2
+  DEBUG   emulator:simulation    TICK: 9971 PC:  34 SP: 145 ACC: 2
+  DEBUG   emulator:simulation    TICK: 9978 PC:  35 SP: 144 ACC: 2
+  DEBUG   emulator:simulation    TICK: 9985 PC:  36 SP: 143 ACC: 2
+  DEBUG   emulator:simulation    TICK: 9992 PC:  37 SP: 142 ACC: 2
+  DEBUG   emulator:simulation    TICK: 9995 PC:  38 SP: 143 ACC: 2
+  DEBUG   emulator:simulation    TICK: 9998 PC:  39 SP: 144 ACC: 2
+  DEBUG   emulator:simulation    TICK: 10001 PC:  40 SP: 145 ACC: 2
+  DEBUG   emulator:simulation    TICK: 10008 PC:  41 SP: 144 ACC: 2
+  DEBUG   emulator:simulation    TICK: 10011 PC:  42 SP: 145 ACC: 2
+  DEBUG   emulator:simulation    TICK: 10019 PC:  43 SP: 146 ACC: 2
+  DEBUG   emulator:simulation    TICK: 10026 PC:  44 SP: 145 ACC: -232792558
+  DEBUG   emulator:simulation    TICK: 10029 PC:  45 SP: 144 ACC: -232792558
+  DEBUG   emulator:simulation    TICK: 10037 PC:  46 SP: 145 ACC: -232792558
+  DEBUG   emulator:simulation    TICK: 10044 PC:  47 SP: 144 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 10047 PC:  48 SP: 145 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 10055 PC:  49 SP: 146 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 10058 PC:  50 SP: 145 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 10066 PC:  51 SP: 146 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 10069 PC:  52 SP: 145 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 10072 PC:  53 SP: 144 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 10075 PC:  54 SP: 143 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 10078 PC:  55 SP: 142 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 10085 PC:  56 SP: 141 ACC: 2
+  DEBUG   emulator:simulation    TICK: 10088 PC:  57 SP: 142 ACC: 2
+  DEBUG   emulator:simulation    TICK: 10096 PC:  58 SP: 143 ACC: 2
+  DEBUG   emulator:simulation    TICK: 10103 PC:  59 SP: 142 ACC: 0
+  DEBUG   emulator:simulation    TICK: 10106 PC:  60 SP: 141 ACC: 0
+  DEBUG   emulator:simulation    TICK: 10114 PC:  61 SP: 142 ACC: 0
+  DEBUG   emulator:simulation    TICK: 10121 PC:  62 SP: 141 ACC: 2
+  DEBUG   emulator:simulation    TICK: 10124 PC:  63 SP: 142 ACC: 2
+  DEBUG   emulator:simulation    TICK: 10132 PC:  64 SP: 143 ACC: 2
+  DEBUG   emulator:simulation    TICK: 10135 PC:  65 SP: 142 ACC: 2
+  DEBUG   emulator:simulation    TICK: 10138 PC:  66 SP: 143 ACC: 2
+  DEBUG   emulator:simulation    TICK: 10145 PC:  67 SP: 142 ACC: 2
+  DEBUG   emulator:simulation    TICK: 10148 PC:  68 SP: 143 ACC: 2
+  DEBUG   emulator:simulation    TICK: 10156 PC:  69 SP: 144 ACC: 2
+  DEBUG   emulator:simulation    TICK: 10163 PC:  70 SP: 143 ACC: -232792558
+  DEBUG   emulator:simulation    TICK: 10166 PC:  71 SP: 142 ACC: -232792558
+  DEBUG   emulator:simulation    TICK: 10174 PC:  72 SP: 143 ACC: -232792558
+  DEBUG   emulator:simulation    TICK: 10181 PC:  73 SP: 142 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 10184 PC:  74 SP: 143 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 10192 PC:  75 SP: 144 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 10195 PC:  76 SP: 143 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 10198 PC:  77 SP: 144 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 10205 PC:  78 SP: 143 ACC: 2
+  DEBUG   emulator:simulation    TICK: 10208 PC:  79 SP: 144 ACC: 2
+  DEBUG   emulator:simulation    TICK: 10216 PC:  80 SP: 145 ACC: 2
+  DEBUG   emulator:simulation    TICK: 10223 PC:  81 SP: 144 ACC: -232792558
+  DEBUG   emulator:simulation    TICK: 10226 PC:  82 SP: 143 ACC: -232792558
+  DEBUG   emulator:simulation    TICK: 10234 PC:  83 SP: 144 ACC: -232792558
+  DEBUG   emulator:simulation    TICK: 10241 PC:  84 SP: 143 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 10244 PC:  85 SP: 144 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 10252 PC:  86 SP: 145 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 10255 PC:  87 SP: 144 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 10262 PC:  88 SP: 143 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 10265 PC:  89 SP: 144 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 10268 PC:  90 SP: 145 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 10275 PC:  91 SP: 144 ACC: 2
+  DEBUG   emulator:simulation    TICK: 10278 PC:  92 SP: 143 ACC: 2
+  DEBUG   emulator:simulation    TICK: 10286 PC:  93 SP: 144 ACC: 2
+  DEBUG   emulator:simulation    TICK: 10293 PC:  94 SP: 143 ACC: 0
+  DEBUG   emulator:simulation    TICK: 10296 PC:  95 SP: 144 ACC: 0
+  DEBUG   emulator:simulation    TICK: 10299 PC:  97 SP: 144 ACC: 0
+  DEBUG   emulator:simulation    TICK: 10302 PC:  98 SP: 145 ACC: 0
+  DEBUG   emulator:simulation    TICK: 10309 PC:  99 SP: 144 ACC: 2
+  DEBUG   emulator:simulation    TICK: 10312 PC: 100 SP: 145 ACC: 2
+  DEBUG   emulator:simulation    TICK: 10320 PC: 101 SP: 146 ACC: 2
+  DEBUG   emulator:simulation    TICK: 10327 PC: 102 SP: 145 ACC: -465585118
+  DEBUG   emulator:simulation    TICK: 10330 PC: 103 SP: 144 ACC: -465585118
+  DEBUG   emulator:simulation    TICK: 10338 PC: 104 SP: 145 ACC: -465585118
+  DEBUG   emulator:simulation    TICK: 10345 PC: 105 SP: 144 ACC: 465585120
+  DEBUG   emulator:simulation    TICK: 10348 PC: 106 SP: 145 ACC: 465585120
+  DEBUG   emulator:simulation    TICK: 10356 PC: 107 SP: 146 ACC: 465585120
+  DEBUG   emulator:simulation    TICK: 10359 PC: 108 SP: 145 ACC: 465585120
+  DEBUG   emulator:simulation    TICK: 10367 PC: 109 SP: 146 ACC: 465585120
+  DEBUG   emulator:simulation    TICK: 10369 PC: 110 SP: 146 ACC: 465585120
+  DEBUG   emulator:simulation    TICK: 10376 PC: 111 SP: 145 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 10379 PC: 112 SP: 146 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 10382 PC: 113 SP: 146 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 10384 PC:  21 SP: 146 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 10391 PC:  22 SP: 145 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 10394 PC:  23 SP: 146 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 10402 PC:  24 SP: 147 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 10409 PC:  25 SP: 146 ACC: 232792559
+  DEBUG   emulator:simulation    TICK: 10412 PC:  26 SP: 145 ACC: 232792559
+  DEBUG   emulator:simulation    TICK: 10420 PC:  27 SP: 146 ACC: 232792559
+  DEBUG   emulator:simulation    TICK: 10427 PC:  28 SP: 145 ACC: 1
+  DEBUG   emulator:simulation    TICK: 10430 PC:  29 SP: 146 ACC: 1
+  DEBUG   emulator:simulation    TICK: 10438 PC:  30 SP: 147 ACC: 1
+  DEBUG   emulator:simulation    TICK: 10441 PC:  31 SP: 146 ACC: 1
+  DEBUG   emulator:simulation    TICK: 10448 PC:  32 SP: 145 ACC: 1
+  DEBUG   emulator:simulation    TICK: 10451 PC:  33 SP: 146 ACC: 1
+  DEBUG   emulator:simulation    TICK: 10454 PC:  34 SP: 146 ACC: 1
+  DEBUG   emulator:simulation    TICK: 10461 PC:  35 SP: 145 ACC: 1
+  DEBUG   emulator:simulation    TICK: 10468 PC:  36 SP: 144 ACC: 1
+  DEBUG   emulator:simulation    TICK: 10475 PC:  37 SP: 143 ACC: 1
+  DEBUG   emulator:simulation    TICK: 10478 PC:  38 SP: 144 ACC: 1
+  DEBUG   emulator:simulation    TICK: 10481 PC:  39 SP: 145 ACC: 1
+  DEBUG   emulator:simulation    TICK: 10484 PC:  40 SP: 146 ACC: 1
+  DEBUG   emulator:simulation    TICK: 10491 PC:  41 SP: 145 ACC: 1
+  DEBUG   emulator:simulation    TICK: 10494 PC:  42 SP: 146 ACC: 1
+  DEBUG   emulator:simulation    TICK: 10502 PC:  43 SP: 147 ACC: 1
+  DEBUG   emulator:simulation    TICK: 10509 PC:  44 SP: 146 ACC: -232792559
+  DEBUG   emulator:simulation    TICK: 10512 PC:  45 SP: 145 ACC: -232792559
+  DEBUG   emulator:simulation    TICK: 10520 PC:  46 SP: 146 ACC: -232792559
+  DEBUG   emulator:simulation    TICK: 10527 PC:  47 SP: 145 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 10530 PC:  48 SP: 146 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 10538 PC:  49 SP: 147 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 10541 PC:  50 SP: 146 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 10549 PC:  51 SP: 147 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 10552 PC:  52 SP: 146 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 10555 PC:  53 SP: 145 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 10558 PC:  54 SP: 144 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 10561 PC:  55 SP: 143 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 10568 PC:  56 SP: 142 ACC: 1
+  DEBUG   emulator:simulation    TICK: 10571 PC:  57 SP: 143 ACC: 1
+  DEBUG   emulator:simulation    TICK: 10579 PC:  58 SP: 144 ACC: 1
+  DEBUG   emulator:simulation    TICK: 10586 PC:  59 SP: 143 ACC: 0
+  DEBUG   emulator:simulation    TICK: 10589 PC:  60 SP: 142 ACC: 0
+  DEBUG   emulator:simulation    TICK: 10597 PC:  61 SP: 143 ACC: 0
+  DEBUG   emulator:simulation    TICK: 10604 PC:  62 SP: 142 ACC: 1
+  DEBUG   emulator:simulation    TICK: 10607 PC:  63 SP: 143 ACC: 1
+  DEBUG   emulator:simulation    TICK: 10615 PC:  64 SP: 144 ACC: 1
+  DEBUG   emulator:simulation    TICK: 10618 PC:  65 SP: 143 ACC: 1
+  DEBUG   emulator:simulation    TICK: 10621 PC:  66 SP: 144 ACC: 1
+  DEBUG   emulator:simulation    TICK: 10628 PC:  67 SP: 143 ACC: 1
+  DEBUG   emulator:simulation    TICK: 10631 PC:  68 SP: 144 ACC: 1
+  DEBUG   emulator:simulation    TICK: 10639 PC:  69 SP: 145 ACC: 1
+  DEBUG   emulator:simulation    TICK: 10646 PC:  70 SP: 144 ACC: -232792559
+  DEBUG   emulator:simulation    TICK: 10649 PC:  71 SP: 143 ACC: -232792559
+  DEBUG   emulator:simulation    TICK: 10657 PC:  72 SP: 144 ACC: -232792559
+  DEBUG   emulator:simulation    TICK: 10664 PC:  73 SP: 143 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 10667 PC:  74 SP: 144 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 10675 PC:  75 SP: 145 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 10678 PC:  76 SP: 144 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 10681 PC:  77 SP: 145 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 10688 PC:  78 SP: 144 ACC: 1
+  DEBUG   emulator:simulation    TICK: 10691 PC:  79 SP: 145 ACC: 1
+  DEBUG   emulator:simulation    TICK: 10699 PC:  80 SP: 146 ACC: 1
+  DEBUG   emulator:simulation    TICK: 10706 PC:  81 SP: 145 ACC: -232792559
+  DEBUG   emulator:simulation    TICK: 10709 PC:  82 SP: 144 ACC: -232792559
+  DEBUG   emulator:simulation    TICK: 10717 PC:  83 SP: 145 ACC: -232792559
+  DEBUG   emulator:simulation    TICK: 10724 PC:  84 SP: 144 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 10727 PC:  85 SP: 145 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 10735 PC:  86 SP: 146 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 10738 PC:  87 SP: 145 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 10745 PC:  88 SP: 144 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 10748 PC:  89 SP: 145 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 10751 PC:  90 SP: 146 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 10758 PC:  91 SP: 145 ACC: 1
+  DEBUG   emulator:simulation    TICK: 10761 PC:  92 SP: 144 ACC: 1
+  DEBUG   emulator:simulation    TICK: 10769 PC:  93 SP: 145 ACC: 1
+  DEBUG   emulator:simulation    TICK: 10776 PC:  94 SP: 144 ACC: 0
+  DEBUG   emulator:simulation    TICK: 10779 PC:  95 SP: 145 ACC: 0
+  DEBUG   emulator:simulation    TICK: 10782 PC:  97 SP: 145 ACC: 0
+  DEBUG   emulator:simulation    TICK: 10785 PC:  98 SP: 146 ACC: 0
+  DEBUG   emulator:simulation    TICK: 10792 PC:  99 SP: 145 ACC: 1
+  DEBUG   emulator:simulation    TICK: 10795 PC: 100 SP: 146 ACC: 1
+  DEBUG   emulator:simulation    TICK: 10803 PC: 101 SP: 147 ACC: 1
+  DEBUG   emulator:simulation    TICK: 10810 PC: 102 SP: 146 ACC: -232792559
+  DEBUG   emulator:simulation    TICK: 10813 PC: 103 SP: 145 ACC: -232792559
+  DEBUG   emulator:simulation    TICK: 10821 PC: 104 SP: 146 ACC: -232792559
+  DEBUG   emulator:simulation    TICK: 10828 PC: 105 SP: 145 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 10831 PC: 106 SP: 146 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 10839 PC: 107 SP: 147 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 10842 PC: 108 SP: 146 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 10850 PC: 109 SP: 147 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 10852 PC: 110 SP: 147 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 10859 PC: 111 SP: 146 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 10862 PC: 112 SP: 147 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 10865 PC: 113 SP: 147 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 10867 PC:  21 SP: 147 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 10874 PC:  22 SP: 146 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 10877 PC:  23 SP: 147 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 10885 PC:  24 SP: 148 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 10892 PC:  25 SP: 147 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 10895 PC:  26 SP: 146 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 10903 PC:  27 SP: 147 ACC: 232792560
+  DEBUG   emulator:simulation    TICK: 10910 PC:  28 SP: 146 ACC: 0
+  DEBUG   emulator:simulation    TICK: 10913 PC:  29 SP: 147 ACC: 0
+  DEBUG   emulator:simulation    TICK: 10921 PC:  30 SP: 148 ACC: 0
+  DEBUG   emulator:simulation    TICK: 10924 PC:  31 SP: 147 ACC: 0
+  DEBUG   emulator:simulation    TICK: 10931 PC:  32 SP: 146 ACC: 0
+  DEBUG   emulator:simulation    TICK: 10934 PC:  33 SP: 147 ACC: 0
+  DEBUG   emulator:simulation    TICK: 10937 PC: 110 SP: 147 ACC: 0
+  DEBUG   emulator:simulation    TICK: 10944 PC: 111 SP: 146 ACC: 0
+  DEBUG   emulator:simulation    TICK: 10947 PC: 112 SP: 147 ACC: 0
+  DEBUG   emulator:simulation    TICK: 10950 PC: 114 SP: 147 ACC: 0
+  DEBUG   emulator:simulation    TICK: 10953 PC: 115 SP: 148 ACC: 0
+  DEBUG   emulator:simulation    TICK: 10955 PC: 116 SP: 149 ACC: 0
+  INFO    emulator:simulation    output_buffer: '232792560'

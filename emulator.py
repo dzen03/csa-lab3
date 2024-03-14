@@ -47,14 +47,17 @@ class DataPath:
         self.rbp = self.stack_pointer
 
     # sel_addr = 0 if selecting instruction
-    def signal_oe(self, sel_addr: bool = False, sel_out: Opcode = None, instruction_addr: int = None, latch_acc: bool = False):
+    def signal_oe(
+        self, sel_addr: bool = False, sel_out: Opcode = None, instruction_addr: int = None, latch_acc: bool = False
+    ):
         if not sel_addr:
             res = self.data[instruction_addr]
         else:
             if sel_out == Opcode.OUTPUT:
                 res = self.data[self.stack_pointer]
 
-                if ord('a') < res < ord('z') or ord('A') < res < ord('Z'):
+                if ord("a") <= res <= ord("z") or ord("A") <= res <= ord("Z") or \
+                        res in {ord(' '), ord('!'), ord(','), ord('.')}:
                     self.user_output_buffer.append(chr(res))
                 else:
                     res = str(res)
@@ -143,14 +146,17 @@ class ControlUnit:
         if self.decode_and_execute_control_flow_instruction(instr, opcode):
             return
 
-        math = {Opcode.EQ: lambda a, b:  int(a == b),
-                Opcode.NEQ: lambda a, b:  int(a != b),
-                Opcode.ADD: lambda a, b:  int(a + b),
-                Opcode.SUB: lambda a, b:  int(a - b),
-                Opcode.MUL: lambda a, b:  int(a * b),
-                Opcode.DIV: lambda a, b:  int(a // b),
-                Opcode.MOD: lambda a, b:  int(a % b)}
+        math = {
+            Opcode.EQ: lambda a, b: int(a == b),
+            Opcode.NEQ: lambda a, b: int(a != b),
+            Opcode.ADD: lambda a, b: int(a + b),
+            Opcode.SUB: lambda a, b: int(a - b),
+            Opcode.MUL: lambda a, b: int(a * b),
+            Opcode.DIV: lambda a, b: int(a // b),
+            Opcode.MOD: lambda a, b: int(a % b),
+        }
         if opcode in math:
+
             self.data_path.latch_stack_pointer(Opcode.INC)
             self.tick()
 
@@ -163,6 +169,8 @@ class ControlUnit:
             left = self.data_path.signal_oe(True, opcode)
             self.tick()
 
+            assert right is not Instruction, opcode
+
             result = math[opcode](right, left)
             self.tick()
 
@@ -173,7 +181,16 @@ class ControlUnit:
             self.latch_program_counter(sel_next=True)
             self.tick()
 
-        elif opcode in {Opcode.INC, Opcode.DEC, Opcode.MOV, Opcode.MOV_RBP}:
+        elif opcode is Opcode.MOV:
+            self.data_path.latch_rbp()
+            self.tick()
+
+            self.data_path.latch_stack_pointer(opcode, instr.arg)
+            self.tick()
+
+            self.latch_program_counter(sel_next=True)
+            self.tick()
+        elif opcode in {Opcode.INC, Opcode.DEC, Opcode.MOV_RBP}:
             self.data_path.latch_stack_pointer(opcode, instr.arg)
             self.tick()
 
@@ -219,22 +236,21 @@ class ControlUnit:
 
     def __repr__(self):
         """Вернуть строковое представление состояния процессора."""
-        state_repr = "TICK: {:3} PC: {:3} SP: {:3} MEM_OUT: {} ACC: {}".format(
+        state_repr = "TICK: {:3} PC: {:3} SP: {:3} ACC: {}".format(
             self._tick,
             self.program_counter,
             self.data_path.stack_pointer,
-            self.data_path.data[self.data_path.stack_pointer],
             self.data_path.acc,
         )
+        return state_repr
 
-        instr = self.data_path.signal_oe(False, instruction_addr=self.program_counter)
-        opcode = instr.code
-        instr_repr = str(opcode)
-
-        if "arg" in instr:
-            instr_repr += " {}".format(instr.arg)
-
-        return "{} \t{}".format(state_repr, instr_repr)
+        # instr = self.data_path.signal_oe(False, instruction_addr=self.program_counter)
+        # opcode = instr.code
+        # instr_repr = str(opcode)
+        #
+        # instr_repr += " {}".format(instr.arg)
+        #
+        # return "{} \t{}".format(state_repr, instr_repr)
 
 
 def simulation(code, input_tokens, data_size, limit, data=None):
@@ -260,24 +276,18 @@ def simulation(code, input_tokens, data_size, limit, data=None):
 
 
 def run(program_path, input_path):  # entry point
-    print(f'Running with {program_path} {input_path}')
+    print(f"Running with {program_path} {input_path}")
     prog = json.load(open(program_path))
-    code = isa.deserialize_instruction_list(prog['program'])
+    code = isa.deserialize_instruction_list(prog["program"])
     with open(input_path, encoding="utf-8") as file:
         input_text = file.read()
         input_token = []
         for char in input_text:
             input_token.append(char)
 
-    data = prog.get('data', None)
+    data = prog.get("data", None)
 
-    output, instr_counter, ticks = simulation(
-        code,
-        input_tokens=input_token,
-        data_size=1500,
-        limit=10000,
-        data=data
-    )
+    output, instr_counter, ticks = simulation(code, input_tokens=input_token, data_size=150, limit=3000, data=data)
 
     print("".join(output))
     print("instr_counter: ", instr_counter, "ticks:", ticks)
@@ -285,10 +295,10 @@ def run(program_path, input_path):  # entry point
 
 def main(argv):
     if len(argv) != 3:
-        print(f'Error in arguments. Expecting: <program_file> <input_file>')
+        print(f"Error in arguments. Expecting: <program_file> <input_file>")
         exit(1)
     run(argv[1], argv[2])
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main(sys.argv)

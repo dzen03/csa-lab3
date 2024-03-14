@@ -1,5 +1,10 @@
 .idea/
 **/.DS_Store
-test/test.forth
+tests/test.forth
 test_out/
 venv/
+.coverage
+**/__pycache__/
+poetry.lock
+.pytest_cache/
+.ruff_cache/

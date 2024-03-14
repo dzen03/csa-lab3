@@ -3,28 +3,28 @@ from enum import Enum
 
 
 class Opcode(Enum):
-    EQ = '='
-    NEQ = '!='
-    ADD = '+'
-    SUB = '-'
-    MUL = '*'
-    DIV = '/'
-    MOD = '%'
-    DUP = 'dup'
-    OUTPUT = '.'
-    INPUT = 'input'
+    EQ = "="
+    NEQ = "!="
+    ADD = "+"
+    SUB = "-"
+    MUL = "*"
+    DIV = "/"
+    MOD = "%"
+    DUP = "dup"
+    OUTPUT = "."
+    INPUT = "input"
 
-    JMP = 'jmp'
-    JZ = 'jz'
+    JMP = "jmp"
+    JZ = "jz"
 
-    DEC = 'dec'
-    INC = 'inc'
-    MOV = 'mov'
-    MOV_RBP = 'mov_rbp'
+    DEC = "dec"
+    INC = "inc"
+    MOV = "mov"
+    MOV_RBP = "mov_rbp"
 
-    PUSH = 'push'
+    PUSH = "push"
 
-    HALT = 'halt'
+    HALT = "halt"
 
     def __str__(self):
         return self.value
@@ -51,10 +51,10 @@ class Instruction:
             self.code = Opcode.PUSH
             self.arg = int(code)
         elif code.startswith("'") and code.endswith("'"):
-            chars = {'\\n': '\n', '\\0': '\0', '\\t': '\t'}
+            chars = {"\\n": "\n", "\\0": "\0", "\\t": "\t"}
 
             self.code = Opcode.PUSH
-            if code[1] == '\\' and len(code) == 4:
+            if code[1] == "\\" and len(code) == 4:
                 self.arg = ord(chars[code[1:-1]])
             else:
                 self.arg = ord(code[1])
