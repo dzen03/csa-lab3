@@ -49,9 +49,7 @@ class DataPath:
         self.rbp = self.stack_pointer
 
     # sel_addr = 0 if selecting instruction
-    def signal_oe(
-        self, sel_addr=False, sel_out=None, instruction_addr=None, latch_acc=False
-    ):
+    def signal_oe(self, sel_addr=False, sel_out=None, instruction_addr=None, latch_acc=False):
         if not sel_addr:
             res = self.data[instruction_addr]
         else:
