@@ -94,17 +94,9 @@ rbp to move back to original stack_pointer state
 
 ### +3 translation time defined
 
-#### .s
-
-`: .s begin swap . until ;`
-
-#### drop
-
-`: drop inc ;`
-
-#### swap
-
-`: swap dup dup dec dec - dup inc + dup dup dec dec - -1 * inc ;`
+- .s `: .s begin swap . 1 swap - dup until ;`
+- drop `: drop inc ;`
+- swap `: swap dup inc - dup dec - dup inc + dec ;`
 
 ## Encoding
 

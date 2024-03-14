@@ -65,7 +65,7 @@ Creates a word called `name` that, upon execution, executes all `words`
 
 ### Predefined words
 
-- .s `: .s begin swap . until ;`
+- .s `: .s begin swap . 1 swap - dup until ;`
 - drop `: drop inc ;`
 - swap `: swap dup inc - dup dec - dup inc + dec ;`
 
